@@ -13,3 +13,19 @@ The discussion helped me understand the proposed **probe → patch → verify** 
 **Assistance used:** ChatGPT helped interpret the requirements and outline possible steps. It also drafted this entry and the initial README at my request.
 
 **Status:** Initial requirements clarification only. No pipeline code has been implemented, no security experiments have been run, and no mitigation results are available yet. The explanation provides a starting point; it does not establish that any proposed approach works.
+
+## Task 2 — Reading about Garak directly
+
+I started reading about Garak and began reading the paper myself, rather than asking an AI tool to summarize it for me. My aim is to build my own understanding of the tool and its approach before making implementation decisions.
+
+The sources I am using for this reading stage are:
+
+- **Paper:** https://arxiv.org/pdf/2406.11036
+- **GitHub repository:** https://github.com/NVIDIA/garak
+- **Documentation:** https://docs.garak.ai/garak
+
+Once I have worked through these sources, I plan to return to the professor's requirements and use what I have learned to guide the next steps of the exercise. I will record any additional searches or sources here as I use them.
+
+**Assistance used:** ChatGPT drafted this progress entry from my account of what I started doing. I am reading the paper directly; this entry does not report an AI-generated summary of it.
+
+**Status:** Reading in progress. This entry records the start of that work, not completion of all three sources or any implementation or experimental results.
