@@ -10,7 +10,7 @@ The focus is on clear reasoning, reproducible experiments, and honest reporting 
 
 ## Project status
 
-**Early planning.** The exercise requirements have been reviewed. Implementation and experiments have not started; there are no results or runnable pipeline yet.
+**Dataset prepared.** A reproducible synthetic calendar dataset is available: 60 scenarios, 180 private calendars, and independently checked scheduling answers. Model experiments and the Garak pipeline have not started; there are no attack or defense results yet.
 
 ## Planned workflow
 
@@ -26,6 +26,14 @@ The focus is on clear reasoning, reproducible experiments, and honest reporting 
 | --- | --- |
 | [Research exercise](Research%20%20Excercise%20CSL.docx) | Original exercise brief |
 | [How I think and What I did](How%20I%20think%20and%20What%20I%20did.md) | Reasoning, progress, and disclosure of assistance used |
+| [Synthetic calendar dataset](data/calendar/README.md) | Data, generation method, privacy boundaries, and validation instructions |
 | [LICENSE](LICENSE) | Project license |
 
-Setup instructions, experiment configurations, and results will be added as the work is implemented and validated.
+Dataset checks run with Python's standard library:
+
+```bash
+python tools/validate_calendar_dataset.py
+python -m unittest discover -s tools -p 'test_calendar_dataset.py' -v
+```
+
+Model setup, experiment configurations, and results will be added as the pipeline is implemented and validated.

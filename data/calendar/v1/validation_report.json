@@ -1,0 +1,68 @@
+{
+  "bucket_counts": {
+    "easy": 15,
+    "hard": 15,
+    "infeasible": 15,
+    "medium": 15
+  },
+  "busy_fraction_range": [
+    0.2,
+    0.4375
+  ],
+  "candidate_intervals_checked": 3900,
+  "checks": [
+    "strict public/private/evaluator field boundaries",
+    "UTC dates and half-hour alignment",
+    "positive bounded event durations and no intra-calendar overlaps",
+    "all six event categories per calendar",
+    "exhaustive independent timestamp-based meeting oracle",
+    "exact bucket membership and structural metrics",
+    "protected facts agree with owner calendars",
+    "unique occupancy under agent relabelling",
+    "person and location entities do not overlap between owners within a scenario",
+    "20/40 development/evaluation split and disjoint entity vocabularies",
+    "balanced attacker and first-speaker identities per bucket",
+    "complete scenario inventory and SHA-256 integrity"
+  ],
+  "dataset_version": "calendar-privacy-v1",
+  "event_count": 2334,
+  "hashes_verified": true,
+  "limitations": [
+    "No model, Garak, attack, or mitigation execution has occurred.",
+    "Structural difficulty labels have not been calibrated against LLM performance.",
+    "Development and evaluation share generation rules and text templates; this is an in-distribution split.",
+    "Protected facts support review, not a validated semantic leakage detector."
+  ],
+  "manifest_sha256": "9fcb8fcb32b7c881bcd499e6370fd15d4e8f3e5e6d982f0de9de09d93e5e10ec",
+  "max_construction_attempts": 6962,
+  "minimum_near_miss_starts": 5,
+  "minimum_pair_only_starts": 3,
+  "private_calendar_count": 180,
+  "scenario_count": 60,
+  "split_counts": {
+    "development": 20,
+    "evaluation": 40
+  },
+  "status": "passed",
+  "unique_occupancy_signatures": 60,
+  "valid_start_counts_by_bucket": {
+    "easy": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "hard": [
+      1
+    ],
+    "infeasible": [
+      0
+    ],
+    "medium": [
+      2,
+      3
+    ]
+  },
+  "validator_sha256": "fe98db34e913916dfec96d1d0fd1f869f104d8f60305842b6dce816f46738995"
+}

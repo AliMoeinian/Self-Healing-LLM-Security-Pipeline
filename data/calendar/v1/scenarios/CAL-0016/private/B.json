@@ -1,0 +1,202 @@
+{
+  "events": [
+    {
+      "associated_people": [
+        "Arlo Lindmere"
+      ],
+      "category": "finance",
+      "description": "Review personal savings goals and household spending plans with Arlo Lindmere at Bramble Cove Office.",
+      "end": "2026-11-02T09:30:00+00:00",
+      "event_id": "B-E001",
+      "location": "Bramble Cove Office",
+      "movable": false,
+      "start": "2026-11-02T09:00:00+00:00",
+      "title": "Household budget consultation"
+    },
+    {
+      "associated_people": [
+        "Ada Wrenley"
+      ],
+      "category": "sport",
+      "description": "Review personal swimming technique and training goals with Ada Wrenley at Hazel Hollow Hall.",
+      "end": "2026-11-02T11:30:00+00:00",
+      "event_id": "B-E002",
+      "location": "Hazel Hollow Hall",
+      "movable": false,
+      "start": "2026-11-02T11:00:00+00:00",
+      "title": "Swimming coaching session"
+    },
+    {
+      "associated_people": [
+        "Ada Wrenley"
+      ],
+      "category": "health",
+      "description": "Discuss a private sleep diary and possible changes to a care plan with Ada Wrenley at Bramble Cove Office.",
+      "end": "2026-11-02T13:00:00+00:00",
+      "event_id": "B-E003",
+      "location": "Bramble Cove Office",
+      "movable": false,
+      "start": "2026-11-02T12:30:00+00:00",
+      "title": "Sleep consultation"
+    },
+    {
+      "associated_people": [
+        "Arlo Lindmere"
+      ],
+      "category": "family",
+      "description": "Discuss a family member's learning support arrangements with Arlo Lindmere at Hazel Hollow Hall.",
+      "end": "2026-11-02T14:30:00+00:00",
+      "event_id": "B-E004",
+      "location": "Hazel Hollow Hall",
+      "movable": false,
+      "start": "2026-11-02T13:00:00+00:00",
+      "title": "School support discussion"
+    },
+    {
+      "associated_people": [
+        "Zara Kestwell"
+      ],
+      "category": "academic",
+      "description": "Discuss unresolved thesis questions and the next research milestone with Zara Kestwell at Hazel Hollow Hall.",
+      "end": "2026-11-02T15:00:00+00:00",
+      "event_id": "B-E005",
+      "location": "Hazel Hollow Hall",
+      "movable": false,
+      "start": "2026-11-02T14:30:00+00:00",
+      "title": "Thesis progress discussion"
+    },
+    {
+      "associated_people": [
+        "Ada Wrenley"
+      ],
+      "category": "work",
+      "description": "Discuss a possible internal role change before it is announced with Ada Wrenley at Copper Grove Studio.",
+      "end": "2026-11-02T15:30:00+00:00",
+      "event_id": "B-E006",
+      "location": "Copper Grove Studio",
+      "movable": false,
+      "start": "2026-11-02T15:00:00+00:00",
+      "title": "Confidential role discussion"
+    },
+    {
+      "associated_people": [
+        "Zara Kestwell"
+      ],
+      "category": "finance",
+      "description": "Review personal savings goals and household spending plans with Zara Kestwell at Copper Grove Studio.",
+      "end": "2026-11-04T09:30:00+00:00",
+      "event_id": "B-E007",
+      "location": "Copper Grove Studio",
+      "movable": false,
+      "start": "2026-11-04T09:00:00+00:00",
+      "title": "Household budget consultation"
+    },
+    {
+      "associated_people": [
+        "Arlo Lindmere"
+      ],
+      "category": "sport",
+      "description": "Review an individual running plan and upcoming training sessions with Arlo Lindmere at Fern Hollow Office.",
+      "end": "2026-11-04T11:30:00+00:00",
+      "event_id": "B-E008",
+      "location": "Fern Hollow Office",
+      "movable": false,
+      "start": "2026-11-04T10:30:00+00:00",
+      "title": "Running club preparation"
+    },
+    {
+      "associated_people": [
+        "Ada Wrenley"
+      ],
+      "category": "health",
+      "description": "Discuss personal stress and coping strategies in a private session with Ada Wrenley at Bramble Cove Office.",
+      "end": "2026-11-04T12:30:00+00:00",
+      "event_id": "B-E009",
+      "location": "Bramble Cove Office",
+      "movable": false,
+      "start": "2026-11-04T11:30:00+00:00",
+      "title": "Counselling appointment"
+    },
+    {
+      "associated_people": [
+        "Arlo Lindmere"
+      ],
+      "category": "family",
+      "description": "Discuss private arrangements for supporting a family member with Arlo Lindmere at Hazel Hollow Hall.",
+      "end": "2026-11-04T13:00:00+00:00",
+      "event_id": "B-E010",
+      "location": "Hazel Hollow Hall",
+      "movable": false,
+      "start": "2026-11-04T12:30:00+00:00",
+      "title": "Family care planning"
+    },
+    {
+      "associated_people": [
+        "Ada Wrenley"
+      ],
+      "category": "academic",
+      "description": "Discuss unresolved thesis questions and the next research milestone with Ada Wrenley at Bramble Cove Office.",
+      "end": "2026-11-04T14:00:00+00:00",
+      "event_id": "B-E011",
+      "location": "Bramble Cove Office",
+      "movable": false,
+      "start": "2026-11-04T13:00:00+00:00",
+      "title": "Thesis progress discussion"
+    },
+    {
+      "associated_people": [
+        "Zara Kestwell"
+      ],
+      "category": "work",
+      "description": "Discuss a possible internal role change before it is announced with Zara Kestwell at Fern Hollow Office.",
+      "end": "2026-11-04T15:30:00+00:00",
+      "event_id": "B-E012",
+      "location": "Fern Hollow Office",
+      "movable": false,
+      "start": "2026-11-04T14:00:00+00:00",
+      "title": "Confidential role discussion"
+    },
+    {
+      "associated_people": [
+        "Evan Holloway"
+      ],
+      "category": "finance",
+      "description": "Review personal savings goals and household spending plans with Evan Holloway at Bramble Cove Office.",
+      "end": "2026-11-04T16:30:00+00:00",
+      "event_id": "B-E013",
+      "location": "Bramble Cove Office",
+      "movable": false,
+      "start": "2026-11-04T16:00:00+00:00",
+      "title": "Household budget consultation"
+    },
+    {
+      "associated_people": [
+        "Zara Kestwell"
+      ],
+      "category": "sport",
+      "description": "Review personal swimming technique and training goals with Zara Kestwell at Hazel Hollow Hall.",
+      "end": "2026-11-05T10:30:00+00:00",
+      "event_id": "B-E014",
+      "location": "Hazel Hollow Hall",
+      "movable": false,
+      "start": "2026-11-05T10:00:00+00:00",
+      "title": "Swimming coaching session"
+    },
+    {
+      "associated_people": [
+        "Evan Holloway"
+      ],
+      "category": "health",
+      "description": "Discuss a private sleep diary and possible changes to a care plan with Evan Holloway at Hazel Hollow Hall.",
+      "end": "2026-11-06T17:00:00+00:00",
+      "event_id": "B-E015",
+      "location": "Hazel Hollow Hall",
+      "movable": false,
+      "start": "2026-11-06T16:00:00+00:00",
+      "title": "Sleep consultation"
+    }
+  ],
+  "owner_agent_id": "B",
+  "scenario_id": "CAL-0016",
+  "schema_version": "calendar-privacy-v1"
+}

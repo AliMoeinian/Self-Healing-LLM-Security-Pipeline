@@ -1,0 +1,815 @@
+{
+  "bucket_targets": {
+    "easy": [
+      6,
+      10
+    ],
+    "hard": [
+      1,
+      1
+    ],
+    "infeasible": [
+      0,
+      0
+    ],
+    "medium": [
+      2,
+      3
+    ]
+  },
+  "dataset_version": "calendar-privacy-v1",
+  "generator_sha256": "6cd4196f387e5ee0fa7913cf517a059dd542bd304f9ac8859df645e538bad1fe",
+  "master_seed": 20261026,
+  "records": [
+    {
+      "bucket": "hard",
+      "generation_seed": 20261026001,
+      "scenario_id": "CAL-0001",
+      "sha256": {
+        "evaluator.json": "4dc27d41252840e34a8316d59159bcd6a63886ae3cfd199002830e99d40200ca",
+        "private/A.json": "22fea8725033f27505f8faae4bbbc56098ee74af7bc08b805a3f5849aa582862",
+        "private/B.json": "79a77b87f0df50ef9af1ba00c8ba77c33935deacc2c8e0004947c413e11c3055",
+        "private/C.json": "3be5970c5690860d57f822c047284f41cf77da31d12f18a963bca8be168b5ac7",
+        "public.json": "40b29bee78ef5cadca0db0d58d9cd83d944a6379e04b8c04305d2fdcd786f0d8"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "infeasible",
+      "generation_seed": 20261026002,
+      "scenario_id": "CAL-0002",
+      "sha256": {
+        "evaluator.json": "4760d6895e9deabfa38e428cf200566f678c05ee734a5f43e5a3777fcb96b52e",
+        "private/A.json": "1f7a05f4edbcb66f2c4a9bfa0cafb2643df06248e997bbcbfc5e0ad09f4d2198",
+        "private/B.json": "61037cd52f53b7269ab1bd60c24b31179a1f0cf338d4ba1be9135cfb3e897b64",
+        "private/C.json": "f90b2fb7b2587473abd097729b04b2efef29e1b5bbe95819f8e0df8a4a0c4731",
+        "public.json": "7901c965f11c54caa09587e599811709bc9017dff2dbc40c48d8ba37f92a8908"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "medium",
+      "generation_seed": 20261026003,
+      "scenario_id": "CAL-0003",
+      "sha256": {
+        "evaluator.json": "3a4ebaa9699f01322ad34bdd86e65ac87c6c3843bdfab277d080d643caa6c43b",
+        "private/A.json": "74d0659d0a42c989a2696de8d38f3fdbda4debeab4d2ba6b4b4ac5fb4a500458",
+        "private/B.json": "9c657b676beba9b40501db5ed002454e0ab25194b6dc6e81fdb55983d87da3a6",
+        "private/C.json": "b5cc907a1bf13e395a0c287733d2265c6a6f8abc671607247e72e82a4ebe212f",
+        "public.json": "4028bf227309726dafa5e7ca374799d13fcd43808fd3c703096a453b650f9973"
+      },
+      "split": "development"
+    },
+    {
+      "bucket": "infeasible",
+      "generation_seed": 20261026004,
+      "scenario_id": "CAL-0004",
+      "sha256": {
+        "evaluator.json": "66b068c8eb8ea54ef3293e640e684ca9d19daf1f9d467bef51acba84cec3e83b",
+        "private/A.json": "2dd98d38e11a89d5491ad4f2264363b7765a177bd2b0904181bb6b3f68824e1d",
+        "private/B.json": "dd8de82f62d9cd37ddfb5aebe282df40f73b61853c83a498f0dd5068155c4ede",
+        "private/C.json": "834b3490574ecf85541aeb9cc13a33f04b03f3759917bc47bd76a82f0f7a97c6",
+        "public.json": "48467e4189e2a1ba1f369b9948e6f0dc1f395302748b15cce6f4545c67f6d2cd"
+      },
+      "split": "development"
+    },
+    {
+      "bucket": "infeasible",
+      "generation_seed": 20261026005,
+      "scenario_id": "CAL-0005",
+      "sha256": {
+        "evaluator.json": "4bad97384332698fb298652aba43b7a95f122d02cbeb2738307392138234a8e0",
+        "private/A.json": "b6c0ebedffbe69e54b19084bf3cbe2ebd91e8c2f08fbc604e96a0aa2cbd28d75",
+        "private/B.json": "6cd0849c4fecdc186f233482f0489de8b0201a8b525645809a91c49d30f259fe",
+        "private/C.json": "5d20336801bd9a289c2ab06fa93e904cbabe21f7128502290a3952b5bd5b593d",
+        "public.json": "173fec7c5e3d888a9e4907c4854eed9824f7469a4e4dc83699c90af3274383c6"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "infeasible",
+      "generation_seed": 20261026006,
+      "scenario_id": "CAL-0006",
+      "sha256": {
+        "evaluator.json": "b04d5e8fa21bd9be94c742078784870d675e4dad0f1d5301e3ee1948206911c1",
+        "private/A.json": "68df2e62c7d3b264af35c71860eeab85dc000518cc24a35420a0a73653e43dc9",
+        "private/B.json": "19befdf92ccbf9481286b886e82526c5004d83325656219051e086ffa602b3e2",
+        "private/C.json": "832e8447899a5dca646c3efa5e33949fe5f19263a6fa8da1fcb57191ef2121aa",
+        "public.json": "bf46bea3d4fe64db76c576ef6efcd8c86d849f312cb8c1a5240aad98f219f913"
+      },
+      "split": "development"
+    },
+    {
+      "bucket": "easy",
+      "generation_seed": 20261026007,
+      "scenario_id": "CAL-0007",
+      "sha256": {
+        "evaluator.json": "e2d7b0b514a29ae82f9f8ba2492f7efbf2a0a21da19fc3e1bfae3c0bd4eed2d2",
+        "private/A.json": "7718718850768af628ff6556be5f060f9baed891e775728d79b36d4f9ef51d99",
+        "private/B.json": "a9487058c3727916ef762dd4fdaa137603cb056e57086103b96af3f121c6b4e4",
+        "private/C.json": "1585f96641c3a0c43287f20a0499e80d3d0812c15fe46082a53b5ba74177d263",
+        "public.json": "ab1e382b5c68b97e8e19bb82a551f0755ce368fdca07e771f7e1edc09d4ef22e"
+      },
+      "split": "development"
+    },
+    {
+      "bucket": "infeasible",
+      "generation_seed": 20261026008,
+      "scenario_id": "CAL-0008",
+      "sha256": {
+        "evaluator.json": "3794d6b816263b51879a5fcb010ed36e3329f0cfb713925525956795fe00e224",
+        "private/A.json": "d781fd91f84b7d1d87adf3e3e377454063d8ec182b0a7b210188746371e9ac87",
+        "private/B.json": "17061d4b3981e699ba87c9d2af382b0544b67fa99c0fca105fde51ca58298f51",
+        "private/C.json": "a31247b63e0a9c93463e1179e776fa69adcbce5ca6ead2073206b44d9ec3804a",
+        "public.json": "06b14b721bf7bf2a968a3f75765ed9264262468558c5769c8f295a6acebaf345"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "hard",
+      "generation_seed": 20261026009,
+      "scenario_id": "CAL-0009",
+      "sha256": {
+        "evaluator.json": "80dd7a3f54203d143a18a39ef7bebf0a65fcd81cfd98a9c14524515c16b12da9",
+        "private/A.json": "20e06d40b2d4e8b3bd39dca340f3ffc199b5b2d545916e047854544125792c2c",
+        "private/B.json": "2204235be19de375cdf88ffee12b4af5a50df63fb91750b1ce9c57d204ec8c8a",
+        "private/C.json": "b554186c4e8d67fe43bbe6f85080532e287cd2c409744253d49046d183017bf0",
+        "public.json": "029f279d8de06a5d0b6cb61e091f4f1f1990e84c87d2b4bf1dcbac36c0caf92a"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "hard",
+      "generation_seed": 20261026010,
+      "scenario_id": "CAL-0010",
+      "sha256": {
+        "evaluator.json": "7f3f42e6a86bd2a76bb51af2f99b63b2b48dd6f9518e687c40020fbe0ca6150c",
+        "private/A.json": "e1a76577c7e0ecdc2a0d4d59baf52d1afc00835ec567217ce6cb840b3c25f45d",
+        "private/B.json": "887719ca7b6b437b2356e7ed1692935801e001090fa7aa532b775264157bdde9",
+        "private/C.json": "844e5252de0178f3e0f1f599747b13a5ed9001436b2524959e32a7016a03e9bf",
+        "public.json": "7bb25e11c19a9444aa1be2fab28f139e9168b4ff2a8f50d24364d4781f4a20d7"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "infeasible",
+      "generation_seed": 20261026011,
+      "scenario_id": "CAL-0011",
+      "sha256": {
+        "evaluator.json": "cf62f4c26779e18498d89b559d24448d698edc2abc9824dfaae7dbc96538343e",
+        "private/A.json": "8d778cd0ac37510a96ea75d37f493ffb3d5c68ed1fe2746d6a0c5c96ed600f61",
+        "private/B.json": "09bcb9fe8119f4b9d59e7750c5d2d653b03d23c06cb1a46a60207879dd02c6fd",
+        "private/C.json": "536efd7b291405e5f281acec7f908e89334719fdd0b2dd7860333076676c7709",
+        "public.json": "5bd140b355b677b46f4aa236f0c2d371e5195ec9c496b711b396c5280e10e776"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "medium",
+      "generation_seed": 20261026012,
+      "scenario_id": "CAL-0012",
+      "sha256": {
+        "evaluator.json": "f88ac5333e1c79ca386c2c2e0c37bdccaf6a3c3a8f3259411dc2ed9fe8d8c4c9",
+        "private/A.json": "50affae0e74d66b518a5e65d47a599b63f0d8e403a73b8285540ccd82de70949",
+        "private/B.json": "b0b1201e25d7b5846de416c28270ba9dcdc8a24c5ae0084179924cd8fcd369ec",
+        "private/C.json": "c2ccf0f646215c9366ce0d2876a81947611d4d7fec96e36278cd9ae6aaae965b",
+        "public.json": "f2e8f4ccfbb2f94ae486a6724f970ab956222d159db02b072f56c9bd6d8ffd5b"
+      },
+      "split": "development"
+    },
+    {
+      "bucket": "medium",
+      "generation_seed": 20261026013,
+      "scenario_id": "CAL-0013",
+      "sha256": {
+        "evaluator.json": "20d38ce6208166a251043604386560f54f0456239e5501a8d86191f28cbedaad",
+        "private/A.json": "afacedb1866804281be2d1ea613abfe1275e1f1ac5de24d70a7c5f4dc4231fdc",
+        "private/B.json": "ef8b2ad49e504d3b511dca6aa4b2ebb018fa049854ead7f25a889f3792633447",
+        "private/C.json": "03cc5faaf1c8cdb46138beb75e6fca1eb626cceeb0e39021cc4bcb79450f3bfc",
+        "public.json": "8eec88c4ec41e2e0e508629985cabb0f8b41b5405e59ecf5567ec5eaba3efee4"
+      },
+      "split": "development"
+    },
+    {
+      "bucket": "infeasible",
+      "generation_seed": 20261026014,
+      "scenario_id": "CAL-0014",
+      "sha256": {
+        "evaluator.json": "047ba1f8f9826aa44e97b34d0880621a1cb60141d1ab636c0c74043f769da9e5",
+        "private/A.json": "7fbcf41d8c5cc4bf6e8dc658ff78231397aa30d857312b293911f9ea4580980c",
+        "private/B.json": "196f25a4d76f2fc1aa845ef187109ffa4f925b163787d41bfb01257fc522b2d7",
+        "private/C.json": "6ac79c637e1752c266657a6405ef03bcd6366d77f66e67162f9eaf1d9beec9c8",
+        "public.json": "5f5105af36d1577c69a9485e3cb4c645738100fc7a5cb076d814685af7829c90"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "medium",
+      "generation_seed": 20261026015,
+      "scenario_id": "CAL-0015",
+      "sha256": {
+        "evaluator.json": "1b65662166d8ba95bd2b0bdb687daf134cf729c9410d690696400927b882e265",
+        "private/A.json": "625450c5eb0f0cb386c133cd2128b045350c9d4c266d7d8851c539ef4130d947",
+        "private/B.json": "d97dc85a7560b74d14c67c98f74a5045bfc85af9291197f2069f9b45a79564d5",
+        "private/C.json": "d26f3fd3cec9497ce703220d1abb055f425142c2cfb35510deee7aa2904923af",
+        "public.json": "402de9e6b1272e2c337732fe8e71d83d278e38561524108f392f09082fb41a40"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "hard",
+      "generation_seed": 20261026016,
+      "scenario_id": "CAL-0016",
+      "sha256": {
+        "evaluator.json": "89a4ff860ae1797afb0447fc46417319947e7fdc859d0a045e9d065cafc08e46",
+        "private/A.json": "755235f1a90891238cbf5bd394bc1a6a7fe22dc484bd08d03e90216a143d9d11",
+        "private/B.json": "b02d21b5b321e5e15a07311d73ec8e8c3470a107b0e4a21e74ecb6f15c9630a0",
+        "private/C.json": "8a6bc41a71e42dcd3ae1cba77797d96c1d8e34e24a8a18e4e5f94546a4477ccb",
+        "public.json": "975c5ebc7533d53e03701e6635b88e468b00fb8faea84665a84ab985e7cb4d73"
+      },
+      "split": "development"
+    },
+    {
+      "bucket": "easy",
+      "generation_seed": 20261026017,
+      "scenario_id": "CAL-0017",
+      "sha256": {
+        "evaluator.json": "429dd1b4e4f9d4e1fcde648fecc4871bdf27122275e4fde8d15b399ed01ad38e",
+        "private/A.json": "b321578f37e8b952015d9c2aa38a82536a8b902b79bafc4a2f4859e0c0a8ecec",
+        "private/B.json": "280cc8aa9a8806adc4bfcb8890eb173b92d6f10e7e635e6cf5698a309c258fa1",
+        "private/C.json": "3a3765e08a057bfc0226cd67f9cdb2135f76fb235a1edd0c9dc97f8b5a57f209",
+        "public.json": "48b967711862789be6588b96beed76e38b336588a1d48312ada0518e2a87f4ef"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "medium",
+      "generation_seed": 20261026018,
+      "scenario_id": "CAL-0018",
+      "sha256": {
+        "evaluator.json": "f9edd6b937a392aba3af4aaa0d019d453579fc0988c5ae4a2c4d94df9158d3f0",
+        "private/A.json": "dcc16294567e7ebd690193dcd866d1c7fdb6cc88fff0e44ba05d6bd504d347e3",
+        "private/B.json": "c6df27396a757355b25652a9a51fd8f235f60a0e3ba32afd6a639a13529855bb",
+        "private/C.json": "2d4dbb2f0a47b80b69a7ae24a5229924abd0041e472b6823d93a44f8f8a26851",
+        "public.json": "79b141dc78f5a3bdcfa86481de29e3ad95384365c30ab7ce8ce6aeb8524fa0c0"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "easy",
+      "generation_seed": 20261026019,
+      "scenario_id": "CAL-0019",
+      "sha256": {
+        "evaluator.json": "e990034911cfe00a49ca03bf529ad2fd3daee320d155f0f8fb49921c8b2c67c8",
+        "private/A.json": "007155c4801e97ad16c30a19441315cf29859090ec0c0e5742eeed46aaa9f906",
+        "private/B.json": "68d43f51845590ee1a62876acf0c7367fc5cd58b3467ebd625b88e29981598da",
+        "private/C.json": "2e714f0791a1fe5044d95c0ef0735389ca123cb191d56082d84bf8ce1e273fb9",
+        "public.json": "d0b57a74fac7091574e876d22b6de8116daf2c39f28258745d83f595e7bcced0"
+      },
+      "split": "development"
+    },
+    {
+      "bucket": "infeasible",
+      "generation_seed": 20261026020,
+      "scenario_id": "CAL-0020",
+      "sha256": {
+        "evaluator.json": "15d35996a610cd0a1629894bf9ec593831cd75b41af8c84c8ce0f8caca253d25",
+        "private/A.json": "bc0cdb540663d7f42982623ab6dcc5cf51a579490173666925b1d0dea916b11a",
+        "private/B.json": "fb852212f57110dcae37e2b5282e541b1cad9fcda7613a46c5517caf9c4956b9",
+        "private/C.json": "e57349c97f63467ec5850f164882a24c30c869a03cb4a7339212c91b550b8f2b",
+        "public.json": "18f42e78bd80490e2840879e3e5dcbcc6b49c8ccb72d641f2d2a881fb5cf5b03"
+      },
+      "split": "development"
+    },
+    {
+      "bucket": "easy",
+      "generation_seed": 20261026021,
+      "scenario_id": "CAL-0021",
+      "sha256": {
+        "evaluator.json": "5075a61788d768c4a70656572031cb7fb7c2746d296e668cf7393078ab17acb4",
+        "private/A.json": "a61d1660628d3e28ace5a3f43a5ff235d27ad6b8bcf3f082c2e5580353ca9f68",
+        "private/B.json": "d4552db5e3252769623b9c978e0dfeec5ae308582128eda67ecf9a8eef0a60c0",
+        "private/C.json": "33e181a01f36e4cd6a0e2a911cf9f44587d734579762ebbec6e9ae48650ebe65",
+        "public.json": "af73e003de62dc7c0bd5b8c74c21fbf9be3fc70f44cd78424ee72a3152e8f408"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "medium",
+      "generation_seed": 20261026022,
+      "scenario_id": "CAL-0022",
+      "sha256": {
+        "evaluator.json": "f5290f00c572862d240ffd307b5fe6ef47fc9e24967b6a80a3d35c6ace3ce679",
+        "private/A.json": "21f7d7de6999aeb5ae7a7cda939150f0b15e713ea817c345c8fce29e3eba0719",
+        "private/B.json": "e5961e8e08409d36944723b2d5d806f27a7dc27a198b9a6b84262714bd6b34f1",
+        "private/C.json": "a2068e31779354855873ac07701e0bded8f5735c53a00c06599d9757af3e6278",
+        "public.json": "5b5ee48d65d6d14a7fa8d3df2a7f7945ab39b8858f35117761cf005e6eb8a180"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "medium",
+      "generation_seed": 20261026023,
+      "scenario_id": "CAL-0023",
+      "sha256": {
+        "evaluator.json": "30d5b01da2cdb91b3a2233cf3adfcec5c17a712a72cc44da824161e2abc87abc",
+        "private/A.json": "bf6726fa1c10588310610a8efcb5c3331a3b621ec090c6434ed495f036d0011e",
+        "private/B.json": "62e5b2c51c6ecc9b321508a8b3d5ef939111b1ec1a31964dd46a45ee7bb8e286",
+        "private/C.json": "02758afdee12175a094c3673a77dfe5daddd253e25a760bd6c020d981de268c0",
+        "public.json": "b3196888f04ff3c1e1e521d5bd03ed0233b80546b05c73c73d967c6e74d852c0"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "medium",
+      "generation_seed": 20261026024,
+      "scenario_id": "CAL-0024",
+      "sha256": {
+        "evaluator.json": "135bceee3718687d49f73292dcc12ac738e32cad88a616bbe7276b58a2842fbd",
+        "private/A.json": "4ba146b1926f75197d60593f2fb1b31d03b46633983f4174d113d95d96a2ebc4",
+        "private/B.json": "cdb755b0d3834474fb93615e82ec7bee6deac3505cd1c4906572f78a588b65b3",
+        "private/C.json": "b5508bd32aef8ad2c88e85dde451342794516f531a1934dd61ae59624546968d",
+        "public.json": "d753d6e6630c1270e37f4d874c863a225c03a0f6db2fc24ddbc0d9b9d53edfbc"
+      },
+      "split": "development"
+    },
+    {
+      "bucket": "easy",
+      "generation_seed": 20261026025,
+      "scenario_id": "CAL-0025",
+      "sha256": {
+        "evaluator.json": "f66a345a56f7ad58749228fece8bc3fc46490e1e0ca0b11b65e7979cd93861ae",
+        "private/A.json": "fc0eb7d87d2c163449243c04d7a7d9e6c30606eeac94bcdccaee06a203019c01",
+        "private/B.json": "12668d0c9c0019e9bd5ca5eb25de8e8f32c42571166ae7c25d91ee573a8b76d0",
+        "private/C.json": "eb80b282d54fed1e64693c82a325ad2d1c6c345075e9bba672180d9af7498821",
+        "public.json": "46bff7b2b4138ad8c6d03478ee6ee782f3a3002673f70afe5ad875faa9e9d681"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "easy",
+      "generation_seed": 20261026026,
+      "scenario_id": "CAL-0026",
+      "sha256": {
+        "evaluator.json": "4b00837155910d1d904c37e382cc6094eeb64f003bc295b176bb2e26609af960",
+        "private/A.json": "2e9b79def1aff9bf1d40a17b9f5b2cf53c6da5c85709ef9ec1dad804553b77c1",
+        "private/B.json": "3d47e2e6ccfd60e3d9a9a9aa2accef42e8060c63147876d222fcd28081a2e89f",
+        "private/C.json": "6fcd79bedd109702e6f7b1aaa9610a47560416dddb4182c1c894ff43a06fe06e",
+        "public.json": "4f456a99dd8b796f97791c2a856a0f9bdfe3ac2d043f8ddbc001e43e445f234e"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "medium",
+      "generation_seed": 20261026027,
+      "scenario_id": "CAL-0027",
+      "sha256": {
+        "evaluator.json": "cd8ad9944bce74c760d77b3326770599c421f5cd99189444c59428bdf13f8e02",
+        "private/A.json": "07c6fd20d23b90d4a08cf6836552c803365b581672d7a3ba1cce55ba2b06485a",
+        "private/B.json": "f450f89e874b707af79b6447ef1b0ef93831ce528aa788ab966f52f326481123",
+        "private/C.json": "a531deb6d9fbd02c18380a9064d5ef73aacce2e1b6f70c0b18b6218b1726603f",
+        "public.json": "f4cfd5f235fb4fa2168f941c1ea90a8a286f45c1090b84893a08fc180e7f9971"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "hard",
+      "generation_seed": 20261026028,
+      "scenario_id": "CAL-0028",
+      "sha256": {
+        "evaluator.json": "821d048c284af50a7aa32489825e736e53a66d45c63cf01809096fd954f36d41",
+        "private/A.json": "a03ed0e40afc96f473b08a4da26d4b6a4215e8aee267167f8529f78eaceaefe7",
+        "private/B.json": "062b69cb1ed711936dce7dce22333a8b296e9b99bc501e5310caa0ba02f97259",
+        "private/C.json": "1eefc8c811b8f95a12139b15dc1ec507d4cdf67f8721563af47f3cb429815de5",
+        "public.json": "bdaed2fb257aa020e557f35cdfba336a9351c58ea63f4f1fae7e6f3a333a8f11"
+      },
+      "split": "development"
+    },
+    {
+      "bucket": "infeasible",
+      "generation_seed": 20261026029,
+      "scenario_id": "CAL-0029",
+      "sha256": {
+        "evaluator.json": "ed77f027e7ba7527ad468e39b0adf365c728c6266f715b63eec42eaf6e8304b9",
+        "private/A.json": "ec0028eea79f2255359f85cef3159e1786a933c61892e569c38752f515c3360b",
+        "private/B.json": "cecf6f2309842b7dc782007f84b957a7c4ab52173516ad55fa96b2be0398760a",
+        "private/C.json": "a8d5ba0f86f651698e7bbe2f28957bdf23db156656b27311132a26b4ca453579",
+        "public.json": "f1ababdd4024efde462dbba0d7ac5785a08c691d2f6c48d48a9bb8444705a407"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "medium",
+      "generation_seed": 20261026030,
+      "scenario_id": "CAL-0030",
+      "sha256": {
+        "evaluator.json": "502145a34aa9a37bf6f90b9c3b8f3aa726636ccc28ce7c652c8fc9649032cb80",
+        "private/A.json": "72c212168dead51a4c403f8365fb15e9f9d5b049f3b7b1b43462b455f9e77782",
+        "private/B.json": "53183cb45a1ccbe1fe3a4219ababdb3fdb923259667df917352a9bcef389454a",
+        "private/C.json": "d8fd7df139fabfde10429f1ce19f8222390860d1712a3fa6de22be991e4f24f0",
+        "public.json": "ef14e8b59917700b51197d1ceb2b986bea1d2058b2d2be7707eb000271bc4edc"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "easy",
+      "generation_seed": 20261026031,
+      "scenario_id": "CAL-0031",
+      "sha256": {
+        "evaluator.json": "8e667aae94e6af8ccd0aa67591dfa63aab20cc1f4fe9e9a890590381d81b2a6f",
+        "private/A.json": "feb92e38168562b073d8e8260b876d9bae2dcc47c29d89e87f887badba84cde5",
+        "private/B.json": "c978c977388718932f346ab7297678b3a3ab2a2a6713ec42be6469cb129672d4",
+        "private/C.json": "60a039535be17e58924ef98ac59c14d69042dc820a44fef716cbee41f4985b23",
+        "public.json": "1d708ab108e564ffbd962fa5898fb50bd2f0d115dc2265ee6f811ee4fada8e18"
+      },
+      "split": "development"
+    },
+    {
+      "bucket": "hard",
+      "generation_seed": 20261026032,
+      "scenario_id": "CAL-0032",
+      "sha256": {
+        "evaluator.json": "d9349f24e3e10a04b1ab92fbc82be2e235d8bb0317ee76af67820bb83b697de4",
+        "private/A.json": "344b55b32a235b82a6acca3213ce68dc46090dc48e86235a1872e473edefe3e1",
+        "private/B.json": "158aaebe6f015c7f399f28e93102b1cd49026a9f929b94906aa1f993f118f680",
+        "private/C.json": "24a627e668bb5d317f3bbda0a57cbb499fa0e53b592ef5d82de21fadab6c3f9f",
+        "public.json": "839aede59b845ee716c3b08aee13d070e5b589022716c7c52a755d8facde0d62"
+      },
+      "split": "development"
+    },
+    {
+      "bucket": "hard",
+      "generation_seed": 20261026033,
+      "scenario_id": "CAL-0033",
+      "sha256": {
+        "evaluator.json": "983e2e9055920889e1d25e18b213ee9aea048fc7c8f813c55da5db54015baadf",
+        "private/A.json": "3fe4488c5a99a00bf4eda8317381ea4b805e3f3ee66b53085f71049af0827f52",
+        "private/B.json": "085ccae070afdafdae522ed10947dbc9a657e34da93b32a0ca58f4bd238ecc56",
+        "private/C.json": "ad451290a84575cfdc9013806cba7498c3275a07cfed9cae66bbcb6fdc17c58e",
+        "public.json": "06d6aa2803eb79664d34a0fc3f8a1d4da281f5678778efad4e15d3d7d669adfc"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "hard",
+      "generation_seed": 20261026034,
+      "scenario_id": "CAL-0034",
+      "sha256": {
+        "evaluator.json": "5120bbcd5da2bde61661f17058a97e9e985dc243e204f64c189bd659bea34aaa",
+        "private/A.json": "d2ab2fc228f2c891975cd360db7ada04b3b165b48954d35981f86d53c97ae92e",
+        "private/B.json": "0fd6c1389db333e5a7d8bd42e229f5686fe508bc68641b9f2769665f44fa044d",
+        "private/C.json": "a54376f77befcd6726601e7c1d833a3ebadc224ad76727340e5519b9a581cdb9",
+        "public.json": "1a09103d62028df32dc3c26de379c8c6443deb574c6dfca58e02c231a350172f"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "infeasible",
+      "generation_seed": 20261026035,
+      "scenario_id": "CAL-0035",
+      "sha256": {
+        "evaluator.json": "3dd5b4b1d633c90ab3476c7b9fdbaae59c82b916eed6ce8ba0018566609eecfc",
+        "private/A.json": "7f0531d14b9a14b6ec0d00dbebc256d699a90259200fffa44c9b9f09efcac201",
+        "private/B.json": "8ae8bc51429bbb6a70d7fff4b88723fa75894f99050f17c30811f6b7cbd180d3",
+        "private/C.json": "858aa7fc5468d97681b229b8db88ed36bd2cc144b17097621a8176bf3bf743e6",
+        "public.json": "0edeb5355d4ebc31c103378e2aef775e7bfe522f3b82e6ae10c4b71c884630b4"
+      },
+      "split": "development"
+    },
+    {
+      "bucket": "easy",
+      "generation_seed": 20261026036,
+      "scenario_id": "CAL-0036",
+      "sha256": {
+        "evaluator.json": "3034608fb6a9cecaefcbbe26ac7ec09191c25979f4970bfebf23cdb7c53243ea",
+        "private/A.json": "3a750101c36ccc67cb382d0ede9feb8f1638e003b7e3008545c23b173fa787f2",
+        "private/B.json": "99f771a56d4cc8fe85277bc6111419ab9327ba538f75f1698f2f426764f1b0b3",
+        "private/C.json": "ef0140d34f18b5f4480b81a371e650c0512be812703d9d6746b01a3095e940f2",
+        "public.json": "271709f4a508979658b780adc757aed7ed139a344f09229bea817b7824e9a093"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "easy",
+      "generation_seed": 20261026037,
+      "scenario_id": "CAL-0037",
+      "sha256": {
+        "evaluator.json": "9642066577205766cc61f4d0cafb7a831e7fad4b21a0265731d0bbb053b96aa1",
+        "private/A.json": "97e6eda0fd218fcb2f362b9b5782d90b5d0738f20234d8907aeb06e1d33da0e1",
+        "private/B.json": "9505509860fae63daba3143bcc3b54603abaf9e4770fef56a9c7cdabf46ccb33",
+        "private/C.json": "e5e076f9c29f2f6084325d03413f1d86599b4b6ed98a6fb966e52cf73522c361",
+        "public.json": "c922868f5d3f7dd86d915085a4b3aff9abd59ed124d2a2bcde33859f5b10753e"
+      },
+      "split": "development"
+    },
+    {
+      "bucket": "medium",
+      "generation_seed": 20261026038,
+      "scenario_id": "CAL-0038",
+      "sha256": {
+        "evaluator.json": "caaef30902cdbdc78db825ff63b0ff570851c7a3efee969193b38bfa9d55170e",
+        "private/A.json": "32a4ca16481eb01a9c1d49202d6a121ad7d2c7c6d809a55e0babcf28af7f09b2",
+        "private/B.json": "7f1d2f5e95a6adca4046de9061017c2fd62cbd657c1617656b6aaac040e98e08",
+        "private/C.json": "4e64fd9238d76cc98fa8b92e6b55ab3fa5a4e45113b9887d3c0556d8790ef5bf",
+        "public.json": "aa9593e2f08a453b03be7d9700a9bc7c29c52f702081b5fd81d3c660bacd11be"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "hard",
+      "generation_seed": 20261026039,
+      "scenario_id": "CAL-0039",
+      "sha256": {
+        "evaluator.json": "b828586b9900ceb1439ff3512231f5ed06f3cb425bb36998963b995f3dffd18b",
+        "private/A.json": "914a89c640038aee89a90cb4b19ff4b84b10ec5f7a6ffc4777e8d3776e438ca4",
+        "private/B.json": "4b82d5b0398126c00dcdbbbc3faa0f6808d0235c55987e554836fa2f2f15146c",
+        "private/C.json": "b227ceba5287798f2e878cc7dc96e6b6aaf5d9d59334ac795fd33e41d749df8a",
+        "public.json": "976c036f2e46284f78fde71af597e2d7491d8c114ffad9e37e38357414718682"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "infeasible",
+      "generation_seed": 20261026040,
+      "scenario_id": "CAL-0040",
+      "sha256": {
+        "evaluator.json": "44514138b63cfa0cd3344793607e3f7ee22c75bd88c6d446e91a517efa564f60",
+        "private/A.json": "521e6b148ce69cf1f42adf19c8bf58586e7bce2b80cbda0118ec552534327ed7",
+        "private/B.json": "94ed76e15997fe91149b3efed9cefeea07b0d1df6047056793ba126181b3c611",
+        "private/C.json": "5369f018f3a3da4723d813e355e4ca3cd19b67dac4036d556a8a7642ed7611cb",
+        "public.json": "1702d91c110f75a337c2d71843ef1b28f1bec17cd1d3d0bf09bcc11958148347"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "medium",
+      "generation_seed": 20261026041,
+      "scenario_id": "CAL-0041",
+      "sha256": {
+        "evaluator.json": "74fbe1945ab7926fd8bd707fda5315de84aa15c690fff85bf963096a48306fcc",
+        "private/A.json": "b84d5579e13c6f2ff8ca869d01fd8c755b86f4fdef51dd01e276bf8a2151e358",
+        "private/B.json": "0adeadbc7fb718bab685cbb26d9aec9a05ebd267f0a4d949084dbe6d6faf3652",
+        "private/C.json": "94f3a4f3fa6961841d29e49dc318f3a62e8446b500a09bc7b1cdb27022a30454",
+        "public.json": "ebd847d5353a1182867eb830d46c93fc5ca300e21326943b82dcebdcacf9d192"
+      },
+      "split": "development"
+    },
+    {
+      "bucket": "hard",
+      "generation_seed": 20261026042,
+      "scenario_id": "CAL-0042",
+      "sha256": {
+        "evaluator.json": "d1ac2b38e7b30f7dc496a1e1f9f304ed9586bc12400144b09b60e9e3e737d04f",
+        "private/A.json": "2608281a989b11897382bdfdfd9cce388d78bb334a6d48daec5d737bddd27467",
+        "private/B.json": "6e25e8dddc7369d62d61bfbfc7ab078e64876ae0a0e2ef11ba947d8ceeaae4d3",
+        "private/C.json": "215994a9ae0454b6a46ba14aa49829fe12a579a2a84895a323e7cfe413d5c7ae",
+        "public.json": "c0d24e9620c97db57c5fb4f70673a1b884acd7f386b5817c60fa0ca3c3769716"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "hard",
+      "generation_seed": 20261026043,
+      "scenario_id": "CAL-0043",
+      "sha256": {
+        "evaluator.json": "b1f3ff43ea4ab54d6779ab12b886ed3cb56b02f3eb65afa26e89d85b2e267bbc",
+        "private/A.json": "ff0f7ec41e16bc292ed23a68e9dfe382e05485d5fcbad3ad13b5fb74b0a3feff",
+        "private/B.json": "b7323c4484a6834923fc0f31a01ebc167f5825154d6f817ec55399a6dfcb181a",
+        "private/C.json": "ac4f8b553fff9867224284c229dc5e5be5d80f3b1463e313bad14786eae849b4",
+        "public.json": "8ef85a44d97170eaec2740a6921b4a8a59851c470e93017e61175fa903971cfb"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "easy",
+      "generation_seed": 20261026044,
+      "scenario_id": "CAL-0044",
+      "sha256": {
+        "evaluator.json": "aa5f81bfadb8790e6c322f96b6b9280a6ce5af09630f15af644fa1802be7b699",
+        "private/A.json": "5717037dd89818bf5f70f9b3b916c78a61f882a7165904c0928ead9cbef23d3a",
+        "private/B.json": "af5c4a2d7ffc600a0b6ea0d96940f7fdc5feee52ca53d9c4ba9c3c5876a16372",
+        "private/C.json": "7517945dda6b4f5e4d8ce1bfe6962a648240b7e5739a3217d8589af994e86456",
+        "public.json": "e1bfa7696f063e63f30d5b8a14d9cb2fccb09622601ceb8d44f963c240dff7f3"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "infeasible",
+      "generation_seed": 20261026045,
+      "scenario_id": "CAL-0045",
+      "sha256": {
+        "evaluator.json": "6140481fe0055551cae9590ce35e502362bea532ae393f9c337e791c577d07ab",
+        "private/A.json": "97ddc926a2a8dd258f0f7ffa8bd686732fdc2a2391cb36faceb85d4b7f64026d",
+        "private/B.json": "a96d9649e4bae8f2ed239bf3c4ad6da90339d70731a552480f36990bd1046e15",
+        "private/C.json": "94494ea3c86e8ae1bbb7609898f7dd28c6c22742c3630c3806873d798b337170",
+        "public.json": "6a555617cf7e86dd6313de937fc3e85246ec0a81891ac5ae1f8cbc3a162f84d4"
+      },
+      "split": "development"
+    },
+    {
+      "bucket": "medium",
+      "generation_seed": 20261026046,
+      "scenario_id": "CAL-0046",
+      "sha256": {
+        "evaluator.json": "1efa399a3adb02a839009026fc272d12a846fdedbc02f911b6f78eac37fb8554",
+        "private/A.json": "b64ff585600452de40eed7724167f957e4a0e8398c94721c015a21f13003eaf9",
+        "private/B.json": "fca4d2110070040221edd0d5d2ac828d616eebf9e27aaf2da5164a9076f6224a",
+        "private/C.json": "9c30ba1947cc8654155e75bf16ce2d1352e716e53c2571bab52a6f4ec038f643",
+        "public.json": "7b862d72794a64dd1ae39001c7d1129df842869ebb3fb82cddeaa846c445d7c0"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "medium",
+      "generation_seed": 20261026047,
+      "scenario_id": "CAL-0047",
+      "sha256": {
+        "evaluator.json": "7b8ee7e74ab2e3fdb1317d1b862ffd9760ad488fa5b83de449f42e36096ae966",
+        "private/A.json": "0c8ad19ad1da158a506a16a122c626f9e5f71db041641fd9f93a37b9964e366b",
+        "private/B.json": "60ecf9080934ae5990c7c60386373935cf09d31f9ba3f8dac5722cbeafe1ed79",
+        "private/C.json": "1ac4f994133796782ab9a235b909026be3cfee1aa4a144b53dd41172f7fc0786",
+        "public.json": "f94dc13daf88756bd0da2c3f3f4950d46b7f6fd6c09f90975d7a9823cd2431b2"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "hard",
+      "generation_seed": 20261026048,
+      "scenario_id": "CAL-0048",
+      "sha256": {
+        "evaluator.json": "35ae6a4b95363dd013f88d4183d698d32ab73052b1190d40185c8b6ef25d5f72",
+        "private/A.json": "f8039456a76a73b737deb3fc382a71f1b8c775e181bb3d04753a9222f318fc4a",
+        "private/B.json": "40cb6cf010c418be64c2768f1a0b897caca2be9751ce887efa5f6627c06a53c4",
+        "private/C.json": "91501eba9881afcc6315c35084e7ba5c1394e841d3bcfc3e0988a3ac2cd83389",
+        "public.json": "a257f3f86f639df391a6d52d8d3543e8a5b127e12fe0434fc671ab2dd4fe6450"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "infeasible",
+      "generation_seed": 20261026049,
+      "scenario_id": "CAL-0049",
+      "sha256": {
+        "evaluator.json": "287a15d925f576c34849706c1f7280daab13ecb06ae5389c8c2e90efa8f3328c",
+        "private/A.json": "4fed350f14a0bdce3856069a75fe81aebe51e27d4fa523e60447089099801413",
+        "private/B.json": "bae271ba2188ba6bef66eadaad7fcc2a3f0bd03bec2c2ba5bf6701292feb23d2",
+        "private/C.json": "e9426b04c657ccafda8ba6e96cc2e22151fa5f52747d7ad8273acb531d793192",
+        "public.json": "0de633caeae1a268c4eb9df4298eb7b23f5ea77148ac29e2731fe8b052d82380"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "easy",
+      "generation_seed": 20261026050,
+      "scenario_id": "CAL-0050",
+      "sha256": {
+        "evaluator.json": "ed770de9e12a39e873cd956719cc77c369dc3cfecc2819c03075587b0d81fade",
+        "private/A.json": "9d02256450fa4b12827a6ffe9e7bdcb6360c47d8ed76e8a1094c85ad11cfd84d",
+        "private/B.json": "750559ee24ff6657c116cfb3844f1ee6d54699501a1845f5374765ca052f5501",
+        "private/C.json": "01c01e2df1c1a404c8cbfd9238b1c7355f3c9eb00aae13bbad502cd6827e90a3",
+        "public.json": "b2b6466ea3e8bb2210133190837b8a0ccb211794032f770d415e825a970c00e5"
+      },
+      "split": "development"
+    },
+    {
+      "bucket": "easy",
+      "generation_seed": 20261026051,
+      "scenario_id": "CAL-0051",
+      "sha256": {
+        "evaluator.json": "022115c1f1518223e6f4f473b3b56e70f8a7ad3e04f297f765b49a72872d45f9",
+        "private/A.json": "e6ccee1460ef5f37e342015d52989d07685115657bc5cd90d68daa8d1fcf43b4",
+        "private/B.json": "ec824ebe0c39dd3f00b07ec08a5729e983751b21eda3b0ce044c01824191a926",
+        "private/C.json": "6603acd8e4ad1f78fa3932d8e58c90ff25e3652de6ae4de67199c4cc266636a0",
+        "public.json": "8dc89d18cf515261111b1f96dfcb135b7419d2b5f3682961a4c970b6c4d4b92f"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "hard",
+      "generation_seed": 20261026052,
+      "scenario_id": "CAL-0052",
+      "sha256": {
+        "evaluator.json": "77433b4e5816d6249095a34199cc57822ddd0ce56810f0fa8e54d1f6bcdb84cb",
+        "private/A.json": "1d0ace0d216c090fdb7f3d50f7053c52e5cabb7b4bf1a6a53b2dce959d9f7f9b",
+        "private/B.json": "b71ae0551b30fd7ccffa643cecd50de01f7d6032ca50042175f6d42be02f6e3d",
+        "private/C.json": "4d36522121fbfc5caaf5c720582a8e2b6439572a80744c8298d64846e88ff202",
+        "public.json": "42dc1b49f419186bea677cc4b0cdf764d2f2457dd50cef699b061cff7f38ee2e"
+      },
+      "split": "development"
+    },
+    {
+      "bucket": "medium",
+      "generation_seed": 20261026053,
+      "scenario_id": "CAL-0053",
+      "sha256": {
+        "evaluator.json": "71232d17141e3449782254d544fb9d322e12a4dc10a9db66047e015642322175",
+        "private/A.json": "edb02d5299ecc3a5997e740493b97ecc2ec43442a94ba3edf16ffd2ad7314ecf",
+        "private/B.json": "e69a5d0574f1f35a017e693db3026719881bc2308fcc6dc7aabf6b39f58e7435",
+        "private/C.json": "cf8aceedf229ec0385360ba880afb36dafbf15f3c5521b58471a9d2a9f91ef9f",
+        "public.json": "7df4189c3771f700d3052363a936a5e0dfe39d5bee5ad7177493c00b7e829bb3"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "hard",
+      "generation_seed": 20261026054,
+      "scenario_id": "CAL-0054",
+      "sha256": {
+        "evaluator.json": "985a4dc88ab465230aac0f47678d73d8cd6bb83f04c86dc07ddd31fb6df2bb59",
+        "private/A.json": "8e67dd35846136e4d32fa3a639b5bda8f25a0535a9617b59814c1ce43c13a7f4",
+        "private/B.json": "4c99703942e2e8dce4c21d84502efa9d60d2a43e7584982b8988ae10889dee7f",
+        "private/C.json": "1875dfb12858e19806290c0a32fe44e622c7bb866c7034c4c3e650067effd99d",
+        "public.json": "d7ba8085792bfb8a17954cd3eebdd637b0934da52e934fb9f9686429fc396033"
+      },
+      "split": "development"
+    },
+    {
+      "bucket": "infeasible",
+      "generation_seed": 20261026055,
+      "scenario_id": "CAL-0055",
+      "sha256": {
+        "evaluator.json": "8bb1c93b3558eb0a985498a1aa3cfdc394db84964801055749e52d5a0c5696e8",
+        "private/A.json": "5a0820003d921e5d8ff868fc14583bc2c93d6b94e594e54f44b9ad2611384d84",
+        "private/B.json": "857a8fb1fc55b14d6400e37619e6852306c7ae662d966369daed5a640fe9b12f",
+        "private/C.json": "dbca7c6e7852750348e70068890b9d62cb6ea885b150ca88974d97f2f5390d0e",
+        "public.json": "e7dd719002961d4655da37186b28f69ea40c88b517db62a0b78112d0227fe528"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "easy",
+      "generation_seed": 20261026056,
+      "scenario_id": "CAL-0056",
+      "sha256": {
+        "evaluator.json": "a6e5c3a782b583d38b8a0e25e8765c549e82365369aa7c329748d8f563bbf5e2",
+        "private/A.json": "0e19115df14cf4bbd3a59913aa32dfefd4ffc5cd5769a566989937ab63fdc2b5",
+        "private/B.json": "9d709ef2472d74e4a3e17f836688d33e3a13e14fa9bd8c2298914114c2d3cb84",
+        "private/C.json": "027a80f66402402f99850531f3938c09c6764c10d9b48e538ccaab03b7210b36",
+        "public.json": "4a821fafabe4aa96cd0215c4681db67ed60dfe9a0edbdb379453009a4fbe4318"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "hard",
+      "generation_seed": 20261026057,
+      "scenario_id": "CAL-0057",
+      "sha256": {
+        "evaluator.json": "7b5e6b84c166b1363be0a96d7bc23dfe72a219ad8bb3828db35e18abc8c45598",
+        "private/A.json": "db5430a6c1015a7aca210c75cb26782bfb02ddf906d3dab78410a4edd3fe0015",
+        "private/B.json": "866149ab68a946f8615c9bc2f058ec90bd09377a5a16c3233a7ee62bae01f42a",
+        "private/C.json": "387e86bdc807e58fad7a4df6448b78461790573c7434a39aa1480350e2cb33e2",
+        "public.json": "23d158c70dbe1a52ca166ff47c60080df1167ade9ee44e06946017a79669d09e"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "easy",
+      "generation_seed": 20261026058,
+      "scenario_id": "CAL-0058",
+      "sha256": {
+        "evaluator.json": "e10b2a6309ac7c469314e6559c70c3796105b717b48e7f4389d67bfd58c73f89",
+        "private/A.json": "6578fc16aa4950699241138ed4d9c15711f11c63c2cca0ddee0e39db87119c0a",
+        "private/B.json": "beaffa56d32f81ecdb28552050d990da562c974702139d1b07e90faf63e1cb56",
+        "private/C.json": "be15fbd57406adb4b7e8f21de4cf16bc63936d3701fde340d3dda0417125536e",
+        "public.json": "886b54ca19a216d7539e309023b61aca269da29e1526c29b74644b7dc1432cf2"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "infeasible",
+      "generation_seed": 20261026059,
+      "scenario_id": "CAL-0059",
+      "sha256": {
+        "evaluator.json": "3049d8dae63c278954fe89c3dddb4eaad9b906fdbcc617bbe9ff8c89fac06e07",
+        "private/A.json": "8259900c5433f9260859c78bc11dd80f85c14a0e5d13c86f14e57f2f8e6e6d5a",
+        "private/B.json": "3d4c993470b5a06acd086fd579def25aff47534771ffc0d82a8d960e1e6c997e",
+        "private/C.json": "d9903b9de20282b1c894373ef9860b5638b4e32856ce86623a77b801349f1ab6",
+        "public.json": "805f71083583e07cf4ee6501a35cd767158039c980140ef9c93242769c2d215c"
+      },
+      "split": "evaluation"
+    },
+    {
+      "bucket": "easy",
+      "generation_seed": 20261026060,
+      "scenario_id": "CAL-0060",
+      "sha256": {
+        "evaluator.json": "0b459c38ab88b17e37aeb7c8de44919a1c25bae4097a8c753aea0611b725d992",
+        "private/A.json": "d3dfe73b305f9df54e9088070e9d5d4eddf1d37de7d871854b6cba023791f4d3",
+        "private/B.json": "aae575b63a473c7c07fbb6e8bd125f87058f785f4ae82279a2e7248901f1ea95",
+        "private/C.json": "18ec008b31b4c243545f5db3bf82e425694a6574189e66d237f3cdd21d811059",
+        "public.json": "23141845a17ca1d5fc415a53d9d9a11037fade51fe7db6212dc985fdf27257b5"
+      },
+      "split": "evaluation"
+    }
+  ],
+  "scenario_count": 60,
+  "selection_rules": {
+    "busy_fraction_range": [
+      0.2,
+      0.65
+    ],
+    "minimum_pair_only_starts_per_pair": 3,
+    "minimum_three_of_four_near_misses": 3
+  },
+  "synthetic": true
+}
