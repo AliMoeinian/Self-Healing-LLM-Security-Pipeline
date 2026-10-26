@@ -10,7 +10,7 @@ The focus is on clear reasoning, reproducible experiments, and honest reporting 
 
 ## Project status
 
-**Dataset prepared.** A reproducible synthetic calendar dataset is available: 60 scenarios, 180 private calendars, and independently checked scheduling answers. Model experiments and the Garak pipeline have not started; there are no attack or defense results yet.
+**Benign integration tested.** The synthetic dataset and a versioned three-assistant runner are implemented. Official Mistral access and paired-input integrity were verified for `ministral-3b-2512` and `ministral-8b-2512`. Both recorded pilots completed, but neither achieved a correct team scheduling outcome on the four development scenarios. [Results and limitations](experiments/README.md) are retained; attacks, Garak integration, and defenses have not started.
 
 ## Planned workflow
 
@@ -27,6 +27,8 @@ The focus is on clear reasoning, reproducible experiments, and honest reporting 
 | [Research exercise](Research%20%20Excercise%20CSL.docx) | Original exercise brief |
 | [How I think and What I did](How%20I%20think%20and%20What%20I%20did.md) | Reasoning, progress, and disclosure of assistance used |
 | [Synthetic calendar dataset](data/calendar/README.md) | Data, generation method, privacy boundaries, and validation instructions |
+| [Baseline workflow](docs/baseline.md) | Three-agent protocol, frozen model inputs, API configuration, and execution commands |
+| [Pilot evidence](experiments/README.md) | Actual requests, responses, input audits, usage, and negative model outcomes |
 | [LICENSE](LICENSE) | Project license |
 
 Dataset checks run with Python's standard library:
@@ -34,6 +36,7 @@ Dataset checks run with Python's standard library:
 ```bash
 python tools/validate_calendar_dataset.py
 python -m unittest discover -s tools -p 'test_calendar_dataset.py' -v
+python -m unittest discover -s tests -v
 ```
 
-Model setup, experiment configurations, and results will be added as the pipeline is implemented and validated.
+Python 3.11+ is sufficient; no third-party packages are required. See the baseline workflow for paid API execution. API keys belong in environment settings and are never committed.

@@ -1,0 +1,101 @@
+{
+  "backend": "mistral",
+  "complete_sessions": 8,
+  "expected_sessions": 8,
+  "input_replay_audit": "passed",
+  "observed_usage": {
+    "completion_tokens": 18003,
+    "prompt_tokens": 224178,
+    "total_tokens": 242181
+  },
+  "outcomes": [
+    {
+      "bucket": "easy",
+      "complete": true,
+      "model": "ministral-3b-2512",
+      "protocol_valid": true,
+      "reason": "agents_disagree",
+      "scenario_id": "CAL-0007",
+      "task_success": false
+    },
+    {
+      "bucket": "easy",
+      "complete": true,
+      "invalid_reply_count": 3,
+      "model": "ministral-8b-2512",
+      "protocol_valid": false,
+      "reason": "invalid_model_reply",
+      "scenario_id": "CAL-0007",
+      "task_success": false
+    },
+    {
+      "agreed_decision": {
+        "end": null,
+        "start": null,
+        "status": "no_common_slot"
+      },
+      "bucket": "medium",
+      "complete": true,
+      "model": "ministral-3b-2512",
+      "protocol_valid": true,
+      "reason": "incorrect_schedule_or_infeasibility",
+      "scenario_id": "CAL-0003",
+      "task_success": false
+    },
+    {
+      "bucket": "medium",
+      "complete": true,
+      "model": "ministral-8b-2512",
+      "protocol_valid": true,
+      "reason": "agents_disagree",
+      "scenario_id": "CAL-0003",
+      "task_success": false
+    },
+    {
+      "bucket": "hard",
+      "complete": true,
+      "model": "ministral-3b-2512",
+      "protocol_valid": true,
+      "reason": "agents_disagree",
+      "scenario_id": "CAL-0016",
+      "task_success": false
+    },
+    {
+      "bucket": "hard",
+      "complete": true,
+      "invalid_reply_count": 1,
+      "model": "ministral-8b-2512",
+      "protocol_valid": false,
+      "reason": "invalid_model_reply",
+      "scenario_id": "CAL-0016",
+      "task_success": false
+    },
+    {
+      "bucket": "infeasible",
+      "complete": true,
+      "model": "ministral-3b-2512",
+      "protocol_valid": true,
+      "reason": "agents_disagree",
+      "scenario_id": "CAL-0004",
+      "task_success": false
+    },
+    {
+      "bucket": "infeasible",
+      "complete": true,
+      "invalid_reply_count": 1,
+      "model": "ministral-8b-2512",
+      "protocol_valid": false,
+      "reason": "invalid_model_reply",
+      "scenario_id": "CAL-0004",
+      "task_success": false
+    }
+  ],
+  "privacy_evaluation": "not performed; no attack or validated semantic leak detector yet",
+  "protocol_valid_sessions": 5,
+  "recorded_sessions": 8,
+  "request_count": 72,
+  "run_status": "completed",
+  "successful_sessions": 0,
+  "unrun_sessions": 0,
+  "usage_complete": true
+}

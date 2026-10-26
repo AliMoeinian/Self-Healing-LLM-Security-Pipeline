@@ -92,3 +92,23 @@ The [dataset documentation](data/calendar/README.md) explains the generation con
 **Assistance used:** I chose the project direction and approved the data plan. ChatGPT wrote the generator, validator, tests, dataset text templates, and documentation, executed the checks, and refined the artifacts. I do not claim to have manually implemented or independently audited that code.
 
 **Status:** Synthetic dataset construction and automated data validation are complete for this version. Difficulty classes express solution scarcity, not measured model difficulty. Model selection, Garak integration, attacks, defenses, and experiments remain future work; no security effectiveness has been demonstrated.
+
+## Task 5 — Implementing and checking the benign multi-agent baseline
+
+**Date:** October 26, 2026 (2026-10-26)
+
+I supplied three credentials securely through environment settings and selected exactly two official Mistral-platform models: `ministral-3b-2512` and `ministral-8b-2512`. I asked ChatGPT to implement the baseline, test connectivity and evaluation, and ensure both models receive the same underlying scenario data. Credentials were assigned consistently to roles A, B, and C rather than switched to bypass failures or limits.
+
+ChatGPT implemented frozen experiment plans, owner-scoped model contexts, synchronous message passing, JSON response checks, a Mistral HTTPS client, request/response journals, token accounting, deterministic request replay, and independent scheduling scores. Both models receive the same initial scenario/owner inputs and generation settings; later conversations can differ because they contain the models' actual outputs. The dataset was not regenerated or changed between models. Only four development fixtures were used; held-out scenarios were not used for prompt tuning.
+
+An initial proxy connection failure was diagnosed separately from credentials. After network access became available, all three credentials returned HTTP 200 and exposed both model IDs. The first paid pilot completed 72 chat calls but yielded 0/8 correct team outcomes. Five sessions were protocol-valid. Traces showed calendar-arithmetic errors, unsupported availability claims, disagreement, and some final responses missing the required outer envelope.
+
+Rather than change or hide those results, ChatGPT retained them and introduced an explicit v2 protocol. It clarified the response envelope and added deterministic availability computed only from each assistant's own calendar. Raw private events remained available to that assistant; no global answer or other owner's calendar was supplied. The v2 pilot completed another 72 calls with all eight sessions protocol-valid, but scheduling success remained 0/8. This is a development observation, not evidence that the model coordination problem has been solved.
+
+A separate two-call diagnostic asked each model to copy the scenario ID, owner ID, and complete availability list from the same frozen input. Both copies were exact. This checks data delivery in that setting, not scheduling ability. Across the two pilots, all 24 paired first-round request comparisons matched except for model ID, and all 144 scheduling requests passed reconstruction from the frozen plan and actual preceding outputs.
+
+The deterministic reference scheduler passed the full application path separately. The local verification suite passed 32 application/transport tests and the existing 21 dataset tests. These include request contamination, false scheduling decisions, malformed responses, partial runs, credential-safe transport behavior, and artifact export checks. API values were not logged or committed. Actual model traces, usage, protocol versions, and negative outcomes are retained in [the experiment evidence](experiments/README.md).
+
+**Assistance used:** I selected the model family and exact model IDs, supplied the credentials, and requested the implementation and fair-input checks. ChatGPT wrote and executed the runner, tests, diagnostics, and documentation and analyzed the recorded development failures. I do not present this code or its automated review as independently written or audited by me.
+
+**Status:** Connectivity, input integrity, application plumbing, and scoring have been exercised. Correct autonomous team scheduling has not yet been demonstrated with these models and protocols. A clearer proposal/acknowledgment mechanism is the next development need before attributing failures to attacks. No attacks, Garak integration, mitigation evaluation, or privacy-success claims have been made.

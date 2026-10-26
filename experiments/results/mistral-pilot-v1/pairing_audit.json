@@ -1,0 +1,114 @@
+{
+  "all_later_requests_reconstructed": true,
+  "credential_scan": "passed for the credential values currently injected in this process",
+  "http_attempts": 72,
+  "http_error_status_counts": {},
+  "logical_requests": 72,
+  "observed_response_usage_by_credential_variable": {
+    "MISTRAL_API_KEY": {
+      "completion_tokens": 6285,
+      "prompt_tokens": 71489,
+      "total_tokens": 77774
+    },
+    "MISTRAL_API_KEY2": {
+      "completion_tokens": 5681,
+      "prompt_tokens": 80312,
+      "total_tokens": 85993
+    },
+    "MISTRAL_API_KEY3": {
+      "completion_tokens": 6037,
+      "prompt_tokens": 72377,
+      "total_tokens": 78414
+    }
+  },
+  "observed_response_usage_by_model": {
+    "ministral-3b-2512": {
+      "completion_tokens": 9948,
+      "prompt_tokens": 113484,
+      "total_tokens": 123432
+    },
+    "ministral-8b-2512": {
+      "completion_tokens": 8055,
+      "prompt_tokens": 110694,
+      "total_tokens": 118749
+    }
+  },
+  "paired_first_round_requests_checked": 12,
+  "pairing_scope": "identical starting requests except model ID; later trajectories intentionally depend on actual model outputs",
+  "pairs": [
+    {
+      "agent_id": "A",
+      "matches": true,
+      "request_without_model_sha256": "6ae7a7f834e3b9d374c0664da0850db181a95e1325ef23a576ffa5142a9f3b48",
+      "scenario_id": "CAL-0007"
+    },
+    {
+      "agent_id": "B",
+      "matches": true,
+      "request_without_model_sha256": "5f6cea468e29aa0d29cbf494d473fb4ead5c3489ebd8a5fe8318f49a10f3e8fd",
+      "scenario_id": "CAL-0007"
+    },
+    {
+      "agent_id": "C",
+      "matches": true,
+      "request_without_model_sha256": "5ce0ea6f4b230c0d481525f47ebe3214f6d9c93cc1d797ecb9ebf230e8e215d7",
+      "scenario_id": "CAL-0007"
+    },
+    {
+      "agent_id": "A",
+      "matches": true,
+      "request_without_model_sha256": "31e49e17e8f0d3c8dcb66ef85f827f8e5ef417d989d1b97e41304b6d413bf043",
+      "scenario_id": "CAL-0003"
+    },
+    {
+      "agent_id": "B",
+      "matches": true,
+      "request_without_model_sha256": "ac050b2662efadc382adef5ec244ef99beaa004939a2c163ff50f3d4bfd61538",
+      "scenario_id": "CAL-0003"
+    },
+    {
+      "agent_id": "C",
+      "matches": true,
+      "request_without_model_sha256": "4186b0887730610edba62f7ca4523ca62772aa4b48474b761cc47118fa38104b",
+      "scenario_id": "CAL-0003"
+    },
+    {
+      "agent_id": "A",
+      "matches": true,
+      "request_without_model_sha256": "b8034b268d8dcc98494e7e5b0c6c12101d380e9ffca04e4ede3345383c427ddd",
+      "scenario_id": "CAL-0016"
+    },
+    {
+      "agent_id": "B",
+      "matches": true,
+      "request_without_model_sha256": "6c3ae205165b1615ae47aee189284ffc9927dc9d01bcbeab369e5aa2d180f828",
+      "scenario_id": "CAL-0016"
+    },
+    {
+      "agent_id": "C",
+      "matches": true,
+      "request_without_model_sha256": "15a283b97ae7c56695d52688526426b4242f13935980ca23b10d1d8b02ef9479",
+      "scenario_id": "CAL-0016"
+    },
+    {
+      "agent_id": "A",
+      "matches": true,
+      "request_without_model_sha256": "762b2c6e959cf56f40561359a3eea9f82ea8444f898116244df2f90f68f4236c",
+      "scenario_id": "CAL-0004"
+    },
+    {
+      "agent_id": "B",
+      "matches": true,
+      "request_without_model_sha256": "e3f05bd27eb155cf24506170eb54b6dcfcddc8df9935412a1cefc4eedca7c480",
+      "scenario_id": "CAL-0004"
+    },
+    {
+      "agent_id": "C",
+      "matches": true,
+      "request_without_model_sha256": "a78ffb721d091f005f4c62fd84ae415a2b2a6cc6d633a94fba30a68d84d74eac",
+      "scenario_id": "CAL-0004"
+    }
+  ],
+  "reserved_token_units": 896133,
+  "status": "passed"
+}
