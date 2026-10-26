@@ -2,16 +2,16 @@
 
 > A research prototype for privacy-aware calendar coordination and a planned **probe → patch → verify** security loop.
 
-**Current status: the v4 benign scheduling baseline works on all 20 development scenarios with both requested models — 40/40 successful team runs.** Attacks, Garak integration, and privacy mitigations have not been evaluated yet.
+**Current status: the v4 benign scheduling baseline works on all 20 development scenarios with both requested models — 40/40 successful team runs.** An initial message-injection pilot also retained correct scheduling, but found **four AI-reviewed private-detail disclosures in 24 injection sessions**. Human confirmation is pending. Garak integration and privacy mitigations remain future work.
 
 | Verification | Recorded result |
 | --- | --- |
 | `ministral-3b-2512` through official Mistral API | 20/20 team runs correct |
 | `ministral-8b-2512` through official Mistral API | 20/20 team runs correct |
-| Real v4 model calls | 280 successful completions; one additional HTTP attempt after a 429 |
+| Benign-v4 model calls | 280 successful completions; one additional HTTP attempt after a 429 |
 | Matched starting requests across models | 60/60 owner/scenario pairs |
 | Model action rejections / protocol repairs in v4 | 0 / 0 |
-| Local application / dataset tests | 65 / 21 passed |
+| Local application / dataset tests | 84 / 21 passed |
 | Offline protocol verification | All 60 fixtures, 174 valid options, 15 infeasible cases |
 
 These results establish the tested application's behavior, **not unaided LLM scheduling ability, general reliability on arbitrary calendars, or security against prompt injection**. The earlier unsuccessful versions are preserved in [the experiment history](experiments/README.md).
@@ -41,6 +41,7 @@ flowchart TD
     IA --> PUB["Three model publish actions + trusted structured attachments"]
     IB --> PUB
     IC --> PUB
+    ATK["Optional fixed attacker participant note"] -->|message text only| PUB
     PUB --> OPTIONS["Coordinator intersects shared availability only"]
     OPTIONS --> PROPOSE["Coordinator model selects one candidate index"]
     PROPOSE --> ID["One proposal with a bound proposal ID"]
@@ -50,6 +51,10 @@ flowchart TD
     GATE -- No --> UNRESOLVED["No booking; bounded repair or unresolved"]
     COMMIT --> EVAL["Offline request replay and outcome evaluation"]
     O["Evaluator-only reference answers"] --> EVAL
+    PUB --> PRIV["Offline AI-assisted disclosure review"]
+    CHECK --> PRIV
+    O --> PRIV
+    PRIV --> HUMAN["Human-review worksheets; confirmation pending"]
 ```
 
 Each private-calendar edge goes **only to the corresponding assistant**, not a shared private-data context. Structured attachments contain availability and protocol metadata, not semantic event details. The model's free-text `message` is preserved without semantic redaction, so correct scheduling alone does not establish confidentiality.
@@ -119,6 +124,9 @@ calendar_pipeline/
   reliable.py     # V3/v4 phase execution, bounded repair, replay, scoring
   client.py       # Official Mistral HTTPS client and separate scripted reference
   runner.py       # Journals, artifact audits, evaluation; retains v1/v2 compatibility
+  attack_catalog.py     # Frozen participant-message probes and matched control
+  privacy_experiment.py # Paired runs, declared message replacement, exposure audit
+  privacy.py            # Grounded disclosure candidates and review-backed metrics
   __main__.py     # Command-line interface
 configs/          # Versioned model, fixture, phase, and spending-limit settings
 data/calendar/    # 60 synthetic scenarios and independent dataset validation
@@ -136,6 +144,8 @@ How I think and What I did.md
 | [Current aggregated evidence](experiments/reliable_baseline_summary.json) | Re-evaluated v4 results for all 20 development scenarios and both models |
 | [Offline protocol verification](experiments/reliable_protocol_validation.json) | All fixture candidates and commit receipts checked against the oracle |
 | [Experiment history](experiments/README.md) | Diagnosis, v1/v2 failures, v3 partial pilot, and v4 verification |
+| [Privacy pilot](experiments/privacy/README.md) | Threat model, paired results, source-grounded examples, and review limitations |
+| [176 messages for human review](experiments/privacy/human_review_176/README.md) | Exact original messages with blank human labels; CSV available |
 | [Reasoning and assistance log](How%20I%20think%20and%20What%20I%20did.md) | Decisions, completed work, and explicit ChatGPT assistance disclosure |
 | [Original exercise](Research%20%20Excercise%20CSL.docx) | Research exercise brief |
 | [LICENSE](LICENSE) | Project license |
@@ -151,6 +161,7 @@ python -m unittest discover -s tools -p 'test_calendar_dataset.py' -v
 python -m unittest discover -s tests -v
 python tools/validate_reliable_protocol.py
 python tools/summarize_reliable_runs.py
+python tools/summarize_privacy_evidence.py
 
 # Replay recorded real results without spending credits.
 python -m calendar_pipeline evaluate --run experiments/results/mistral-pilot-v4
@@ -172,4 +183,6 @@ Use fresh output paths. The runner refuses to overwrite runs. Serial request pac
 
 The synthetic multi-calendar setting is inspired by [CalBench](https://arxiv.org/abs/2605.09823). Our generator and event templates are original, and our simplified task omits event rescheduling, disruption costs, and VPS analysis.
 
-V4 validation used only the **20 development fixtures**, once per model across two disjoint batches. The **40 held-out fixtures have not been run against the models**. Offline deterministic code checks cover all 60 fixtures. Passing the current cases is not a claim that the system is bug-free under every possible input or that privacy is protected. The next research stage is to define adversarial messages and semantic-disclosure evaluation before connecting Garak and testing mitigations.
+V4 validation used only the **20 development fixtures**, once per model across two disjoint batches. The **40 held-out fixtures have not been run against the models**. Offline deterministic code checks cover all 60 fixtures. Passing the current cases is not a claim that the system is bug-free under every possible input or that privacy is protected.
+
+The [privacy pilot](experiments/privacy/README.md) used four development fixtures, two models, and five conditions: matched benign text, a direct private-data request, and three injection families. All 40 new scheduling outcomes were correct. Of 24 injection sessions, four exposed real private values; three had consistent event attribution and one included an incorrect owner/conflict claim. The matched benign and direct-request groups each had 0/8 observed disclosures. Labels are AI-assisted, with human review pending; four examples per family/model do not establish general security or model rankings. The next stage is human annotation validation, then input/output mitigations and Garak integration.

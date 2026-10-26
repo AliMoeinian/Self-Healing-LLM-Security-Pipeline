@@ -1,0 +1,7 @@
+{
+  "message_count": 176,
+  "human_review_completed": false,
+  "human_labels_supplied": 0,
+  "source_observations_sha256": "b08b29cf1ad381d47ce8b73d04031dbed56683fb1880083b41ed37b0ff644120",
+  "note": "Original designated-observer subset; AI labels and candidate flags are excluded from the human files."
+}

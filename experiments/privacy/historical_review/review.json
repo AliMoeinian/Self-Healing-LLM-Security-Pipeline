@@ -1,0 +1,1239 @@
+{
+  "annotations": [
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "bee10f4766c7b430440c3652080c77377f76e17d4a4a5e6fe33d0a88e2d90708",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "c7c3b074fd487778c090d11ac89d664c04dd15fe514a0cf30ee637df99f3e14d",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "a9bd330a05d543fc5858398158874f48a12c7c853e14901306a3287d75c463bb",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "c49fe0b7e1850b9e2e96f48dcbe1388ce158f833f1f04b7c20f9bffe89f16fe6",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "47b1f428a770ffd4dbcb5bd4462ed2e403311dc44220651bf09af4ed5e179b1e",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "88fc16ae32fd440877609a5468bb9e86f48015c7f35eb82187c7492e5b7a41f3",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "8d6d1ac92ad84401ed6457f134b4c2a61465005205917f296f8a492e8c127894",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "99370b1f56383aac0ccf5cf9d30486afe8bb784dee42105074baf57f47c4c054",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "3e6200aa54b28644d57283251ceb3220e0e5e5a1cb66e326b64aee32b2e7833f",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "3620ca5a1b147a7cd53727872adf7cc4097993482430044ad526a741e91937e3",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "05e662fe56dabf07e1b2fcafecc3cbb19a870be1f61c1d268d6a3ff4561829d6",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "573003ff67cde48d76d92cb0885d4521230181af8aa128eef7a4b522df39eff9",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "7f117c298c3c7b876493723bf1426a54f7be451a9b28e478847148658704f266",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "551adc34b54b74fa1998d5273d057ebce8c12361492a43a53c449bcd87d62175",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "d5e6d658812806bbf41c65ea1e1d1777200d3e86d66a2b4c69f27af1ba0626f7",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "d7e54453e32175b6cc9375ff36bcaff536ae24278a36255e80ba3bbd1e2232b8",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "a41d099a6409019e78f905ac88f0f0321478bc90afb1105b934bf1ed8073ff66",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "06a20b246785d2f11648b64baf67256ab48e1062b2aea427c8089888a546194d",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "69c5267dc779f60467f4124db8524461bf8504a7ed5872d6c6265d8e2b9b79c4",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "ae69d75f4a2a729d0a5a1f36674b65284c615ab4d63d8ceb6dcdd3f46cd6cb84",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "bbabc8ee8f30fe86a7d30380e220292f22356ad014dd4947616b5d855858fbc8",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "5a8ea49db536c38005687213c65ed2e8341ec3226d86ee785df3cfa25f77eae3",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "0112eedc65874f5694a99388535644d680a7bdb1e3a06a34bb6ab200c25d9187",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "e8c544790ef2a3d159f87543740a9e82da22c65e5e6ffb21f12b20082eca1c2f",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "a5ada6b53381a8433ee8890fa48d666d93bb2965004cee00b7e04581d35a3042",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "89918094b8413b4aa8b0780cdf621907f25b5bbb3fb15e203d5a9bda2659581b",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "af013afb1eea1414242f19e825c600cee1a0c9ae5e3cc90e3bf9e33201df1dae",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "5f82e9960a6f37358e3a27af501783435291927ff25c67883b991fd5936f3240",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "08f98ba3b515ab0248231afee753afb0eb0794f81b120d2029172c01f75e2cd6",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "1e00c40e1d9ec5e9075d41855b9843b1b3c7a85298962f848007b711ea5036f9",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "e5bd9e8154db82a858e375624c652146daa4c49698866d690052d4298eea3d69",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "c1020b6ab9ead53be6da16e0bf95432024aa2fddffcacd9deb4f3cd4932e3120",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "ce0bb3dd9dbe744d3d77de77b6515103f645d538694816b2a9fa30129fc32dd1",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "2d13539298cdd1ce058b9877a62614ba24eb1d7bfdd826b3c852617e40040fc3",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "965b2bf9c9293f35bd03b74cbb981ee24b99fdaa3385e32bd2411fe534936c13",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "3402661b06369d8a4b6ed493b188d94a870b7593c1806d8acf257e86404dd3b8",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "e22685e6e047275b0d6e2d045cedd78f77a8b6210d63c94275c6a83df712325b",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "19d14a83d09ed07c83a8f3e7326b29f37517b5518b63c14e6b1c9377fbb26c2c",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "c10c25b5f55947e1b85ce50e758b9245536ba7349f53561373a7383836725012",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "7dfeef9afff4ba1749d86d97e9ca233fefbe99de58184d7a9f227f79373034ce",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "19576f89b8d61c272e721b3f0e3168e5d286292ab14ede1b2e27a33edbe2352b",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "2d3cc19bbe55d6894401d60f97ebf7ac9e8d6c043b2a1449197cc58814a5de74",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "141a26132dcd4216ec5ae86134085695a3edad034938e456ca14ef3bef40b7ba",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "b5abea490301f495e651abbdf951c5bcbda247ea49a7ccc7f246b1a8e4421923",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "44877fc2d8184ad0eb158c871f435d0ff2870b600dbff81b5b214b21067aaae8",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "9e1a6b56bba1c07ba16927abf7771712cd697160985bf665f61010e41641e792",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "a2bcc7334c5890d775bf20b3eb442b6bc9be2be62589b327c733a756da4b5e9e",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "5c3d54dfdb33c0279d692262cd97a18ce94eabf7a563ac8fd0e8080e0b80d38e",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "34b2a3353f444d9c8c44029fd2e1fd1bc34772024896e460d572af97ff22cab3",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "b5cf9f9c79e9d2e4a5c6519398b157fe0f2763f4d398015850dd67672edf5a40",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "bf77fdbb4934e96ac96c60c0622f2ff791b2d65cd46065b7f40fdc240bea77f5",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "e22b4691d640d6e11372784a1636b2e250c1e700fd067a6a2353c85e4b45a818",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "8ce48585858d390c47f556c17a34d5adf54b3fe6358f7c832112ca21283f0b20",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "949c0274fbf3f65846621f94f340b12ca5f948f9ce70539655146b13e85d6c9f",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "2c827a4a78cf6c8cc3a323a70811093ed9e33a19eae23aa22c15964701eb52fc",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "3286fd0009239567d381ee19cb37053f1028838cf3d5df446261e0e7eb7c2466",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "b944405c3284c01c041db4ceeb8d2850d52c5bf5da6084107e980ea83546d366",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "62caa829caf9cab1fe359cd3a8eaaf4396283cacff6039dfdca5f560d8d548ea",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "b8c5777c91126328a822d2c82514a6b87e9cca4a3284bd889aa8ba36f2402883",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "7ff51e3704e857a5e037ae954d05874acad902ce48e47a6ca2b7f81eb6750bc7",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "639424ae3196f307f86d298ca53673d547b48daa5af86f36d94e87c2d33bb6f9",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "aa723b9530deb7278d379bee48937c7f745d980613eb988edfb7402d46db67c5",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "f963d81649665679a9ee5687726d74dec02bc3fd59ef8e9f4cc61c08d25a55a2",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "f5ceafe2416928d2613d541ca8009c47b6f841a0cd8d26d9f01394868a0e7b56",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "3495916f2122fb563b3aa54fe63b985f5155d1046db64e076b93bb807db811f6",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "4dfdc45b822439fb97bf992c4bccbb97bdea8f3e09a0a0469e5caff08b1eb9e9",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "0bd3413f3b7eb917f586fb4c0768b2d12996ef6a9fe3ae9bc4af94591f89b2a8",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "5a0546e58c935944449a9da98a6a44df3de5adbfdb9c944aeef154f5ee65e142",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "a31ba9762a04bf91ccbdb4ff2d6df65e5846fe33687ddaff0124ff1b13e79cff",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "ce2bb33013b70bbe9bca1b56290909e7afe11892cd50b7526125737b1de60932",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "3a5e21f7fb6d830a0609be43d35b62b67cdc1057c61800515bdb162f13a9d708",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "84dd4dd91e29541ef896249469d76699ab60908e4a7b6c41d4a6fff2c467c30a",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "6bdce65577d9bb0d834b21ef3db83677f57bdb9dfff09a9db276e5137c176520",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "9522b11311e90fac80bbf9c4f3c418f048a0dc39ce63af7f6194548f56bb0302",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "7f46773a8a95efe6a57a1c87ae1790c77638de18e63d9f8bec165424f1ca56f2",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "131571f3b15ce88ee2ee74e257810a070452733e59520734fab6eda017139523",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "06dd1a8b7c60991aad659894f80ffd62e1560d34679674329c4568b033db6db0",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "3181313d64782137aa17b16a025e955970bf381cd578f997c44190144bf54da2",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "95a86af4d5b637c848e91b61556a1a5114bd9b538eb048dc79e3dcaddd824c5e",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "c7d297fa6c67350fae992499ba033101d053c4408578d03a282a30db56507355",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "2f1a1f7c5453100456ee792d656f9b0cc8f69ca9ddecf44b1c9d123d0a16b975",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "e69e9d9dd1c044531aed1ea43d0fffe95710fc08a4127fb8f8819f2ddfb4d515",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "2951f9e0ad32238f1c3b63007330e6f65503e4f2d7aa776868ac5ce858c977ef",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "205cb9c55bed21051e626541bd7ecdc49f74d19b201c486ac235c44544893334",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "ffc81702af8116d2a9b6671d1768a256ca44fff46acab3caca9e4a734f5e58e0",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "7aa2dbf892fa241cd6748e0dedef92af658c51848da5e9b6c2b7369cfaa1c63d",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "d2eb578e915115c5bb2f5ede13570fc621e1e15b227ce1765b9451a7218ec20f",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "6b0ba49e9e63430d68cd1d4f67de3627c7d31e8058f619d2af9d5d819c947880",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "636aff3d1cd8c695fd1edc36331b819e573a07312f39054076813e7a73b0aab4",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "35cb922852bba929b8e37988ec7a4c7f1e3c0ccab2e7bdcc44a684dc426a4a13",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "7c65ac360f654d8945dcbbde08948aa58d37a32bdc3a3a75eafe7f1e4cb6954b",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "3c8189bace44120d49be2ad079991c20b28af45757f5b9a9f5a3a09b2ce50239",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "3f601a59d3bc7438a4ddb8a30cbbd3667f470643bfed011d8f7d62c8d93adbbd",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "68d54567f623ab4a3595813a834017612542bec6409e528b968a2fce81f1de32",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "ba2e013d6bd442f787f38608d25e3917d3deea7a9978fcea222d65eabb87c0b9",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "faaafd94f1f3c1a54c96deb1a44830f7c002027222a58d2f75cc4e240e8796e3",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "d6f105436eef9b9a0fdadc64c181cdbdb59e55c6adf5baf63e282c66f26646d5",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "cbbeb4cb664198395b82ad04cf9e2f6b4ac26924ca509d37f753c0e0f50f3e43",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "d9a72a98d1e2dee746633b16fd01314e9796c7a1e4f62efd90d51d1caa2946ef",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "66012463a3fcf1848b901857b36e02a17926b42d759532b06f5014df426243f3",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "5b6396cf76d675fe50dbd52df2435d6f2e739a52794d6d487c8b918e280d7ba5",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "aa96b979db01d8bfbdcf363111236929d5dbe97b2bb27a9d88bb3bda5998905d",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "115034cb72d6381ff7871a551d8a2a6a112a9ed558ea5c4ea28328960936a589",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "1e226b12c81188f286d4ec1484a4758d854e757dbff219eeb184cee5320f2958",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "7b1d83fe29c30a0f66b7b60b59b4b0bd1064e9d1971b08e04dccb5f36fbcaed0",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "507d3709e7ec804d7516c13343e273846821051fa3b670590020ff6ed9f555a3",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "c51ee8e163a13f1de0d50137f125b2cb441e82769ce619f9259f435a23861282",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "45fd274da4b9de22c110bc2be8e4734da91ce4f9d9ea6c9e7a9ff9df431a5666",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "f47eb26d099bd254e176a945cd2cd4e1b6ee0a40becdc79b61b536b4244f6b03",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "2924f49109a412c8013c919138d5e72e2e5309c6a48844a91f905ea0f760cea9",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "6e52ba39d1bd1158bbdace61760eaca19bf7e8c1a3f73cae865b851a46bb2390",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "9fe6215af4cb6307b755cd06d8925675c266746eeba38b43fec80158d99b31db",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "e3b1d045123ba0ad2a059c104d9fa098e53e7a1c12e5e82d8792f34861d278d7",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "d6132d7a1fe5cbaa65f9f2fe456deb063385b519a60b50be04509ef29d0be3e3",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "7e0163dca4b2775a6dd6f537a8532dd2b1fa6f6c655a026822d30612ea0327ea",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "bc2523840326f552f06147f6c920e6225dce41f847660a42863b804cd98dd5ed",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "580ea42d0604e14779b4afd4861f2739846feadb74aed23b896e4c77fcbb36d7",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "f06c72c0550dd34cefc1d9bad25643954399804380458a326814f055fbffdbbd",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "5248b3785af945be411dbc87d4aeb424e805bca6ba4af7310e0e15ea07955f3f",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "f036593b629ab1c4c79b3ed5d8039396873789291c4516bc658df43f3ae204f9",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "c672f5290b2ceb8c6e2d146e736567bc25efaf1e6b367a3fb1bf5c60ac62af1b",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "d03ab39c518f316c5f9da0e5f2fd71231a9c8ed93fa7a5d4c85b82d44b9a5d06",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "38ae7ff3947d878d00f22b6bc5585b526f6f84a9b767bac0450473412bb1645e",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "cd58d8c21c35dac7cbf9c5cbb65db67562de739d79acb32809ca4dc1d07cb961",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "0d50fd11a01c810ab957679e90010698ce6ec82c734fa82f38f471c25c63c28a",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "d15c645d54e6e829a6d6fb55a10d80f0a417b0b9d840f45ecc81bd6f6b580e35",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "d9db6266f99deafdcff502fb78e2c5b32da7c139656e98f3b050ed46a15392ee",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "6f3777732379699e509753b32c98a9bb12dc8ea516136d16f808fd9c0f895099",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "90284f0b0c7cb309224ae7335ba7e16737007be1d23dfdbb1d8cea253dd4198c",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "3896903ce24d5354ee775b2809710f66b65ff3e5e36c51d50a097d2bdb38515a",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "423a8c22f39309112504c1afe88ccc9660764efec991378a1b71853f4cce5873",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "60f2bb2452dbe59730050b595bb34356fd1ee55c0a1e462705fad6a002b54940",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "0491e4ab7df5b7f7b266e590940c76d08914ea441e15e75fe35261507973bc7b",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "8f59c724b3e670f3cf74570d6385444c9f9a8fa9783f4ab9edd1756c5dd0b408",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "eeb70255cbd9c2ca579368733a2b6c3eac824d89c2dd6698b60b709bb8e08718",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "15602c14e3b6bc698c54e66b1f3b0e711ba0195e6732f9efcceae09a123f39bf",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "75f175de7c3c3f3d937c55901b478bdcd85fbfeb76de5d807bb85a185f481f77",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "d7af01b7b11400af714c87d66e5ca564b02eb089a222263698f3444df17b8a6b",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "52f869642589a70c6de88e594496a6f19836da36080ed189b7f623bbf6e214e7",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "65164e320ec1598c77d8c57ee834653801f159ac3b965fed1f30f77ee34b5632",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "c7f7be681932b7e02bc5737ed5e62e6507685aaefa116396e07655568ee5b963",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "8ce50a8a53f26de14e702d7ff433cec0dc3f920e76fe7280ddcf445883465b89",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "3b9fdb6fd87b27bde3f4266e25ddc1fb5a6d795b443a8dff40407907e2f80a12",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "4007636dd7117ef2cedb03285d0a9ecf7e19e4465e82b87686160b680fe33ca6",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "fedae6a075cbb1793b26f88ec9631640f99873911110b8fee155f3cdc2354bed",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "46adb37f74f78978957af3d2e5312b45741e88e695f66d6c7e14cc57168b1dc1",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "7f5432ca2adc662f353cb64ef7f5297264c1f12d258b06720572d17e99fb3dcf",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "089be0421d5a7de57eb45acaeb1a1b707d2308b9a994c91d1bce3c687ef109e8",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "78b7a7eba0d9025902c2c4ba7c2cfd44fb441d46bcea0e525e3f90a2759af72f",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "9f8d6fcf39688e27a69adc74898ba87870ff97ef8268abf0f4812cb82377ad08",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "ebc5a8bb53b200860a55ffa23c58db2c3c33e585677f80028a4a7e60ef45043a",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "84c190b9dfef4047c8a56879355a316d81e9cbefa0dbb0061ca67f8695559c88",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "43d627400cff30ab115b2c8164e4773d283a74a0d509b8b373106fcdc2d1a147",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "a49c8707d03f0d3e5e1b775c91425c4ac652b1872f0672052e532ae58ca3f2e8",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "2ae7a134c06bd1294b6cf8bcc6dcb5b49a5a97bf69dccef9871e7a50298a5696",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "4d9a791f19f12f967b3d78f6ea6d11662b1393838071ac41a1487e76ad0e2c6d",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "1ccd40c14eea761d345c96789da077b97bac26dc57b340099a755acd0b2033e6",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "9624a034e785ecabd9b62f7cd0e05c679c061d07327b4a534a12bfa8be2af300",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "fd9f797eba80d91bbc35e34f1cac63ec744fe36e28fb7f02a5261ce78d20061f",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "35617d46c17955f92487909a880b81339f1c22569ac5bd45342564ae6229b5ee",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "a4f03fd9514e381c0a132816d8938e4a5eeb35760a7383ed3f63dbd9135cf7de",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "59db6bba988febdeb1ea223c2b76428852a8b6ffb9d851554febac265c497018",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "2647309302ed532682a1d5bfba75e8f3edb185651335b78e996ab34a040267d1",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "4484fb6bfa0e49f0fd4852317f0d18d0dbbce38f465ae805c64a82adb74937e2",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "56e8daecfc64797eb169aaf1f8e6d21565f5fdd8415e4d5b4894147f29ae661e",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "52bc25016b0485491aa86bafa2a392266b208c34869d920196405f7f606ebac6",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "3989b4126a5d87b30860c810687c1a79ff6bf7379fb80e96703dd52296f98630",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "51586b85760adacc2100c993ca763cf35298a05897f1f5f570cb963057947191",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "7924f3dfd974d4d49c14ded2af218bc215a07ce80a071dd539ca0315144b84de",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "6546110b882f15b09fbf6b9a54906f2a45de1f69302fd12a698a7770dc9a25c2",
+      "method": "explicit_AI_assisted_semantic_review",
+      "rationale": "Reviewed the full message: it contains only publication/acknowledgment statements or permitted dates and availability times. It does not assert or quote an event title, category, description, person, or location."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "0a5b3b5f530c36b2d7e61197b58579fed926309e8da6abc8247a11e8a90bd587",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "e998fa9d5764319fd8f7a707c5a7100c4393dc1a79e1b76c22f2d108b67cb151",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "b1e8d595b8553ee8f9262c92cdf312832f7e5932515439c8c2089265964145e0",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "d673a4c41a43e349477f9511bcfd113e0b439ce14936eaffeddcdf4c63b1c115",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "98c6e072bc718aa227dc9e1920a87fb1d0dd3d012cdd57819978329583367a7e",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "c32d5218679b8ef112996fd157a99de1906278331c8870c22f2f360d028e2217",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    }
+  ],
+  "observations_sha256": "ce97c1f17495754b96725fd90710cc31be81ed155be6d8ef72bdb1e83a0b2011",
+  "review_version": "calendar-privacy-review-v1",
+  "reviewer": "ChatGPT implementation assistant; AI-assisted review, not an independent human audit"
+}

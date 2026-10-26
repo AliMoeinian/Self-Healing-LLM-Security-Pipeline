@@ -1,0 +1,1267 @@
+{
+  "annotations": [
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "9982f64e46e191aa64cd38d8b935dc68a58a5a969b982b320ecadcbe34d943d9",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "d0eedf8f9f476db123a19a55195866d9135fd86946add40bf16d7acc5f1332b3",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "9a97204c9d9ad1d14135cecb297a1f714399dd1078c7eea64ef38b7a8c8afe19",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "40959d09535c21d1856197ee29af090b1100ee722c5ac99e8ed00c1a6cb60018",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "b6ebf1c40cd6bb237d760ec7e16ec6eaad8f50aab77def6a8c056d6b1d73ee40",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "a8a81f44899b6ed8c230121b3bcb353dc0c6101a5c1bdf530d98cb89695b2a76",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "059b4d7f32cd5a8a518d5d9c7596ee966210d2d931cfd12ed52cc29d06b7ef04",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "047d4a98edbf2cdb9800d61a65cbf31956a244dc8c0a85c9808a729f5cfa8f90",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "a25f488e53d0f1e541f8a667a67b84ad8217bcaa4d1a9c31fb8d4daff1e4f859",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "70b3f24fc91324e1fecac3196dc04c5ceae83eb4457b6f32c122307ecdeee561",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "7d9a9152b2a46efd448d03462d1e560560e1151038d786e9b0d890ba9c6d4804",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "c9396d8d68edf9564558d8a524817085be8b00f7d5ba33c7a38b28a42bba0af1",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "5482f2e99822213621a0a17beb9abfae43f8fbb76ad7a357f7f7779bdb9774ba",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "7186b23e12caf1c067b9125072be8a7eaf5dbb006d09c8103a7c7d612539d418",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "324c3e61407fb94438c42d7c8f69c5c56a403a31c6ddcc3c107d111d8e9bc6bd",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "9f6e164a5a78f0d3259a3e848b21e451fe001c35d2317904cbac08daf8b0db9e",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "e2679812444af55084d0f82fb6fd4ba75ed04e55f03a66939d8e12023eab34c2",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "0b6ab9ae4738b629cec3499a63aec3d81b92ed00cb2ba4230b63f326ace4b427",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "dce7e9febd9ccea79cb48865a04ddadb26137f6f6fc7ba85328453172a125d14",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "cef5faa9d76e3a972989486859534d957b5f4dcceb4e07306a658250ab59fa7c",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "d2a0853fe28ac5bab1dfe2586a48271c480d4daa4c90f121ebc36e1da75e79c3",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "9b6fc82667dc5943279c77a31a14d792dc235c7d984242a0776532337a3cfb72",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "53f19e335fa5d35498410caef2d731f5eb579de10038871658f6613dee83c8a2",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "f3878053cc5a87802eac693b5baec084afb9c7c213f564bfe70d248062f7ef92",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "d67fd0594b15b849b5bd3625f5f0a0fe75c5a3fdeae8e471ded2d41cd708e55d",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "b7a5a9f4c093f68e57fd9c5a6aa37efee965184d2fbfe1da3a88c8758356b45f",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "1fe827daa7d9f7f78cb39a3e92285ad3a721e88a67cb80d27e0b4da6f834d6cf",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "eca0281d7760454e98ad448bf5e3bfaeda7bb3d0546b9407797429013a835743",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "673a1acb60fb26586f057c117aeef45a533f4ce9dc41368553f9aad904d12936",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "d0f78ea2184d8531c041fb861bf9bcf4eaa986d12860bccbbfcc5c9282662e1d",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "01e03c269f114e1ce713f0d132e4c686610e2b8a67e75e41a5d7088d10edd50a",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "eb84ac43ab646d34cefcf1dae1daf381ac47d5c82750ee7379faa2439c78c207",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "f514628fea65fdfac7bc2bb59c1907eabe3d603d333d179f96b9d85093bff3aa",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "7a9d527edbccb7346307f9409de4ec641f3cb3cc5aff1ebef738b3eaf62482fd",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "44bc2af7b5cf7d94ef4f9b30fb64cf88c0483601daccb992efc9377be3603363",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "e49ffabe31f288ffde570f4c7c4e08a5d27b2cdb6031ab447c38a27b89343168",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "04e46587785b6015501f455e7b52ce7f5822bf422a2c8b08e424e30fa9ba5e15",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "2def8226018c4f24d866a72aa2718a1d4f39a643ac5828daa59ddfd9a9243ec1",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "fc20f0b6f1ee0d310db6437335950a6a243bd5a46a09faa24203b3a13274f361",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "312cd44fcbabfa5b9fe718eaa5d36d89db196d7cf05eb43d7a08eb425228535c",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "8d7e70796cd54daa3401bd39805ccea0898fe356cf358ce380fc981983032f94",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "47d4afbde2b5412707c84b181c075672207e013ca64c4cb537dbb6cd1d01f2ea",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "c0db4c41f51c3bbc03cdc47c7adaf98c1b95cb69c8291d13e20499380cfdd336",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "c846e8658bbe03e99ed19b1de01e61a59bb4f220834a3e418e1376e2a7b2f4c2",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "4aeccf6ff7c31ac5449d241688e74ae9b89588869816dfd5123bfeacc03d5774",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "46cbef1ad5d386e2e92d30921ebda43dec003f2418438b3f6e837d41ff090cee",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "353df8af936e2c8bde6a8ebfb479440f5d3199071a726184f9906867b4861ef9",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "605841501d3218b7c854497503927462adfcf0482c127879ae8e7312e46a1337",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "cee18b752e51664e773d680982f92f93d4e99c38d0d115175444cd1196386f9f",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "e80b9391616d0e02ef6bf48837e354467729835a721e352cffd3ee34ff63911b",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "b527f6a9c8755418cecb544ce8d92ecfb9e953c11d476c8a1015d312204f1e8e",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "4ee76d3576ff61e229cd6745a9a0ffa30a40bd7b29ebb1cd324746dd681b1ad4",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "edcbc91202989127ea6d7257021e8e1ffdad71e3498b510ad365d186c4f29005",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "01d95ee1d4372885351f9f6aab4f1ef770bce8d82e78aa34f51f4dd41273eba5",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "bc596abf4666752642910131dab2e3d01368051d1d0c1e7a452e218b84762dbe",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "c68305403c6c5a14fe94fb81dc8ab8aadcd6d1150bfb037cad955db479bebb98",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "9a95e8a1cd324e4ea0055b359f9ab8a9ed02d5659e33a0331f1a3826e9b8c314",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "f1024143b2dff827dd34972e57d29d1a52ab0045a41e22fbdaa3c09334b13d44",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "39ff42791e78695a379788d756fa3600571c04cd17af991a3912a2e4b019104e",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "a7f1fe8d0dfd4e6172dadf2fccd732f8d71606d0caa1d6080b2595853c4efac8",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "ddcbf2ca2ffdf84af5912608d94eb306e928929ef1f06f6c9cbdbf9a0401f354",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "00d948a9d37f9996e6ed428137237f4d4376d552d6381c6216850f6e19a94f82",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "8e914c3a4cd7b607d3271f1929b4089f03bfc82e2aed6f47fd3ff500398b6028",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "07680da2953deebb8c14cdaeb19b1b81bd5710508dc7b12a5d4313c99a20efe1",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "57a057aaa3b29406423fd3a9874555942a5bd4991b008678deff18fd71f4f060",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "7b25f980e4ee2a68ceb154787bebf046e727540adfced9be127b1931ec2357dc",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "0fe6b98938f6e7273dfea5e74b5103c485da4f4074d3c24df5eac32a70536a2a",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "e2f46f0d16c831332cd6676fe9f229c9a62b4edf31e7cd70cf5a2bc713f94b02",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "d9b9b0451a37b18a0e93825841118f70b33becd0426b386310dacbcd885b8415",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "42661d5b46c9dc794a9dd1682185c313f88c414427dce14f7ad58458f9bf7b6e",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "215a511d224afb3db92870a06c2dad15053c906d1f4c97bd379f1df742cd2c72",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "99ec63bca0ac0abbfa32950ff6265ce2d93ff1e23622dd0d16fd121d4e0f8ca8",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "7a241811b9b8684cce55597ad51426e44e938e162b1fdd291f08040bfb160905",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "1b61cbe6c903a8019e13c2ed93af22ba8f0d7f30158f88d9b80851efb91547a4",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "e73be9cfb0085921088be1cdd770dfad95c8f6c7912caaf00756108833fbbe70",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "70d2ebb508daab0e3b6c5a2c1fbca74d3422cfac30ddf4e9e54f923bd58cdcdd",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "5b0424971dbfc0efe980156e4e4d736646695bc6692b48831a51f0bb8ad9b5a1",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "2866dc2c1e7672988a3bfd28d12cb1b5d1708d124c896a07ac0fb669c6c25921",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "42083b78f931b18dacf59e7dcfd6d630d0cedd94f97a35e72b6f1038cec30168",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "b361eb079bdf993c942049b496fadfa7a723af276759d3b5940359b782bcafbf",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "5400832e590dea3022fd72ad66f18effe6c4134b1d8d720bf25ab6675ae932f9",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "21ecee8711753ba0665156638c990413f0d49ba04382b680131bba819719b065",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "f2a897f4a9eb41463e99ab5c698e33f83ca547ecae0d7561fdd3b7d64405a3ef",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "952b5833cd8b19dd5563e4fbe837548405c79c6f407dae27ed745123d2ad879d",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "1faa3e8befac0dc267cdf1542d08ecb19320c085683bb49169fe5a00a89028a1",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "db83bd375c6f3f9eaababf0fcffb4b1a555b8f1372f648c8dfb2b5a2eec02478",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "27c54c09a833490403e3e949efdafd29bf4a56ec87be0fbc1c76d1757ae39835",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "600de0985a001f298c0ae37a4e2c5089d17dc9dc5de1f700539ae460505c7a10",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "1a2a0be995dbf23e6e8f08a6c77e9d64ec2fed5aad3852883dc4b0b61b7b1da9",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "16127202840018fbd9ff6879915ed3c94819043383989d4c677a1a7733c33fc2",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "7210679bcab3fbb08889dfc74f774b470df42d0b45e4e9c7bfc8f130a9c24cd7",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "d541709937f81455f958213e30069e11ff73ed65f967fc338cf05123a471c182",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "acabc63ab98bad2047e1f8bc473091fd32a6265035dfc241643e10d85ee863e6",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "41db9ed2e799b7cf74c7db9de3baaa3984eecb304166df5be8ad572ba7b54dfc",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "5e0e131d461eb4c45f91b2e21b0ed4abb8f6e59972e2932845db9a2ba688bafc",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "09a8ed40e6a12b277d0056db8c51f97a73a0d6a0bf603c4e3e840ef291990250",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "5e708e90d8a6244dbfe6201b1130ca93d99709165a66d844e964e39445416bc9",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "8364441577e1a4907f1ebf076c381dc26fc0f330fab9faf69c7201269940bf5c",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "f2b9bbaf8fdf8d8b99767f32c47d570a4b626dd03e33f44ef7108412567d09a9",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "5aab4cc9f63e0e31afa3cfa49aa8db9ba8d86c273222fb961da399814471c0d1",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "6e4034fa8f7a5680aad467864f0ed3832d9edfa19b9546f696a43517eaa296a2",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "d2de013cf798a70e7bde7bd1d3d5feeed92a6d038ac5192d6789a95e84accd65",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "9c932498a0d96aef444104a3a1a1108e985b015a5e20568a93ac094df3628d2e",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "a7570a65f52ede4344c12b554150dfa002e7fdde686af7f55eaf25c93920f4cf",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "9b20f6aa8938fca48b60ec9c0c8d6583f9091cbb7d5bfaccf7279feceef9e2a5",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "751c342e3d27e39cc68aedf5c2329c5b724e8fc148ea102fe5af35f0b556b322",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "6bf701eb45f2949e432e7d7bac2e675c63d5c8aff06525e2a9ef83a3d7f88201",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "ccf95584f90cce6b30db57290fc66848ba83fa7bfff416bcea8b8bdbaeca428c",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "198d6a2663f572259764bc2b0fe0f4c55b88fd854f17f6637cdf5e5eca5775d5",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "a68df3c1e0be76c00913c8da1696a1229d8f91d8b38abf3a616f8b99fb8fef92",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "8712859671647d738becca70fb94d10bd7d6db8294f18359321cb8738f4d4922",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "730d6ed98fa0310b97a7720fc7bece3df93aa27f647c907127cf792aa95e1619",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "e3843e5f39ff3e99ecb578002bc56c3fc13f0e639f07af6c590f2d87f2a8f369",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "32c53826808fbf7939dd8c573bfb4e70ff83583c8007245c06ba7b4d770427bd",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "16352a60a8d7e129af6500db17f48f4b6779c583cc26f621c926f61763d13037",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "d0edf00b1b2aa43aa41e95ee858c2e68befecfae2bc2251dcc4851be4231c4a5",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "ea9d9c556def471a23fa8bb483c4e8dff82f16d8b85098131787cd1d3a4692d9",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "2d46c604c66d9d3e33ec3dd9b5c0bccdecf23274ad77a3f5b7e8bc918183b75d",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "f38b93d04feeafd5ffecff02410b74428e3ce1b6037df0697d33002580b14a15",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "334b52848ecef70e95c5e215b8ceb24271f04ca669e163dd96e9bd8de3ba5448",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "d9b2913ebde6304d4a64bb995c175a1da83244e10610a9a3a3f31859df33be75",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "0e5ba202c40f10da7924690d43f8dc00db56b766506eaf84012284f2750eeaba",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "837631f240f7f11effd1badbb1e2ccb3867b959419af1b054d5416d05ac4bf85",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "9ca0b09c3f11e867a94c256c98cbdcfb6e6800ad1c2ac988ab8e2ed40d659964",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "9871d90c6edeaf1942ddc6c064d9132a0c603398582bd133bfcd889997312112",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "c78230f2a8c3be67cf2faa1ca935155a48c1a3928dcf3ef406aaf90595dc8a16",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "5d560b4aa527b72ec9910e2906eeac20b87cb3c009b48d3ad9bb967c38b1b534",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "e607daf379e941f663764c0fca3bf4ab0b6ac179ba743bf86f8d4b7af4f38d7f",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "dced6884e85f5b5acbe10203ae1a201f869d3c3ae21ca5ebd5b44d2d5226cc7f",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "8f46057f0b89bcfd5a963cd58cc230d489709c2e0a35f42783072db48a731114",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "d8a409241c0766b2e94fbc9070146d3a13621e146753425539c319b86e700baa",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "9cfb5055ab5ae6ff0bc3bb12e416ae941b61ebc1177c862ef16f11089832da8a",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "9d7270dae1804eafe44c6d8522ad1858c9aa91a99eea9149fcf1b9a21f24648d",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "388afa6c70963718eea5925861c5479e3f8d7122ba1fc5478fb5a2db07a839b0",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "34a67b5861b80d4875f67bfeff25094f7a877565040d4515a4282d6283386ba6",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "57f32131182b3b1070db8a7bd31b79cd25c9e60cc45cf5483df73c6c1d753f7a",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "c27d88588fa4bf90102a48faf585a0c24f47c52063d9edd67b1828d16d5cd13a",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "8dde57777bde3fa905e98787424bcb27df942c79e26bc3298d7ef4e56f6bde2b",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "eb64ac061e88e1086fdb6c473644476a328e0e92095d338dbc430c2bb36de1d2",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "8e799aa3347212e4afd0f3df14f5aed2261d7e2d393d49524a5e12b9a1aeaa8d",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "839983c30da97df9d6f8139f5f48bc7a40e768463f244c7e59ed42f861c11230",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "2b870bc7201c59b7b0807d8802f27513d879dd15064d6faba1900a41bfec83e8",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "98de24416a4c933db171f27e0ba019c1167e412be51ccb2f2404e0b92e144ea6",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "b77077f60da1d23e71daaf14ae8d562ce0cb947e1f6aa6b119323a9198b4d4b2",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "07ed4e99440b377f21bdba5622e0327da191f7c3536b22b652de860e9e9f38aa",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "1ae39de47e58eef028a3979a2b903728172f2c0f65e70350e3292e7a90625f25",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "babf42c37a047f92be8663b2068889aa50bc1c0268af44220103a67ff2473bc9",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "b98b779d1f769273f8231f68a75f25548b1b4f0463e4c83c74096bba01b3bdea",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "98e47681b458ab4c96e37644942472a36ad812fa726ba5db12191860a7be2949",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "6e6d8b2211bb602773504533a794f1328339ec4622ee3439b263cf195c4c60ef",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "48880ed36e29ddd2cfd18045ec36d73ee42c18973c5acca3c50a473006916d91",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "3f9ed237b9708627977dd5b3dee11985a1195a63c6a3fc36ed5c985325a18b2c",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "68ada5a27e359dc1f72feadee2bbb74b6be2236d1f94a341f1137dcabcd7408b",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "113cdde9b556df849f9fb7b81ca3dfe0b49e3aa5ef72814407158eafee4ad759",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "d736902a6874dc029944bb5f32685d3c4a39b40577263c13af979e1a2c4d722c",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "0ec66a0a7cf17dc633f1c9bcc29f076f7252ca56f8f983e000db3b23171168bf",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "8742eb1a59512dd54e73e5510c35e23b6c90bcb1bd661fe0700158415a5e9257",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "94af6169ee308be0796374cf0a4bae5bcee854c10edb355fe07f52197f9d259d",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "0e7eac5964fc66d28c69ed30ce04b5e11f7ff53bf14f52df1473f3d43eefa4ba",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "b4ed06b06a7208c377110c7f12cdb03559930378c677ad610cac2095f319c57c",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "f09eb4ab1d6596a302b6c92e0ff9640c5e3900b42b32a17961f3b48fc5408198",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "188ebc6ecf194a0580fa67e6cc2df6ffdb71725667583f1c99e5f89563add192",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "4c0561efad5439fded59135a952dba395a077a6e3c77693741c4a18ce5443783",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "6163cd92fd12666cb3cff23cedb284cfa40b8f5d3b39079e6a2d6ae5e7e04fee",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "19d4538fa63d11f5708e007599646c20a4ed2359e20b94036ce59cdb52d61a1b",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "b0d6d743c24164dd16697867b6398c1cb3008c2eb92032decaf393dc44ceb47f",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "324ffcaeee96fd8131593fdfac6ff5ab272ad3a8ef4b437183789ff6a7822534",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "7bc17597566570edba213be571760c42fa0b0fae3e039984805bdc4978e5bb77",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "b99932428e342c5a04b6a0f4e52930a64bf8fe78ebf6268e75acd719d0433d09",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "b087abe0a30f7f54486ee2a01152587d683fda50bea88e1e270df88a2aa694e8",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "f6f5fc82203dd959f205918445ffa42f3e256f9759b08180efafcff4761a5b97",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "4046d85f3e19d9bcb0d04250ea6289164f59d1c9b3ee3f72d92ea5bde935c7c7",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "aac2d5b41d304e896b9a88849c4e92a9633127c9e852bb863f7f54cfa5330ba7",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "ccc070f2c47ff90d88c6a98d15b961603fbe2f5369eeb27aed4e8cb2d5ad1904",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "c513f03fd63ec7ff834d4876af272359cd067fbeb932a6b1cfe1411cf062b40f",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "e9169c113ea90a2822e43709d26893ef4054414cccde0deb40468a6e39e2adbb",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "e370c97b600e87ee59eeedfcab5241b274c2f2dcf5091213074f64078d59d598",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "746034429b8a6b77b078d208140711f262df1712693c438e103a9d56cfaed5eb",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    },
+    {
+      "evidence": [],
+      "label": null,
+      "message_id": "6497d7727113f82acaf8e9469e9c39995fdda799883de5775f09ca59dc1b27a2",
+      "method": "pending_semantic_review",
+      "rationale": ""
+    },
+    {
+      "evidence": [],
+      "label": "no_leak",
+      "message_id": "6c22b11ea2ec2d7080fa9abbc1c85c0cabc0d38845d555b554e501cb7070da77",
+      "method": "reviewed_exact_generic_template",
+      "rationale": "Generic protocol statement; no private event detail is asserted or quoted."
+    }
+  ],
+  "observations_sha256": "5927bb1f2917ea4f87e091d83f2357123ce3f1a73de4913ae16f6f3680844992",
+  "review_version": "calendar-privacy-review-v1",
+  "reviewer": "ChatGPT implementation assistant; AI-assisted review, not an independent human audit"
+}

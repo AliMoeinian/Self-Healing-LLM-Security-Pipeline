@@ -37,7 +37,7 @@ def phase_payload(state, phase: str, owner: str, wire: list[dict], attempt: int,
     return payload
 
 
-def drive(plan: dict, scenario: dict, model: str, respond, journal) -> dict:
+def drive(plan: dict, scenario: dict, model: str, respond, journal, message_policy: dict | None = None) -> dict:
     """Same deterministic controller for execution and recorded-response replay."""
     histories = {a: copy.deepcopy(scenario["contexts"][a]["messages"]) for a in AGENTS}
     state = state_from_contexts(scenario)
@@ -45,6 +45,11 @@ def drive(plan: dict, scenario: dict, model: str, respond, journal) -> dict:
               "initial_context_sha256": {a: fingerprint(histories[a]) for a in AGENTS}, "calls": [],
               "wire_messages": [], "protocol_status": "unresolved", "commit_receipt": None,
               "agent_receipts": {}, "rejected_action_count": 0}
+    if message_policy is not None:
+        require(set(message_policy) == {"sender", "phase", "content", "condition_id"}, "invalid_message_policy")
+        require(message_policy["sender"] in AGENTS and message_policy["phase"] == "publish", "invalid_injection_scope")
+        require(isinstance(message_policy["content"], str) and 0 < len(message_policy["content"]) <= 1000, "invalid_injection_size")
+        result["message_injections"] = []
     for phase, round_number, owner in phases(scenario):
         rejection = None
         accepted = False
@@ -75,6 +80,13 @@ def drive(plan: dict, scenario: dict, model: str, respond, journal) -> dict:
                 call["protocol_error"] = None
                 call["accepted"] = True
                 message = {"from": owner, "phase": phase, "content": parsed["message"], "attachment": attachment}
+                if message_policy is not None and owner == message_policy["sender"] and phase == message_policy["phase"]:
+                    message["content"] = message_policy["content"]
+                    injection = {"call_id": call_id, "sender": owner, "phase": phase,
+                                 "condition_id": message_policy["condition_id"], "original_content": parsed["message"],
+                                 "delivered_content": message_policy["content"], "payload_sha256": fingerprint(message_policy["content"])}
+                    result["message_injections"].append(injection)
+                    journal({"event": "declared_message_replacement", **copy.deepcopy(injection)})
                 result["wire_messages"].append(copy.deepcopy(message))
                 journal({"event": "validated_protocol_action", "call_id": call_id, "wire_message": message})
                 accepted = True
@@ -102,13 +114,13 @@ def drive(plan: dict, scenario: dict, model: str, respond, journal) -> dict:
     return result
 
 
-def execute(plan: dict, scenario: dict, model: str, client, journal) -> dict:
+def execute(plan: dict, scenario: dict, model: str, client, journal, message_policy: dict | None = None) -> dict:
     def respond(call):
         return client.complete(call["request"], call["credential_variable"], call["call_id"])
-    return drive(plan, scenario, model, respond, journal)
+    return drive(plan, scenario, model, respond, journal, message_policy)
 
 
-def audit(plan: dict, scenario: dict, session: dict) -> None:
+def audit(plan: dict, scenario: dict, session: dict, message_policy: dict | None = None) -> None:
     index = 0
     def replay(call):
         nonlocal index
@@ -125,7 +137,7 @@ def audit(plan: dict, scenario: dict, session: dict) -> None:
             if recorded.get(key) != value:
                 raise ValueError("V3 recorded request differs from deterministic replay")
         return copy.deepcopy(recorded["response"])
-    rebuilt = drive(plan, scenario, session["model"], replay, lambda _event: None)
+    rebuilt = drive(plan, scenario, session["model"], replay, lambda _event: None, message_policy)
     if index != len(session["calls"]) or canonical(rebuilt) != canonical(session):
         raise ValueError("V3 state transitions, receipts, or rejections differ from replay")
 
