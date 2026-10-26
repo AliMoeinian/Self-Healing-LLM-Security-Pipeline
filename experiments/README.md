@@ -35,6 +35,39 @@ The independent saved-run audit verifies the actual request snapshots, source da
 
 A separate [copy-only diagnostic](results/input_delivery_smoke.json) sent the same frozen owner-A view to both models and asked them to copy the scenario ID, owner ID, and complete local available-start list. **Both copied all requested values exactly.** It used two additional chat calls and is explicitly not a scheduling or privacy result. Its expected answer was computed offline and was not supplied as an answer in the request. Combined with the request audit, this supports data-delivery integrity for the tested inputs; it does not prove universal model attention or reasoning correctness.
 
+## Diagnosis before the next implementation change
+
+**Recorded October 26, 2026, after the v2 pilot.** We examined the saved development traces and checked the scoring rather than immediately adding attacks or repeatedly changing prompts. This is a trace-based diagnosis of the observed executions, not a controlled causal ablation or a general claim about the models.
+
+| Observed failure | Application/protocol limitation exposed | Evidence |
+| --- | --- | --- |
+| An assistant says it is providing its complete availability but supplies no actual list. | The JSON envelope validator checks syntax and field shape, not whether a free-text message contains the scheduling information needed by peers. Valid JSON does not imply a useful negotiation message. | In [CAL-0007 / 8B](results/mistral-pilot-v2/sessions/CAL-0007__ministral-8b-2512.json), A and B's first-round messages announce a list without including it. |
+| Later messages assert peer availability that the peers did not actually provide. | The protocol relies on natural-language interpretation and does not require proposals to cite explicit received availability or obtain local confirmation. The runner preserves these claims; it does not silently correct them. | The same trace contains second-round claims about a common start despite the missing first-round lists. |
+| Assistants independently choose different valid intervals. | Two discussion rounds followed by simultaneous independent decisions do not establish a shared commitment. There is no explicit proposal identifier, acknowledgment from all three owners, or commit phase. | The concrete example below shows three individually valid decisions that fail the team-agreement criterion. |
+| All assistants agree that no common interval exists when one does. | An empty or incomplete negotiation record can be mistaken for proof of infeasibility. The application has no explicit unresolved state or evidence requirement for a no-slot decision. | [CAL-0016 / 3B](results/mistral-pilot-v2/sessions/CAL-0016__ministral-3b-2512.json) reports no common slot, although the validated fixture has exactly one. |
+
+For the easy CAL-0007 scenario with `ministral-8b-2512`, the final decisions were:
+
+| Assistant | Selected interval on November 3, 2026 (UTC) | Valid against all three calendars? |
+| --- | --- | --- |
+| A | 14:30–16:30 | Yes |
+| B | 10:00–12:00 | Yes |
+| C | 14:30–16:30 | Yes |
+
+The team still fails: a meeting must have one shared time across all three calendars. We rechecked both intervals against the fixture's exhaustive oracle. Therefore **0/8 successful teams does not mean that every individual proposed interval was invalid**. In v2, seven session failures were disagreement and one was an agreed false infeasibility report, as recorded in the [summary](results/mistral-pilot-v2/summary.json).
+
+Checks completed before deciding on the next change:
+
+- Confirmed provider access and actual chat responses separately from task correctness.
+- Checked paired initial requests and reconstructed every later request from its actual history; no mismatched underlying calendar inputs were found in these audits.
+- Independently validated the fixtures and reference answers, and retained the separate passing scripted-reference run as a plumbing check.
+- Used the two-call copy diagnostic to confirm exact recovery of the requested input fields in that diagnostic; this does not establish that models use every field correctly during negotiation.
+- Preserved both pilots, including the v1-to-v2 change history. The v2 envelope changes resolved the observed protocol-format failures, but did not establish successful coordination.
+
+The proposed next revision is to use explicit scheduling data fields, locally validate proposals against each owner's calendar, and require **one identified proposal → acknowledgments from all three owners → commit of that same interval**. An unresolved negotiation should remain distinct from proven infeasibility. Free-text messages and private event details would still need separate privacy evaluation; a scheduling-protocol improvement is not itself evidence of a security improvement.
+
+**Status:** Diagnosis documented; these proposed coordination changes have not been implemented or tested. Their effectiveness must be checked on development fixtures under a new protocol version, retaining identical starting inputs across models. No new API calls were made to write this diagnosis, and no new attack experiment was started.
+
 ## Files
 
 - [v1 plan](baseline_plan.json) and [v2 plan](baseline_plan_v2.json): complete frozen configurations and owner-scoped initial messages.

@@ -112,3 +112,21 @@ The deterministic reference scheduler passed the full application path separatel
 **Assistance used:** I selected the model family and exact model IDs, supplied the credentials, and requested the implementation and fair-input checks. ChatGPT wrote and executed the runner, tests, diagnostics, and documentation and analyzed the recorded development failures. I do not present this code or its automated review as independently written or audited by me.
 
 **Status:** Connectivity, input integrity, application plumbing, and scoring have been exercised. Correct autonomous team scheduling has not yet been demonstrated with these models and protocols. A clearer proposal/acknowledgment mechanism is the next development need before attributing failures to attacks. No attacks, Garak integration, mitigation evaluation, or privacy-success claims have been made.
+
+## Task 6 — Diagnosing the coordination failures before further changes
+
+**Date:** October 26, 2026 (2026-10-26)
+
+After discussing the unsuccessful pilots, I asked ChatGPT to record the diagnosis and supporting evidence before implementing another revision. The earlier v1-to-v2 change is already recorded above; this entry concerns the remaining failures after v2. We did not treat successful API responses or valid JSON as proof of successful team scheduling, and we did not move on to attacks while the benign baseline remained unsuccessful.
+
+The trace review identified incomplete availability messages, unsupported claims about peers' availability, and a protocol that asks assistants to make independent final decisions without an explicit shared-proposal acknowledgment and commit stage. These are limitations of the application design as well as observed model behavior; it would be inaccurate to attribute every failure simply to model size. The existing parser validates the response envelope, but does not ensure that free-text negotiation contains complete availability information.
+
+One concrete example is CAL-0007 with the 8B model in v2: A and C selected November 3, 14:30–16:30 UTC, while B selected 10:00–12:00 on the same day. Both intervals were rechecked against the reference answers and are valid for all three calendars. The team failed because its decisions differed, not because every proposed interval was invalid. Across v2, seven sessions failed through disagreement and one incorrectly agreed that no common slot existed.
+
+Before proposing further changes, ChatGPT checked the saved requests and responses, the fixture answers, input-pairing audits, and the separate input-copy diagnostic. Those checks support input integrity for the tested executions; they do not prove perfect model attention or establish a controlled causal explanation for every error. The detailed [diagnosis and evidence](experiments/README.md#diagnosis-before-the-next-implementation-change) distinguish direct observations from protocol limitations and proposed remedies.
+
+The next proposed change is a structured proposal/acknowledgment/commit mechanism with local calendar validity checks and a distinction between unresolved negotiation and genuine infeasibility. This remains a plan, not a completed fix. Any revision will need a new protocol version and fresh development checks, while retaining the current negative results and paired model inputs.
+
+**Assistance used:** I requested and discussed the diagnosis. ChatGPT inspected the saved artifacts, checked the concrete example against the oracle, and drafted this record. No additional paid model calls or code changes were needed for this documentation step.
+
+**Status:** Failure diagnosis documented before the next implementation revision. The coordination problem remains unresolved; no claim is made that the proposed fix has already worked.
