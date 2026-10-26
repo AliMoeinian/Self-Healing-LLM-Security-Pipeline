@@ -1,5 +1,7 @@
 # Benign multi-agent baseline
 
+This document preserves the **v1/v2 historical workflow**. For the current structured protocol and passing development runs, see [the reliable baseline](reliable_baseline.md).
+
 This stage tests the scheduling application, provider integration, reproducible inputs, message routing, and correctness evaluation **before attacks, Garak integration, or added input/output mitigations**. Only the two requested Mistral-platform models are configured: `ministral-3b-2512` and `ministral-8b-2512`.
 
 ## Frozen inputs and model pairing

@@ -1,0 +1,82 @@
+{
+  "all_requests_and_protocol_receipts_replayed": true,
+  "dataset_manifest_sha256": "9fcb8fcb32b7c881bcd499e6370fd15d4e8f3e5e6d982f0de9de09d93e5e10ec",
+  "evidence_paths": [
+    "experiments/results/mistral-pilot-v4",
+    "experiments/results/mistral-v4-additional-development"
+  ],
+  "http_error_counts": {
+    "429": 1
+  },
+  "http_post_attempts": 281,
+  "interpretation": "Application-assisted scheduling with model-issued control actions; not evidence of unaided model reasoning, statistical generalization, or privacy security.",
+  "model_requests": 280,
+  "observed_successful_response_usage": {
+    "completion_tokens": 18446,
+    "prompt_tokens": 2530808,
+    "total_tokens": 2549254
+  },
+  "paired_starting_requests_checked": 60,
+  "per_model": {
+    "ministral-3b-2512": {
+      "by_bucket": {
+        "easy": {
+          "sessions": 5,
+          "successes": 5
+        },
+        "hard": {
+          "sessions": 5,
+          "successes": 5
+        },
+        "infeasible": {
+          "sessions": 5,
+          "successes": 5
+        },
+        "medium": {
+          "sessions": 5,
+          "successes": 5
+        }
+      },
+      "sessions": 20,
+      "successful_sessions": 20
+    },
+    "ministral-8b-2512": {
+      "by_bucket": {
+        "easy": {
+          "sessions": 5,
+          "successes": 5
+        },
+        "hard": {
+          "sessions": 5,
+          "successes": 5
+        },
+        "infeasible": {
+          "sessions": 5,
+          "successes": 5
+        },
+        "medium": {
+          "sessions": 5,
+          "successes": 5
+        }
+      },
+      "sessions": 20,
+      "successful_sessions": 20
+    }
+  },
+  "protocol_rejections": 0,
+  "protocol_repair_calls": 0,
+  "protocol_valid_sessions": 40,
+  "protocol_version": "calendar-baseline-v4",
+  "scenario_count": 20,
+  "scope": "20 development fixtures; no held-out LLM evaluation or security/attack evaluation",
+  "sessions": 40,
+  "source_sha256": {
+    "calendar_pipeline/core.py": "f278e6cd29be41a2e5c02de5b4ace699a40d6da4ee64b338664b0cc120e4c68b",
+    "calendar_pipeline/protocol.py": "ae13ba4b675531a56bfb21be8db929a749ddd5562f619af31b33e28ae27931f7",
+    "calendar_pipeline/reliable.py": "e59d2539adb9f13c128b5fb915e075efce0d9d7a3f6adbd16d45aa7b075103ee",
+    "calendar_pipeline/runner.py": "97e670b364ad7e2c7f047b593eab8db39c2828e1f09a3a46f7a333aff4fa2b9d",
+    "tools/summarize_reliable_runs.py": "2f90049511a51249623f8599796b4261feef9b57126cc8be4629074c83404ba9"
+  },
+  "status": "passed",
+  "successful_sessions": 40
+}

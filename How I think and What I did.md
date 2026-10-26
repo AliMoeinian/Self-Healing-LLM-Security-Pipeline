@@ -130,3 +130,25 @@ The next proposed change is a structured proposal/acknowledgment/commit mechanis
 **Assistance used:** I requested and discussed the diagnosis. ChatGPT inspected the saved artifacts, checked the concrete example against the oracle, and drafted this record. No additional paid model calls or code changes were needed for this documentation step.
 
 **Status:** Failure diagnosis documented before the next implementation revision. The coordination problem remains unresolved; no claim is made that the proposed fix has already worked.
+
+## Task 7 — Implementing and verifying the structured scheduling protocol
+
+**Date:** October 26, 2026 (2026-10-26)
+
+I asked ChatGPT to implement the diagnosed fixes, test the resulting system, and investigate and correct further problems found during testing. I also asked for the current architecture, data flow, real execution examples, and a flowchart in the README.
+
+The implementation separates scheduling facts from natural-language claims. Each assistant's local calendar tool supplies its complete availability as a trusted structured attachment. A designated coordinator derives candidate intervals from the three shared availability records; its model selects an index. All three assistants must explicitly acknowledge the same proposal ID, their local endpoints validate it, and an in-process transaction records one identical receipt for everyone. Missing data or missing acknowledgments remain unresolved, not evidence of infeasibility. Failed writes roll back, stale snapshots are rejected, and repeated commits are idempotent.
+
+This is an application-architecture change. The software performs the deterministic availability and intersection work; I do not claim that this demonstrates unaided model reasoning or that a security defense has been proved effective. Each model still sees only its own raw private calendar, and its accepted free-text messages remain unredacted for the later privacy study. The runtime does not use fixture reference answers.
+
+The first structured version, v3, correctly committed seven of eight real sessions. Testing exposed another failure: one 8B session repeatedly generated an oversized action and exhausted its output budget. The protocol rejected it and left the session unresolved without making a booking. That failure and all attempts were preserved. ChatGPT then inspected the official SDK response-format definitions and introduced v4 with phase-specific strict JSON Schema, an explicit message budget, and continued runtime semantic checks.
+
+The v4 pilot succeeded in all eight sessions. The remaining 16 development scenarios were then run once with each model, without repeating the pilot cases. All 32 additional sessions succeeded: **40/40 successful team runs across the full 20-scenario development split**, with 20/20 for each requested model. There were 280 successful model calls, no protocol rejections or repairs, and one same-key HTTP retry after a 429. All 60 paired starting requests matched except for model ID; all subsequent requests, control attachments, ACKs, and commits passed replay checks. The 40 held-out scenarios were not used for live model testing.
+
+Separately, offline deterministic verification covered every fixture and every feasible candidate: 60 fixtures, 174 valid-option commits, 15 infeasible-case commits, and 567 matching owner receipts. The final local suite passed 65 application/transport/protocol tests and 21 dataset tests. Fault tests included incomplete publication, unsupported claims, wrong proposal IDs, insufficient or forged ACKs, calendar changes, write rollback, inconsistent reservations, malformed model output, bounded repairs, and altered journals. Passing these checks is not a universal claim that no bug can exist.
+
+The [README](README.md) now documents the component structure, owner-scoped input routing, responsibilities of models versus code, a Mermaid flowchart, and an actual CAL-0007 run. The [experiment report](experiments/README.md) retains earlier failures alongside v4 results, and the [reliable protocol documentation](docs/reliable_baseline.md) states the trust and deployment limitations. Data fixtures were not changed to obtain the successful outcomes.
+
+**Assistance used:** I requested the fixes and the documentation. ChatGPT designed and implemented the state machine, schemas, tests, live validation, evidence audits, flowchart, and documentation. I do not present this implementation or its review as independently written or audited by me.
+
+**Status:** The diagnosed scheduling problems are addressed by the tested v4 application under the fixed synthetic-calendar contract. A working benign development baseline has been demonstrated. Privacy attacks, Garak integration, semantic-disclosure evaluation, and mitigation effectiveness remain future work.

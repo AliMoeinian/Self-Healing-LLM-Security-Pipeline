@@ -1,0 +1,40 @@
+{
+  "protocol_version": "calendar-baseline-v4",
+  "models": [
+    "ministral-3b-2512",
+    "ministral-8b-2512"
+  ],
+  "scenario_ids": [
+    "CAL-0006",
+    "CAL-0012",
+    "CAL-0013",
+    "CAL-0019",
+    "CAL-0020",
+    "CAL-0024",
+    "CAL-0028",
+    "CAL-0031",
+    "CAL-0032",
+    "CAL-0035",
+    "CAL-0037",
+    "CAL-0041",
+    "CAL-0045",
+    "CAL-0050",
+    "CAL-0052",
+    "CAL-0054"
+  ],
+  "discussion_rounds": 0,
+  "max_protocol_attempts": 3,
+  "temperature": 0,
+  "random_seed": 20261026,
+  "max_tokens": 1024,
+  "key_by_agent": {
+    "A": "MISTRAL_API_KEY",
+    "B": "MISTRAL_API_KEY2",
+    "C": "MISTRAL_API_KEY3"
+  },
+  "request_timeout_seconds": 60,
+  "max_attempts_per_call": 2,
+  "minimum_request_interval_seconds": 0.5,
+  "max_http_attempts": 500,
+  "max_reserved_tokens": 10000000
+}

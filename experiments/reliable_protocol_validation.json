@@ -1,0 +1,497 @@
+{
+  "atomic_owner_receipts_checked": 567,
+  "candidate_intervals_independently_checked": 3900,
+  "cases": [
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "hard",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0001",
+      "split": "evaluation",
+      "valid_start_count": 1
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "infeasible",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0002",
+      "split": "evaluation",
+      "valid_start_count": 0
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "medium",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0003",
+      "split": "development",
+      "valid_start_count": 3
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "infeasible",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0004",
+      "split": "development",
+      "valid_start_count": 0
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "infeasible",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0005",
+      "split": "evaluation",
+      "valid_start_count": 0
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "infeasible",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0006",
+      "split": "development",
+      "valid_start_count": 0
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "easy",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0007",
+      "split": "development",
+      "valid_start_count": 10
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "infeasible",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0008",
+      "split": "evaluation",
+      "valid_start_count": 0
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "hard",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0009",
+      "split": "evaluation",
+      "valid_start_count": 1
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "hard",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0010",
+      "split": "evaluation",
+      "valid_start_count": 1
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "infeasible",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0011",
+      "split": "evaluation",
+      "valid_start_count": 0
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "medium",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0012",
+      "split": "development",
+      "valid_start_count": 3
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "medium",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0013",
+      "split": "development",
+      "valid_start_count": 2
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "infeasible",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0014",
+      "split": "evaluation",
+      "valid_start_count": 0
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "medium",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0015",
+      "split": "evaluation",
+      "valid_start_count": 3
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "hard",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0016",
+      "split": "development",
+      "valid_start_count": 1
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "easy",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0017",
+      "split": "evaluation",
+      "valid_start_count": 9
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "medium",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0018",
+      "split": "evaluation",
+      "valid_start_count": 3
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "easy",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0019",
+      "split": "development",
+      "valid_start_count": 7
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "infeasible",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0020",
+      "split": "development",
+      "valid_start_count": 0
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "easy",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0021",
+      "split": "evaluation",
+      "valid_start_count": 8
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "medium",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0022",
+      "split": "evaluation",
+      "valid_start_count": 2
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "medium",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0023",
+      "split": "evaluation",
+      "valid_start_count": 2
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "medium",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0024",
+      "split": "development",
+      "valid_start_count": 2
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "easy",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0025",
+      "split": "evaluation",
+      "valid_start_count": 10
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "easy",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0026",
+      "split": "evaluation",
+      "valid_start_count": 8
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "medium",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0027",
+      "split": "evaluation",
+      "valid_start_count": 3
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "hard",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0028",
+      "split": "development",
+      "valid_start_count": 1
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "infeasible",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0029",
+      "split": "evaluation",
+      "valid_start_count": 0
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "medium",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0030",
+      "split": "evaluation",
+      "valid_start_count": 3
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "easy",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0031",
+      "split": "development",
+      "valid_start_count": 10
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "hard",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0032",
+      "split": "development",
+      "valid_start_count": 1
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "hard",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0033",
+      "split": "evaluation",
+      "valid_start_count": 1
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "hard",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0034",
+      "split": "evaluation",
+      "valid_start_count": 1
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "infeasible",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0035",
+      "split": "development",
+      "valid_start_count": 0
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "easy",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0036",
+      "split": "evaluation",
+      "valid_start_count": 8
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "easy",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0037",
+      "split": "development",
+      "valid_start_count": 6
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "medium",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0038",
+      "split": "evaluation",
+      "valid_start_count": 2
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "hard",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0039",
+      "split": "evaluation",
+      "valid_start_count": 1
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "infeasible",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0040",
+      "split": "evaluation",
+      "valid_start_count": 0
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "medium",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0041",
+      "split": "development",
+      "valid_start_count": 2
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "hard",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0042",
+      "split": "evaluation",
+      "valid_start_count": 1
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "hard",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0043",
+      "split": "evaluation",
+      "valid_start_count": 1
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "easy",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0044",
+      "split": "evaluation",
+      "valid_start_count": 6
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "infeasible",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0045",
+      "split": "development",
+      "valid_start_count": 0
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "medium",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0046",
+      "split": "evaluation",
+      "valid_start_count": 2
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "medium",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0047",
+      "split": "evaluation",
+      "valid_start_count": 3
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "hard",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0048",
+      "split": "evaluation",
+      "valid_start_count": 1
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "infeasible",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0049",
+      "split": "evaluation",
+      "valid_start_count": 0
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "easy",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0050",
+      "split": "development",
+      "valid_start_count": 10
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "easy",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0051",
+      "split": "evaluation",
+      "valid_start_count": 7
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "hard",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0052",
+      "split": "development",
+      "valid_start_count": 1
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "medium",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0053",
+      "split": "evaluation",
+      "valid_start_count": 3
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "hard",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0054",
+      "split": "development",
+      "valid_start_count": 1
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "infeasible",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0055",
+      "split": "evaluation",
+      "valid_start_count": 0
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "easy",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0056",
+      "split": "evaluation",
+      "valid_start_count": 7
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "hard",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0057",
+      "split": "evaluation",
+      "valid_start_count": 1
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "easy",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0058",
+      "split": "evaluation",
+      "valid_start_count": 8
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "infeasible",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0059",
+      "split": "evaluation",
+      "valid_start_count": 0
+    },
+    {
+      "all_options_committed_correctly": true,
+      "bucket": "easy",
+      "identical_owner_receipts": true,
+      "scenario_id": "CAL-0060",
+      "split": "evaluation",
+      "valid_start_count": 7
+    }
+  ],
+  "dataset_manifest_sha256": "9fcb8fcb32b7c881bcd499e6370fd15d4e8f3e5e6d982f0de9de09d93e5e10ec",
+  "feasible_option_commits_checked": 174,
+  "fixture_count": 60,
+  "infeasible_case_commits_checked": 15,
+  "scope": "offline deterministic protocol verification, not model evaluation",
+  "source_sha256": {
+    "calendar_pipeline/core.py": "f278e6cd29be41a2e5c02de5b4ace699a40d6da4ee64b338664b0cc120e4c68b",
+    "calendar_pipeline/protocol.py": "ae13ba4b675531a56bfb21be8db929a749ddd5562f619af31b33e28ae27931f7",
+    "tools/validate_reliable_protocol.py": "153fb2a7f2809c6a8551418407e72b0cb48b464560a7ffd36bf4c1581480a4d0"
+  },
+  "status": "passed"
+}

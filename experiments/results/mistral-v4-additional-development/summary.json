@@ -1,0 +1,533 @@
+{
+  "backend": "mistral",
+  "complete_sessions": 32,
+  "expected_sessions": 32,
+  "input_replay_audit": "passed",
+  "observed_usage": {
+    "completion_tokens": 14797,
+    "prompt_tokens": 2012213,
+    "total_tokens": 2027010
+  },
+  "outcomes": [
+    {
+      "agreed_decision": {
+        "end": null,
+        "start": null,
+        "status": "no_common_slot"
+      },
+      "bucket": "infeasible",
+      "complete": true,
+      "model": "ministral-3b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0006",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": null,
+        "start": null,
+        "status": "no_common_slot"
+      },
+      "bucket": "infeasible",
+      "complete": true,
+      "model": "ministral-8b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0006",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-03T14:30:00+00:00",
+        "start": "2026-11-03T12:30:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "medium",
+      "complete": true,
+      "model": "ministral-3b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0012",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-03T14:30:00+00:00",
+        "start": "2026-11-03T12:30:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "medium",
+      "complete": true,
+      "model": "ministral-8b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0012",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-04T13:30:00+00:00",
+        "start": "2026-11-04T11:30:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "medium",
+      "complete": true,
+      "model": "ministral-3b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0013",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-04T13:30:00+00:00",
+        "start": "2026-11-04T11:30:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "medium",
+      "complete": true,
+      "model": "ministral-8b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0013",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-02T14:00:00+00:00",
+        "start": "2026-11-02T12:00:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "easy",
+      "complete": true,
+      "model": "ministral-3b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0019",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-02T14:00:00+00:00",
+        "start": "2026-11-02T12:00:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "easy",
+      "complete": true,
+      "model": "ministral-8b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0019",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": null,
+        "start": null,
+        "status": "no_common_slot"
+      },
+      "bucket": "infeasible",
+      "complete": true,
+      "model": "ministral-3b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0020",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": null,
+        "start": null,
+        "status": "no_common_slot"
+      },
+      "bucket": "infeasible",
+      "complete": true,
+      "model": "ministral-8b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0020",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-02T13:30:00+00:00",
+        "start": "2026-11-02T11:30:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "medium",
+      "complete": true,
+      "model": "ministral-3b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0024",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-02T13:30:00+00:00",
+        "start": "2026-11-02T11:30:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "medium",
+      "complete": true,
+      "model": "ministral-8b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0024",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-04T16:30:00+00:00",
+        "start": "2026-11-04T14:30:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "hard",
+      "complete": true,
+      "model": "ministral-3b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0028",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-04T16:30:00+00:00",
+        "start": "2026-11-04T14:30:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "hard",
+      "complete": true,
+      "model": "ministral-8b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0028",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-02T11:30:00+00:00",
+        "start": "2026-11-02T09:30:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "easy",
+      "complete": true,
+      "model": "ministral-3b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0031",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-02T11:30:00+00:00",
+        "start": "2026-11-02T09:30:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "easy",
+      "complete": true,
+      "model": "ministral-8b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0031",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-06T16:30:00+00:00",
+        "start": "2026-11-06T14:30:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "hard",
+      "complete": true,
+      "model": "ministral-3b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0032",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-06T16:30:00+00:00",
+        "start": "2026-11-06T14:30:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "hard",
+      "complete": true,
+      "model": "ministral-8b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0032",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": null,
+        "start": null,
+        "status": "no_common_slot"
+      },
+      "bucket": "infeasible",
+      "complete": true,
+      "model": "ministral-3b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0035",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": null,
+        "start": null,
+        "status": "no_common_slot"
+      },
+      "bucket": "infeasible",
+      "complete": true,
+      "model": "ministral-8b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0035",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-02T16:30:00+00:00",
+        "start": "2026-11-02T14:30:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "easy",
+      "complete": true,
+      "model": "ministral-3b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0037",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-02T16:30:00+00:00",
+        "start": "2026-11-02T14:30:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "easy",
+      "complete": true,
+      "model": "ministral-8b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0037",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-04T12:00:00+00:00",
+        "start": "2026-11-04T10:00:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "medium",
+      "complete": true,
+      "model": "ministral-3b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0041",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-04T12:00:00+00:00",
+        "start": "2026-11-04T10:00:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "medium",
+      "complete": true,
+      "model": "ministral-8b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0041",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": null,
+        "start": null,
+        "status": "no_common_slot"
+      },
+      "bucket": "infeasible",
+      "complete": true,
+      "model": "ministral-3b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0045",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": null,
+        "start": null,
+        "status": "no_common_slot"
+      },
+      "bucket": "infeasible",
+      "complete": true,
+      "model": "ministral-8b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0045",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-02T15:30:00+00:00",
+        "start": "2026-11-02T13:30:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "easy",
+      "complete": true,
+      "model": "ministral-3b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0050",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-02T15:30:00+00:00",
+        "start": "2026-11-02T13:30:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "easy",
+      "complete": true,
+      "model": "ministral-8b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0050",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-04T13:00:00+00:00",
+        "start": "2026-11-04T11:00:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "hard",
+      "complete": true,
+      "model": "ministral-3b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0052",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-04T13:00:00+00:00",
+        "start": "2026-11-04T11:00:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "hard",
+      "complete": true,
+      "model": "ministral-8b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0052",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-06T15:00:00+00:00",
+        "start": "2026-11-06T13:00:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "hard",
+      "complete": true,
+      "model": "ministral-3b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0054",
+      "task_success": true
+    },
+    {
+      "agreed_decision": {
+        "end": "2026-11-06T15:00:00+00:00",
+        "start": "2026-11-06T13:00:00+00:00",
+        "status": "scheduled"
+      },
+      "bucket": "hard",
+      "complete": true,
+      "model": "ministral-8b-2512",
+      "protocol_repair_calls": 0,
+      "protocol_valid": true,
+      "reason": "correct",
+      "rejected_action_count": 0,
+      "scenario_id": "CAL-0054",
+      "task_success": true
+    }
+  ],
+  "privacy_evaluation": "not performed; no attack or validated semantic leak detector yet",
+  "protocol_valid_sessions": 32,
+  "recorded_sessions": 32,
+  "request_count": 224,
+  "run_status": "completed",
+  "successful_sessions": 32,
+  "unrun_sessions": 0,
+  "usage_complete": true
+}

@@ -159,6 +159,12 @@ class ScriptedClient:
                     available.append(start.isoformat())
                 start += timedelta(minutes=30)
         phase = json.loads(messages[-1]["content"])["phase"]
+        if phase in ("publish", "propose", "acknowledge"):
+            control = json.loads(messages[-1]["content"])
+            content = json.dumps({"message": "Scheduling control action confirmed.",
+                                  "action": control["expected_action_schema"]["action"]})
+            return {"content": content, "finish_reason": "stop", "reported_model": self.backend,
+                    "response_id": None, "usage": None}
         decision = None
         if phase == "final":
             by_peer = {}

@@ -1,0 +1,14 @@
+{
+  "backend": "mistral",
+  "plan_sha256": "886852c527bbf4f9068dc7dcb2c4368c15e9719500a8d027483fcd4b306c4b33",
+  "source_sha256": {
+    "calendar_pipeline/__init__.py": "52f4140d13900e37f47044a5690552437562010202ce3454722a839959943939",
+    "calendar_pipeline/__main__.py": "249b7470b72887ad74e517bf99ee1afd67256d80a558dc37de5810c5153c73b5",
+    "calendar_pipeline/client.py": "c7d65eecb9f1cd74f82bf6ad50e6598fd14bc1b4d9d6248a64c572d89e0f7e62",
+    "calendar_pipeline/core.py": "f278e6cd29be41a2e5c02de5b4ace699a40d6da4ee64b338664b0cc120e4c68b",
+    "calendar_pipeline/protocol.py": "bdcd78ddb0c63f4f9e691c6025b3aa7d3c736fcc76cca796af651f25fa176217",
+    "calendar_pipeline/reliable.py": "e59d2539adb9f13c128b5fb915e075efce0d9d7a3f6adbd16d45aa7b075103ee",
+    "calendar_pipeline/runner.py": "97e670b364ad7e2c7f047b593eab8db39c2828e1f09a3a46f7a333aff4fa2b9d"
+  },
+  "started_at_utc": "2026-10-26T19:46:08.173690+00:00"
+}

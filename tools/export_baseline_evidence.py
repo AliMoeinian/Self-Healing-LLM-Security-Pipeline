@@ -14,12 +14,14 @@ from calendar_pipeline.core import AGENTS, canonical, fingerprint, read_json, sa
 from calendar_pipeline.runner import evaluate_artifacts
 
 
-def export(source: Path, output: Path, connectivity: Path | None = None) -> dict:
+def export(source: Path, output: Path, connectivity: Path | None = None, allow_incomplete: bool = False) -> dict:
     if output.exists():
         raise ValueError("Evidence output exists; do not overwrite recorded experiments")
     summary = evaluate_artifacts(source)
-    if summary["run_status"] != "completed":
+    if summary["run_status"] != "completed" and not allow_incomplete:
         raise ValueError("Only completed runs can be published as pilot evidence")
+    if summary["recorded_sessions"] != summary["expected_sessions"]:
+        raise ValueError("Export requires an explicit recorded outcome for every planned session")
     plan = read_json(source / "plan.json")
     files = [p for p in source.rglob("*") if p.is_file()]
     if connectivity:
@@ -56,7 +58,8 @@ def export(source: Path, output: Path, connectivity: Path | None = None) -> dict
                         counts = bucket.setdefault(key, {"prompt_tokens": 0, "completion_tokens": 0, "total_tokens": 0})
                         for field in counts:
                             counts[field] += usage[field]
-    audit = {"status": "passed", "paired_first_round_requests_checked": len(pairs),
+    audit = {"status": "passed", "scheduling_run_status": summary["run_status"], "successful_sessions": summary["successful_sessions"],
+             "paired_first_round_requests_checked": len(pairs),
              "pairs": pairs, "all_later_requests_reconstructed": summary["input_replay_audit"] == "passed",
              "credential_scan": "passed for the credential values currently injected in this process",
              "logical_requests": summary["request_count"],
@@ -78,9 +81,10 @@ if __name__ == "__main__":
     parser.add_argument("--run", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--connectivity", type=Path)
+    parser.add_argument("--allow-incomplete", action="store_true", help="Preserve a protocol-failure pilot explicitly; never reclassifies it as successful")
     args = parser.parse_args()
     try:
-        audit = export(args.run, args.output, args.connectivity)
+        audit = export(args.run, args.output, args.connectivity, args.allow_incomplete)
     except (ValueError, KeyError, OSError) as error:
         parser.exit(1, f"Export failed: {error}\n")
     print(json.dumps({k: v for k, v in audit.items() if k != "pairs"}, indent=2))

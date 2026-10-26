@@ -13,10 +13,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
     prepare = commands.add_parser("prepare")
-    prepare.add_argument("--config", type=Path, default=ROOT / "configs/baseline.json")
+    prepare.add_argument("--config", type=Path, default=ROOT / "configs/baseline_v4.json")
     prepare.add_argument("--output", type=Path, required=True)
     connect = commands.add_parser("check-connection")
-    connect.add_argument("--config", type=Path, default=ROOT / "configs/baseline.json")
+    connect.add_argument("--config", type=Path, default=ROOT / "configs/baseline_v4.json")
     connect.add_argument("--output", type=Path, required=True)
     execute = commands.add_parser("run")
     execute.add_argument("--plan", type=Path, required=True)
@@ -31,7 +31,8 @@ def main():
             if args.output.exists() and read_json(args.output) != plan:
                 raise ValueError("Existing plan differs; choose another output path")
             save_json(args.output, plan)
-            print(json.dumps({"plan_sha256": plan["plan_sha256"], "scenarios": len(plan["scenarios"]), "models": plan["config"]["models"], "expected_logical_calls": 9 * len(plan["scenarios"]) * len(plan["config"]["models"])}))
+            calls = 7 if plan["config"]["protocol_version"] in ("calendar-baseline-v3", "calendar-baseline-v4") else 9
+            print(json.dumps({"plan_sha256": plan["plan_sha256"], "scenarios": len(plan["scenarios"]), "models": plan["config"]["models"], "expected_logical_calls_without_repairs": calls * len(plan["scenarios"]) * len(plan["config"]["models"])}))
             return 0
         if args.command == "check-connection":
             config = read_json(args.config)

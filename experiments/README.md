@@ -2,7 +2,33 @@
 
 The experiment plans, actual Mistral responses, paired-input audits, and negative scheduling outcomes are retained here. The data are synthetic. Credential values and Authorization headers are absent.
 
-## Results
+## Current result: reliable v4 baseline
+
+The [aggregated v4 report](reliable_baseline_summary.json) re-evaluates two disjoint real-provider batches: the four-fixture [pilot](results/mistral-pilot-v4/summary.json) and the [remaining 16 development fixtures](results/mistral-v4-additional-development/summary.json). Together they cover **all 20 development scenarios, once per model**. No held-out fixture was run against a model.
+
+| Development bucket | Scenarios | `ministral-3b-2512` correct teams | `ministral-8b-2512` correct teams |
+| --- | --- | --- | --- |
+| Easy | 5 | 5/5 | 5/5 |
+| Medium | 5 | 5/5 | 5/5 |
+| Hard | 5 | 5/5 | 5/5 |
+| Infeasible | 5 | 5/5 | 5/5 |
+| **Total** | **20** | **20/20** | **20/20** |
+
+V4 completed **280 successful model requests** with **zero rejected actions or protocol repairs**. There were 281 HTTP POST attempts: one 429 was retried on the same key and succeeded. All 60 paired owner/scenario starting requests matched across models except model ID. Every later request, accepted attachment, acknowledgment, and commit was reconstructed from the recorded state transitions. Provider-reported successful-response usage was **2,549,254 tokens** (2,530,808 prompt; 18,446 completion); this is not a dollar estimate or an accounting of any provider charge for the rejected HTTP attempt.
+
+The software now computes complete local availability and derives common options from the three published records. Models publish, select an option, and explicitly acknowledge a bound proposal. The controller performs local checks and the unanimous commit. This is **application-assisted model coordination**, not evidence that unaided LLM reasoning solved the calendars. Privacy of the free-text messages has not been evaluated.
+
+The [offline protocol verification](reliable_protocol_validation.json) independently checks all 60 fixtures, 174 valid candidate commits, 15 infeasible-case commits, and 567 owner receipts. The local suite passed **65 application/transport/protocol tests plus 21 dataset tests**, including incomplete records, stale calendars, forged receipts, wrong proposal IDs, partial acknowledgments, rollback, idempotency, malformed outputs, and journal tampering.
+
+### The additional v3 failure and its correction
+
+The first structured-protocol pilot is preserved in [the v3 evidence](results/mistral-pilot-v3/summary.json): **7/8 committed and correct sessions**, 55 model calls, and four rejected responses. One 8B session repeatedly copied long availability structures into its action and hit the output-token limit. Bounded retries ended with **unresolved** status and no booking; it was not labeled infeasible or silently filled with a scripted answer. One other rejected action was recovered within the recorded attempts.
+
+V4 retained the same scheduling state machine and introduced phase-specific strict JSON Schema at the provider boundary, a bounded free-text message field, and a 1,024-token output limit. Runtime semantic checks remain in force. The successful v4 runs are new versioned experiments, not replacements for the v3 failure.
+
+See [the current README](../README.md) for the architecture, data-flow chart, and a real request/proposal/ACK/commit example, and [the detailed protocol](../docs/reliable_baseline.md) for the trust boundary and limits. These results support readiness for the next research stage under this fixed contract; they do not establish zero bugs, real-world scheduling reliability, model superiority, or privacy security.
+
+## Historical v1/v2 results
 
 Each pilot used the same four development fixtures with both requested models. Each session has three assistants, two synchronous discussion rounds, and one final decision. There were no attacks, Garak probes, or semantic output defenses.
 
@@ -92,8 +118,8 @@ Both currently exit **3**, because the recorded scheduling outcomes failed. Insp
 
 The deterministic scripted-reference scheduler separately passes all eight sessions in each protocol, using only own-calendar availability and received peer messages. It demonstrates the fixture and application path can produce and score valid outcomes; its successes are **not** substituted for these model results. Local application tests also deliberately inject wrong decisions, request contamination, partial runs, and transport failures.
 
-## Interpretation and next step
+## Interpretation and next step at the v2 stage
 
 Connectivity, controlled data delivery, trace reconstruction, and the evaluator have been exercised. **A successful autonomous scheduling baseline with these models has not yet been demonstrated.** Do not proceed as if attack-induced task failures can already be isolated from benign coordination failures.
 
-The next development step is a more explicit proposal/acknowledgment protocol, with local validity checks and a clear rule for reaching a common decision. Any such change must receive a new version, use development fixtures, preserve both models' paired inputs, and retain the current negative results. A structured calendar protocol or additional allowed-information tools must be documented as application design rather than claimed as model reasoning or security improvement. No further paid tuning was performed after these two pilots and the copy diagnostic.
+At that stage, the next development step was a more explicit proposal/acknowledgment protocol, with local validity checks and a clear rule for reaching a common decision. The v3/v4 revisions and additional paid executions are now documented above. They preserve versioned plans and the earlier negative results. Scheduling-protocol improvements are documented as application design rather than claimed as model reasoning or security improvement.

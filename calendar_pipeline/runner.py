@@ -16,6 +16,9 @@ def source_hashes() -> dict:
 
 
 def execute_session(plan: dict, scenario: dict, model: str, client, journal) -> dict:
+    if plan["config"]["protocol_version"] in ("calendar-baseline-v3", "calendar-baseline-v4"):
+        from .reliable import execute
+        return execute(plan, scenario, model, client, journal)
     histories = {a: copy.deepcopy(scenario["contexts"][a]["messages"]) for a in AGENTS}
     result = {"scenario_id": scenario["scenario_id"], "model": model,
               "speaker_order": scenario["speaker_order"], "initial_context_sha256": {a: fingerprint(histories[a]) for a in AGENTS},
@@ -60,6 +63,9 @@ def execute_session(plan: dict, scenario: dict, model: str, client, journal) -> 
 
 def audit_session(plan: dict, scenario: dict, session: dict) -> None:
     """Reconstruct EVERY recorded request from the frozen plan and prior outputs."""
+    if plan["config"]["protocol_version"] in ("calendar-baseline-v3", "calendar-baseline-v4"):
+        from .reliable import audit
+        return audit(plan, scenario, session)
     if session["scenario_id"] != scenario["scenario_id"] or session["speaker_order"] != scenario["speaker_order"] or session["model"] not in plan["config"]["models"]:
         raise ValueError("Session identity or role order mismatch")
     expected_hashes = {a: scenario["contexts"][a]["sha256"] for a in AGENTS}
@@ -118,7 +124,11 @@ def evaluate_run(plan: dict, sessions: list[dict], backend: str, data: Path = DA
         sid = session["scenario_id"]
         audit_session(plan, by_id[sid], session)
         oracle = read_json(data / "scenarios" / sid / "evaluator.json")
-        score = score_session(session, oracle)
+        if plan["config"]["protocol_version"] in ("calendar-baseline-v3", "calendar-baseline-v4"):
+            from .reliable import score as score_v3
+            score = score_v3(session, oracle)
+        else:
+            score = score_session(session, oracle)
         outcomes.append({"scenario_id": sid, "model": session["model"], "bucket": oracle["bucket"], **score})
         for call in session["calls"]:
             response = call["response"]
@@ -207,7 +217,9 @@ def evaluate_artifacts(output: Path, data: Path = DATA) -> dict:
             call_id = call["call_id"]
             expected_response_ids.add(call_id)
             request = requests[call_id]
-            if (request["request"] != call["request"] or request["request_sha256"] != call["request_sha256"]
+            recorded_request = {k: v for k, v in request.items() if k not in ("at_utc", "event")}
+            expected_request = {k: v for k, v in call.items() if k not in ("response", "protocol_error", "accepted")}
+            if (recorded_request != expected_request
                     or responses[call_id]["response"] != call["response"]):
                 raise ValueError("Session and journal disagree")
     if set(responses) != expected_response_ids:
@@ -216,6 +228,52 @@ def evaluate_artifacts(output: Path, data: Path = DATA) -> dict:
     failures = [s for s in sessions if "transport_error" in s]
     if len(unmatched) != len(failures) or len(failures) > 1:
         raise ValueError("Unaccounted incomplete requests")
+    if plan["config"]["protocol_version"] in ("calendar-baseline-v3", "calendar-baseline-v4"):
+        expected_failures = {s["failed_request"]["call_id"] for s in failures}
+        if unmatched != expected_failures:
+            raise ValueError("V3/V4 unmatched request identity differs from failed request")
+        expected_validated, expected_rejected, expected_commits = {}, {}, {}
+        for session in sessions:
+            accepted = [c for c in session["calls"] if c["accepted"]]
+            if len(accepted) != len(session["wire_messages"]):
+                raise ValueError("Wrong accepted-action count")
+            expected_validated.update({c["call_id"]: wire for c, wire in zip(accepted, session["wire_messages"])})
+            expected_rejected.update({c["call_id"]: c["protocol_error"] for c in session["calls"] if not c["accepted"]})
+            if session["commit_receipt"] is not None:
+                expected_commits[session["scenario_id"], session["model"]] = session["commit_receipt"]
+        def unique_events(event_type, key_fn, value_fn):
+            found = {}
+            for event in events:
+                if event["event"] == event_type:
+                    key = key_fn(event)
+                    if key in found:
+                        raise ValueError("Duplicate protocol journal event")
+                    found[key] = value_fn(event)
+            return found
+        if unique_events("validated_protocol_action", lambda e: e["call_id"], lambda e: e["wire_message"]) != expected_validated:
+            raise ValueError("Validated-action journal differs from replayed session")
+        if unique_events("rejected_protocol_action", lambda e: e["call_id"], lambda e: e["reason"]) != expected_rejected:
+            raise ValueError("Rejected-action journal differs from replayed session")
+        if unique_events("atomic_commit", lambda e: (e["scenario_id"], e["model"]), lambda e: e["receipt"]) != expected_commits:
+            raise ValueError("Commit journal differs from replayed session")
+    if metadata["backend"] == "mistral":
+        successes = {}
+        for event in events:
+            if event["event"] == "http_attempt":
+                logical = requests.get(event["call_id"])
+                if (logical is None or event["credential_variable"] != logical["credential_variable"]
+                        or event["request_sha256"] != logical["request_sha256"]):
+                    raise ValueError("HTTP attempt differs from logical request")
+            if event["event"] == "http_success":
+                if event["call_id"] in successes:
+                    raise ValueError("Duplicate HTTP success")
+                successes[event["call_id"]] = event
+        if set(successes) != set(responses):
+            raise ValueError("HTTP and logical response sets differ")
+        for call_id, event in successes.items():
+            response = responses[call_id]["response"]
+            if event["usage"] != response["usage"] or event["reported_model"] != response["reported_model"]:
+                raise ValueError("HTTP usage/model metadata differs from logical response")
     report = evaluate_run(plan, sessions, metadata["backend"], data)
     if failures:
         report["transport_error"] = failures[0]["transport_error"]
