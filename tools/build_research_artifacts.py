@@ -68,7 +68,10 @@ def save_figure(fig, directory, name, note):
     note = "\n".join(textwrap.wrap(note, max(100, int(fig.get_figwidth()*16))))
     fig.text(.01, .012, note, ha="left", va="bottom", fontsize=8, color="#475569")
     for suffix in ("png", "svg", "pdf"):
-        fig.savefig(directory / f"{name}.{suffix}", dpi=200, bbox_inches="tight", facecolor="white")
+        path = directory / f"{name}.{suffix}"
+        fig.savefig(path, dpi=200, bbox_inches="tight", facecolor="white")
+        if suffix == "svg":
+            path.write_text("\n".join(line.rstrip() for line in path.read_text().splitlines()) + "\n")
     plt.close(fig)
 
 
