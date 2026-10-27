@@ -196,3 +196,19 @@ The focused garak runtime is pinned separately and was installed again in a clea
 **Assistance used:** I requested the integration, execution, later human review, and documentation. ChatGPT wrote the adapter, tests, evidence tools, documentation, and flowchart; installed the focused runtime; and ran/audited the scans. Test doubles and test-only reviewer labels are not real model evidence or my human confirmation.
 
 **Status:** garak integration, offline replay, and a bounded live smoke are complete. My human semantic evaluation is pending and can be added without rerunning the models. Privacy mitigations, adaptive probes, the automated self-healing loop, and live held-out testing remain future work.
+
+## Task 10 — Implementing the configured repair loop and four-way study
+
+**Started:** October 27, 2026 (2026-10-27). UTC execution metadata is retained separately.
+
+I asked ChatGPT to complete the remaining technical work, including the two defenses, automatic probe -> patch -> verify loop, comparisons, visualizations, report, and slides, without waiting for my human labels. ChatGPT implemented an input policy that omits peer prose while retaining trusted scheduling attachments, and an output policy that releases fixed phase phrases while preserving raw replies as researcher evidence. This broad channel minimization is chosen for our narrow structured task, not presented as a novel general security classifier. The external attacker note is inserted after its own sender's local output policy so output-only testing still exposes victims to the attack.
+
+The controller replays the archived vulnerable cases with actual garak, triggers a predefined both-policy configuration on a candidate finding, and schedules fresh verification plus input-only/output-only/no-defense ablations. The frozen plan uses four development scenarios, both Ministral model IDs, five conditions and four policies: 160 planned fresh team sessions. Policy order is rotated across scenario/model blocks. A blocked input still counts as an attempted defended intervention; its raw instruction visibility is recorded separately. No held-out model run is planned in this bounded stage.
+
+All 94 application/privacy/protocol/defense tests, 21 optional garak/self-healing tests, and 21 dataset tests passed (136 total). Tests include deliberate raw private-detail generation, preservation of attachments and correct scheduling under each policy, attacker delivery under output-only, invalid ACK rejection despite output rewriting, transform-journal tampering, balanced order, and pending human review. Scripted reference outcomes are software tests, not model evidence.
+
+The initial real-provider preflight stopped before any paid call because the new environment's proxy rejected CONNECT to api.mistral.ai with 403. ChatGPT checked the three registered variables without exposing their values, verified the stored allowlist draft, requested turn-level network access, and rechecked. That permission was granted but the proxy refusal remained. The domain draft was saved with an explicit requires-publish response; I was told that environment Save/Publish is needed. This is a network/configuration blocker, not a failed model experiment or a diagnosis of invalid credentials.
+
+**Assistance used:** ChatGPT implemented the policies, loop, tests, evidence aggregation and artifact-building tools. The implementation guide includes the architecture, flowchart and review commands. Human labels are still pending, and no scripted or blocked result is presented as a live before/after finding.
+
+**Current status:** Implementation and offline verification are complete. Real-provider defense evaluation and result-dependent figures/report/slides await restored connectivity. Later results will be appended without erasing this preflight diagnosis.

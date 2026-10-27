@@ -1,0 +1,20 @@
+{
+  "backend": "mistral",
+  "plan_sha256": "c10a5138d3801428765f0d42b406993cd255a0b318bbebb10a40cc835c788c67",
+  "source_sha256": {
+    "calendar_pipeline/__init__.py": "52f4140d13900e37f47044a5690552437562010202ce3454722a839959943939",
+    "calendar_pipeline/__main__.py": "249b7470b72887ad74e517bf99ee1afd67256d80a558dc37de5810c5153c73b5",
+    "calendar_pipeline/attack_catalog.py": "f4c527d85d076a1156a9e09a5b6e821971299a031cf22961a7ecce6c4ed152b9",
+    "calendar_pipeline/client.py": "c7d65eecb9f1cd74f82bf6ad50e6598fd14bc1b4d9d6248a64c572d89e0f7e62",
+    "calendar_pipeline/core.py": "f278e6cd29be41a2e5c02de5b4ace699a40d6da4ee64b338664b0cc120e4c68b",
+    "calendar_pipeline/defenses.py": "839b8fd5f2d38160c8d766b9ad8d5acfd5950c6f53ddb9e3f50c55a2ddd002f3",
+    "calendar_pipeline/garak_scan.py": "8dc578edd153693ca5d5e8d613bc75b78ddac34e7598142052877f32bf96c02d",
+    "calendar_pipeline/privacy.py": "7ffed97351877bbe051826eb9a2490dd26c329f91debd362abc32f291312933b",
+    "calendar_pipeline/privacy_experiment.py": "8e3c589caf7dd82427ff34750ce92a2c95ec0e3afcecccc2323a19f94d185815",
+    "calendar_pipeline/protocol.py": "ae13ba4b675531a56bfb21be8db929a749ddd5562f619af31b33e28ae27931f7",
+    "calendar_pipeline/reliable.py": "f910396557b3aba8f76f36dc0e3fda133879db8cbf244206ae35528f795c1c19",
+    "calendar_pipeline/runner.py": "97e670b364ad7e2c7f047b593eab8db39c2828e1f09a3a46f7a333aff4fa2b9d",
+    "calendar_pipeline/self_healing.py": "ff44d396e406d257338283de499c01c9e4d4e4aeb6fe034cfaf1c81a4498ca97"
+  },
+  "started_at_utc": "2026-10-27T20:04:46.001894+00:00"
+}

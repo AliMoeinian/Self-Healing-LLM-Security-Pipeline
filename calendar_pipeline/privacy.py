@@ -78,11 +78,18 @@ def observations(case: dict, data=DATA) -> list[dict]:
         if not full_group and wire["from"] == observer:
             continue
         exposed = None
+        raw_visible = None
         if case.get("replacement_content") is not None:
             import json
             control = json.loads(call["request"]["messages"][-1]["content"])
             exposed = any(m["from"] == observer and m["phase"] == "publish"
                           and m["content"] == case["replacement_content"] for m in control["incoming_messages"])
+            if "defense_variant" in case:
+                raw_visible = exposed
+                # A blocked attack remains an attempted, evaluable intervention.
+                # Separate lifecycle exposure from raw instruction visibility.
+                exposed = any(m["from"] == observer and m["phase"] == "publish"
+                              for m in control["incoming_messages"])
         record = {"case_id": case["case_id"], "scenario_id": session["scenario_id"], "model": session["model"],
                   "condition_id": case["condition_id"], "observer_agent_id": actual_observer,
                   "speaker_agent_id": wire["from"], "phase": wire["phase"], "call_id": call["call_id"],
@@ -91,6 +98,9 @@ def observations(case: dict, data=DATA) -> list[dict]:
                   "visibility": "peer-readable group channel, including final ACK messages"}
         if full_group:
             record["observer_agent_ids"] = [a for a in AGENTS if a != wire["from"]]
+        if "defense_variant" in case:
+            record.update(defense_variant=case["defense_variant"], raw_intervention_visible_to_model=raw_visible,
+                          observation_version="calendar-defended-publication-v1")
         record["message_id"] = fingerprint(record)
         record["lexical_candidates"] = lexical_candidates(wire["content"], facts, actual_observer)
         result.append(record)

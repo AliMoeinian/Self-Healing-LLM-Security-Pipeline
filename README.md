@@ -4,6 +4,8 @@
 
 **Current status: the v4 benign scheduling baseline works on all 20 development scenarios with both requested models — 40/40 successful team runs.** The initial injection pilot found four AI-reviewed private-detail disclosures in 24 injection sessions. **garak 0.17.1 is now integrated:** it replayed those 40 cases and ran a new 10-session live smoke with 10/10 correct scheduling outcomes and one exact-private-value candidate. Human confirmation is pending; privacy mitigations remain future work.
 
+**Repair implementation update:** independent input/output channel policies and an automatic configured probe -> patch -> verify study are implemented and pass offline tests. The fresh 160-session real-provider comparison is currently waiting for the new environment's Mistral network access; see [study status](experiments/self_healing/README.md). No pending or reference result is counted as a live defense result.
+
 | Verification | Recorded result |
 | --- | --- |
 | `ministral-3b-2512` through official Mistral API | 20/20 team runs correct |

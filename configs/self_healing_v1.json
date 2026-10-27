@@ -1,0 +1,28 @@
+{
+  "discussion_rounds": 0,
+  "key_by_agent": {
+    "A": "MISTRAL_API_KEY",
+    "B": "MISTRAL_API_KEY2",
+    "C": "MISTRAL_API_KEY3"
+  },
+  "max_attempts_per_call": 2,
+  "max_http_attempts": 500,
+  "max_protocol_attempts": 3,
+  "max_reserved_tokens": 10000000,
+  "max_tokens": 1024,
+  "minimum_request_interval_seconds": 0.5,
+  "models": [
+    "ministral-3b-2512",
+    "ministral-8b-2512"
+  ],
+  "protocol_version": "calendar-baseline-v4",
+  "random_seed": 20261026,
+  "request_timeout_seconds": 60,
+  "scenario_ids": [
+    "CAL-0019",
+    "CAL-0003",
+    "CAL-0052",
+    "CAL-0004"
+  ],
+  "temperature": 0
+}
