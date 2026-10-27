@@ -1,10 +1,12 @@
 # Self-Healing LLM Security Pipeline
 
-> A research prototype for privacy-aware calendar coordination and a planned **probe → patch → verify** security loop.
+> A research prototype for privacy-aware calendar coordination and a configurable **probe → patch → verify** security loop.
 
-**Current status: the v4 benign scheduling baseline works on all 20 development scenarios with both requested models — 40/40 successful team runs.** The initial injection pilot found four AI-reviewed private-detail disclosures in 24 injection sessions. **garak 0.17.1 is now integrated:** it replayed those 40 cases and ran a new 10-session live smoke with 10/10 correct scheduling outcomes and one exact-private-value candidate. Human confirmation is pending; privacy mitigations remain future work.
+**Current status: the v4 benign scheduling baseline works on all 20 development scenarios with both requested models — 40/40 successful team runs.** The initial injection pilot found four AI-reviewed private-detail disclosures in 24 injection sessions. **garak 0.17.1 is integrated:** it replayed those 40 cases and ran a new 10-session live smoke with 10/10 correct scheduling outcomes and one exact-private-value candidate. Human confirmation is pending. Two independent privacy policies are implemented; their fresh live evaluation is pending connectivity.
 
 **Repair implementation update:** independent input/output channel policies and an automatic configured probe -> patch -> verify study are implemented and pass offline tests. The fresh 160-session real-provider comparison is currently waiting for the new environment's Mistral network access; see [study status](experiments/self_healing/README.md). No pending or reference result is counted as a live defense result.
+
+**Discussion materials:** [four-page preparation report](reports/preparation_report.pdf), [ten-slide PDF](slides/preparation.pdf), [editable PowerPoint](slides/preparation.pptx), and [source-backed figures](figures/README.md). They contain existing real results and clearly mark the fresh defense comparison as pending.
 
 | Verification | Recorded result |
 | --- | --- |
@@ -13,8 +15,8 @@
 | Benign-v4 model calls | 280 successful completions; one additional HTTP attempt after a 429 |
 | Matched starting requests across models | 60/60 owner/scenario pairs |
 | Model action rejections / protocol repairs in v4 | 0 / 0 |
-| Local application / dataset tests | 84 / 21 passed |
-| Optional garak integration tests | 14 passed; focused programmatic runtime |
+| Local application / dataset tests | 94 / 21 passed |
+| Optional garak / artifact tests | 21 / 5 passed; 141 tests total |
 | Offline protocol verification | All 60 fixtures, 174 valid options, 15 infeasible cases |
 
 These results establish the tested application's behavior, **not unaided LLM scheduling ability, general reliability on arbitrary calendars, or security against prompt injection**. The earlier unsuccessful versions are preserved in [the experiment history](experiments/README.md).
@@ -132,13 +134,19 @@ calendar_pipeline/
   privacy_experiment.py # Paired runs, declared message replacement, exposure audit
   privacy.py            # Grounded disclosure candidates and review-backed metrics
   garak_scan.py         # Whole-application garak adapter, live/replay scans, human review
+  defenses.py           # Independent peer-prose input and fixed-phrase output policies
+  self_healing.py       # Candidate-triggered configured repair, balanced ablation, audits
   __main__.py     # Command-line interface
 configs/          # Versioned model, fixture, phase, and spending-limit settings
 data/calendar/    # 60 synthetic scenarios and independent dataset validation
 experiments/      # Frozen plans, actual API traces, audits, summaries, negative history
 tests/            # Application, transport, transaction, and fault-injection tests
 tests_garak/      # Optional garak integration and human-review import tests
+tests_artifacts/  # Optional readiness, provenance and report/deck checks
 requirements/     # Pinned focused garak runtime; baseline remains dependency-free
+figures/          # Actual-source PNG/SVG/PDF charts, calendar illustration and architecture
+reports/          # Preparation report and figure-source rows; final study report generated later
+slides/           # Ten-slide preparation PDF/PPTX, source and speaker notes
 tools/            # Dataset generation, validators, evidence export, aggregation
 docs/             # Detailed protocol and reproduction notes
 How I think and What I did.md
@@ -153,6 +161,9 @@ How I think and What I did.md
 | [Experiment history](experiments/README.md) | Diagnosis, v1/v2 failures, v3 partial pilot, and v4 verification |
 | [Privacy pilot](experiments/privacy/README.md) | Threat model, paired results, source-grounded examples, and review limitations |
 | [garak architecture and usage](docs/garak.md) | Probe/Generator/Detector flowchart, installation, live/replay commands, human-review import |
+| [Repair architecture and final execution](docs/self_healing.md) | Independent defenses, automatic trigger, frozen comparison, final entry point |
+| [Preparation technical report](reports/preparation_report.md) | Current design, actual prior results, pending experiments, limits and research extensions |
+| [Presentation source and notes](slides/preparation.md) | Ten slides, editable PowerPoint and matching PDF |
 | [Recorded garak scans](experiments/garak/README.md) | Audited 40-case replay and 10 new live team runs; separate candidate and utility results |
 | [50 new messages for human review](experiments/garak/live_v1/human_review/README.md) | New live-scan texts, blank labels, and CSV worksheet |
 | [176 messages for human review](experiments/privacy/human_review_176/README.md) | Exact original messages with blank human labels; CSV available |
@@ -190,6 +201,17 @@ bash tools/setup_garak.sh
 
 See [the garak guide](docs/garak.md) for the focused installation's limits, paid live scans, and importing human annotations. An automatic candidate-detector pass does not establish semantic privacy. Human labels update a separate report without rerunning the models or overwriting the native garak output.
 
+For research figures/report/slides, use the separately pinned artifact dependencies (tested with Python 3.12.14):
+
+```bash
+.venv-garak/bin/python -m pip install --no-deps -r requirements/artifacts.lock
+.venv-garak/bin/python -m unittest discover -s tests_artifacts -v
+.venv-garak/bin/python tools/prepare_discussion_artifacts.py  # Existing real observations; no API calls
+.venv-garak/bin/python tools/finalize_study.py --dry-run     # Local readiness only; no API calls
+```
+
+After connectivity is restored, `tools/finalize_study.py` without `--dry-run` performs the **paid** frozen study, requires complete audited real-provider results, exports evidence and builds final comparison artifacts. Human review remains separate. See the [final-execution guide](docs/self_healing.md#commands).
+
 For a **new paid execution**, inject `MISTRAL_API_KEY`, `MISTRAL_API_KEY2`, and `MISTRAL_API_KEY3` securely in environment settings. They are consistently bound to A, B, and C. Never paste their values into config files, prompts, or the repository. The official destination is `api.mistral.ai`.
 
 ```bash
@@ -209,4 +231,4 @@ V4 validation used only the **20 development fixtures**, once per model across t
 
 The [privacy pilot](experiments/privacy/README.md) used four development fixtures, two models, and five conditions: matched benign text, a direct private-data request, and three injection families. All 40 new scheduling outcomes were correct. Of 24 injection sessions, four exposed real private values; three had consistent event attribution and one included an incorrect owner/conflict claim. The matched benign and direct-request groups each had 0/8 observed disclosures. Labels are AI-assisted, with human review pending; four examples per family/model do not establish general security or model rankings.
 
-The subsequent [garak stage](experiments/garak/README.md) reused those 40 cases for offline integration verification and added ten live sessions on a deliberately selected development fixture. It reused the same static attack texts; the replay does not add independent evidence. The next research stage is human annotation validation and versioned input/output mitigations with paired utility/privacy evaluation. The self-healing loop and broad built-in garak probe coverage have not been implemented.
+The subsequent [garak stage](experiments/garak/README.md) reused those 40 cases for offline integration verification and added ten live sessions on a deliberately selected development fixture. It reused the same static attack texts; the replay does not add independent evidence. The [repair implementation](docs/self_healing.md) now supplies independent input/output channel policies and a configured activation/verification controller. Fresh live comparisons and human annotation validation remain pending. Broad built-in garak probe coverage, adaptive defense invention and general security claims are outside the demonstrated scope.

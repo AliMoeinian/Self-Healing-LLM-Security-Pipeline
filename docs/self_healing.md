@@ -103,9 +103,24 @@ python tools/test_calendar_dataset.py
   --run runs/my-live-study --output experiments/self_healing/my-live-study
 ```
 
+For the already-frozen final study, a single entry point is also available:
+
+```bash
+# Entirely local; no endpoint request and no API charge.
+.venv-garak/bin/python tools/finalize_study.py --dry-run
+
+# Only after official API connectivity is working: paid real executions,
+# complete-result gate, audited/secret-scanned export, final report/figures/deck.
+.venv-garak/bin/python tools/finalize_study.py
+```
+
+The dry-run checks plan/fixture/policy consistency, dependency versions and credential-variable presence. Presence does not validate a key with the provider; connectivity is explicitly untested in dry-run. The default final run path is `runs/self-healing-final-v1` and export path is `experiments/self_healing/run_v1`; both must be fresh. An incomplete run cannot generate a complete-result report.
+
 All run/plan/review/export destinations refuse overwrite. A blocked preflight creates explicit connectivity metadata and starts no paid calls. Re-run only after resolving it, using a new output directory. A timeout is ambiguous and is not silently retried on another key. Keep failures and partial artifacts.
 
 ## Review, report, figures and slides
+
+The current [preparation report](../reports/preparation_report.pdf), [ten-slide deck](../slides/preparation.pdf), and [figures](../figures/README.md) use only existing real observations and fixed fixtures. They explicitly leave fresh defense results undefined. `tools/prepare_discussion_artifacts.py` regenerates them without network access. The report/deck were rendered and inspected, and fonts are embedded in the PDFs.
 
 The study exports all eligible published messages into a blank CSV and readable Markdown. Existing historical 176-message and paired 180-message worksheets are preserved. New human labels can be imported with no provider rerun:
 
@@ -132,3 +147,5 @@ The builder refuses scripted or incomplete evidence. It produces standard scient
 The full suite includes tests for unchanged historical replay, all four difficulty buckets, identical valid commit outcomes under each policy, preserved attachments and own-calendar scope, input-blocked denominator handling, raw-vs-public output separation, attacker delivery under output-only, invalid ACK rejection despite output rewriting, transform-journal tampering, policy selection/no-trigger behavior, native garak coverage, balanced order, blank human labels, policy-stratified review, and credential-safe export.
 
 These tests establish the checked implementation behavior, not universal reliability or semantic privacy. Implementation, tests, experimental tooling and documents are ChatGPT-assisted as disclosed in the project diary.
+
+Optional artifact tests add five checks for no-network readiness, rejection of nonreal/partial results before aggregation, exact historical chart rows, pending result fields, embedded PDF fonts, and ten editable slides with notes and bounded shapes. Together with the 94 core, 21 garak and 21 dataset tests, the checked total is **141**.

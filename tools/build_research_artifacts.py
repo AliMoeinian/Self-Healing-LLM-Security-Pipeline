@@ -33,10 +33,24 @@ from reportlab.lib.enums import TA_LEFT
 from reportlab.lib.pagesizes import A4
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, Image, PageBreak, KeepTogether
 from reportlab.pdfgen import canvas
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
+
+# Embed a real font in both PDFs; base-14 fallback can render inconsistently
+# in minimal environments and should not determine the exported typography.
+_font_dir = Path(matplotlib.get_data_path()) / "fonts/ttf"
+pdfmetrics.registerFont(TTFont("ResearchSans", str(_font_dir / "DejaVuSans.ttf")))
+pdfmetrics.registerFont(TTFont("ResearchSans-Bold", str(_font_dir / "DejaVuSans-Bold.ttf")))
 
 COLORS = {"none": "#334155", "input_only": "#2563A0", "output_only": "#B7791F", "both": "#087F8C"}
 LABELS = {"none": "No defense", "input_only": "Input only", "output_only": "Output only", "both": "Both"}
 ORDER = list(LABELS)
+
+
+def image_size(path):
+    from PIL import Image as PILImage
+    with PILImage.open(path) as source:
+        return source.size
 
 
 def figure_setup():
@@ -48,55 +62,19 @@ def figure_setup():
 
 
 def save_figure(fig, directory, name, note):
+    engine = fig.get_layout_engine()
+    if engine is not None:
+        engine.set(rect=(0, .12, 1, .88))
+    note = "\n".join(textwrap.wrap(note, max(100, int(fig.get_figwidth()*16))))
     fig.text(.01, .012, note, ha="left", va="bottom", fontsize=8, color="#475569")
     for suffix in ("png", "svg", "pdf"):
         fig.savefig(directory / f"{name}.{suffix}", dpi=200, bbox_inches="tight", facecolor="white")
     plt.close(fig)
 
 
-def figures(evidence, directory, run):
+def context_figures(directory):
     directory.mkdir(parents=True, exist_ok=True)
     figure_setup()
-    groups = {g["variant"]: g for g in evidence["groups"]}
-    x = np.arange(4)
-    fig, axes = plt.subplots(1, 2, figsize=(12, 4.4), layout="constrained")
-    hits = [groups[v]["candidate_injection_sessions"] for v in ORDER]
-    eligible = [groups[v]["evaluable_injection_sessions"] for v in ORDER]
-    correct = [groups[v]["scheduling_successes"] for v in ORDER]
-    total = [groups[v]["sessions"] for v in ORDER]
-    for ax, values, denoms, title, ylabel in ((axes[0], hits, eligible, "Published exact-value candidates", "Injection sessions flagged"),
-                                             (axes[1], correct, total, "Correct team scheduling", "Correct team sessions")):
-        ax.bar(x, values, color=[COLORS[v] for v in ORDER], width=.6)
-        ax.set_xticks(x, [LABELS[v] for v in ORDER])
-        ax.set_ylim(0, max(denoms) * 1.16)
-        ax.set_title(title, loc="left", fontweight="bold", pad=14)
-        ax.set_ylabel(ylabel)
-        ax.grid(axis="y", color="#E2E8F0", linewidth=.6)
-        ax.set_axisbelow(True)
-        for index, (value, denom) in enumerate(zip(values, denoms)):
-            ax.text(index, value + max(denoms)*.025, f"{value}/{denom}", ha="center", fontweight="bold", fontsize=11)
-    save_figure(fig, directory, "privacy_utility", "Source: chart_rows.csv / evidence_summary.json. Exact-value flags; human semantic review pending. Four development fixtures per model.")
-
-    conditions = ["authority_spoofing", "task_pretext", "role_delimiter"]
-    titles = ["Forged authority", "Task pretext", "Role delimiters"]
-    fig, axes = plt.subplots(1, 2, figsize=(11, 4.8), layout="constrained")
-    for ax, model in zip(axes, ("ministral-3b-2512", "ministral-8b-2512")):
-        rows = evidence["groups_by_model_condition"]
-        matrix = np.array([[next(r["candidate_sessions"] for r in rows if r["variant"] == v and r["model"] == model and r["condition_id"] == c) for c in conditions] for v in ORDER])
-        denoms = np.array([[next(r["evaluable"] for r in rows if r["variant"] == v and r["model"] == model and r["condition_id"] == c) for c in conditions] for v in ORDER])
-        maximum = max(r["sessions"] for r in rows)
-        im = ax.imshow(matrix, vmin=0, vmax=maximum, cmap="Blues", aspect="auto")
-        ax.set_title(model, loc="left", fontweight="bold", pad=12)
-        ax.set_xticks(np.arange(3), titles)
-        ax.set_yticks(np.arange(4), [LABELS[v] for v in ORDER])
-        for i in range(4):
-            for j in range(3):
-                ax.text(j, i, f"{matrix[i,j]}/{denoms[i,j]}", ha="center", va="center", color="white" if matrix[i,j] > maximum/2 else "#172435", fontweight="bold")
-        for spine in ax.spines.values():
-            spine.set_visible(False)
-    fig.colorbar(im, ax=list(axes), shrink=.8, label="Flagged sessions", ticks=range(maximum + 1))
-    save_figure(fig, directory, "attack_matrix", "Source: chart_rows.csv. Cells show flagged/evaluable sessions. Direct requests and benign controls are excluded; human labels pending.")
-
     sid = "CAL-0052"
     public = read_json(ROOT / "data/calendar/v1/scenarios" / sid / "public.json")
     oracle = read_json(ROOT / "data/calendar/v1/scenarios" / sid / "evaluator.json")
@@ -149,6 +127,53 @@ def figures(evidence, directory, run):
     ax.text(.2,5.1,"Garak-triggered configured repair loop",fontsize=16,fontweight="bold")
     ax.text(.2,.35,"Ablation: no defense / input only / output only / both. External attacker note is inserted after its sender's local output policy.",fontsize=9)
     save_figure(fig, directory, "repair_architecture", "The defenses minimize a text channel for a fixed structured task. This is policy activation, not autonomous defense invention or model training.")
+
+
+
+def figures(evidence, directory, run):
+    directory.mkdir(parents=True, exist_ok=True)
+    figure_setup()
+    groups = {g["variant"]: g for g in evidence["groups"]}
+    x = np.arange(4)
+    fig, axes = plt.subplots(1, 2, figsize=(12, 4.4), layout="constrained")
+    hits = [groups[v]["candidate_injection_sessions"] for v in ORDER]
+    eligible = [groups[v]["evaluable_injection_sessions"] for v in ORDER]
+    correct = [groups[v]["scheduling_successes"] for v in ORDER]
+    total = [groups[v]["sessions"] for v in ORDER]
+    for ax, values, denoms, title, ylabel in ((axes[0], hits, eligible, "Published exact-value candidates", "Injection sessions flagged"),
+                                             (axes[1], correct, total, "Correct team scheduling", "Correct team sessions")):
+        ax.bar(x, values, color=[COLORS[v] for v in ORDER], width=.6)
+        ax.set_xticks(x, [LABELS[v] for v in ORDER])
+        ax.set_ylim(0, max(denoms) * 1.16)
+        ax.set_title(title, loc="left", fontweight="bold", pad=14)
+        ax.set_ylabel(ylabel)
+        ax.grid(axis="y", color="#E2E8F0", linewidth=.6)
+        ax.set_axisbelow(True)
+        for index, (value, denom) in enumerate(zip(values, denoms)):
+            ax.text(index, value + max(denoms)*.025, f"{value}/{denom}", ha="center", fontweight="bold", fontsize=11)
+    save_figure(fig, directory, "privacy_utility", "Source: chart_rows.csv / evidence_summary.json. Exact-value flags; human semantic review pending. Four development fixtures per model.")
+
+    conditions = ["authority_spoofing", "task_pretext", "role_delimiter"]
+    titles = ["Forged authority", "Task pretext", "Role delimiters"]
+    fig, axes = plt.subplots(1, 2, figsize=(11, 4.8), layout="constrained")
+    for ax, model in zip(axes, ("ministral-3b-2512", "ministral-8b-2512")):
+        rows = evidence["groups_by_model_condition"]
+        matrix = np.array([[next(r["candidate_sessions"] for r in rows if r["variant"] == v and r["model"] == model and r["condition_id"] == c) for c in conditions] for v in ORDER])
+        denoms = np.array([[next(r["evaluable"] for r in rows if r["variant"] == v and r["model"] == model and r["condition_id"] == c) for c in conditions] for v in ORDER])
+        maximum = max(r["sessions"] for r in rows)
+        im = ax.imshow(matrix, vmin=0, vmax=maximum, cmap="Blues", aspect="auto")
+        ax.set_title(model, loc="left", fontweight="bold", pad=12)
+        ax.set_xticks(np.arange(3), titles)
+        ax.set_yticks(np.arange(4), [LABELS[v] for v in ORDER])
+        for i in range(4):
+            for j in range(3):
+                ax.text(j, i, f"{matrix[i,j]}/{denoms[i,j]}", ha="center", va="center", color="white" if matrix[i,j] > maximum/2 else "#172435", fontweight="bold")
+        for spine in ax.spines.values():
+            spine.set_visible(False)
+    fig.colorbar(im, ax=list(axes), shrink=.8, label="Flagged sessions", ticks=range(maximum + 1))
+    save_figure(fig, directory, "attack_matrix", "Source: chart_rows.csv. Cells show flagged/evaluable sessions. Direct requests and benign controls are excluded; human labels pending.")
+
+    context_figures(directory)
 
     raw = read_json(run / "raw_model_candidates.json")
     key = next((k for k in raw if k.startswith("output_only__")), None)
@@ -216,8 +241,11 @@ def write_report(e, directory, figure_dir):
             md += ["![Repair loop](../figures/repair_architecture.png)", ""]
     (directory / "technical_report.md").write_text("\n".join(md))
     styles = getSampleStyleSheet()
-    styles.add(ParagraphStyle(name="ResearchBody",fontName="Helvetica",fontSize=10,leading=14,spaceAfter=8))
-    styles.add(ParagraphStyle(name="ResearchNote",fontName="Helvetica",fontSize=8,leading=11,textColor=colors.HexColor("#475569")))
+    for style in styles.byName.values():
+        if hasattr(style, "fontName"):
+            style.fontName = "ResearchSans-Bold" if "Bold" in style.fontName else "ResearchSans"
+    styles.add(ParagraphStyle(name="ResearchBody",fontName="ResearchSans",fontSize=10,leading=14,spaceAfter=8))
+    styles.add(ParagraphStyle(name="ResearchNote",fontName="ResearchSans",fontSize=8,leading=11,textColor=colors.HexColor("#475569")))
     story=[Paragraph(escape(title),styles["Title"]),Spacer(1,8),Paragraph(escape(subtitle),styles["ResearchBody"]),
            Paragraph("All data are synthetic. Human review remains pending.",styles["ResearchNote"]),Spacer(1,16)]
     image_map={"3. Reliable scheduling architecture":"calendar_example", "5. Configured repair policies and automatic cycle":"repair_architecture", "7. Results":"privacy_utility"}
@@ -228,19 +256,19 @@ def write_report(e, directory, figure_dir):
         if heading=="7. Results":
             data=[["Policy","Teams","Correct","Published flags","Raw flags"]]+rows
             table=Table(data,colWidths=[89,45,65,105,65],repeatRows=1,hAlign="LEFT")
-            table.setStyle(TableStyle([("BACKGROUND",(0,0),(-1,0),colors.HexColor("#E2E8F0")),("FONTNAME",(0,0),(-1,0),"Helvetica-Bold"),("FONTSIZE",(0,0),(-1,-1),9),("TOPPADDING",(0,0),(-1,-1),7),("BOTTOMPADDING",(0,0),(-1,-1),7),("LINEBELOW",(0,0),(-1,0),.5,colors.grey)]))
+            table.setStyle(TableStyle([("BACKGROUND",(0,0),(-1,0),colors.HexColor("#E2E8F0")),("FONTNAME",(0,0),(-1,-1),"ResearchSans"),("FONTNAME",(0,0),(-1,0),"ResearchSans-Bold"),("FONTSIZE",(0,0),(-1,-1),9),("TOPPADDING",(0,0),(-1,-1),7),("BOTTOMPADDING",(0,0),(-1,-1),7),("LINEBELOW",(0,0),(-1,0),.5,colors.grey)]))
             story += [table,Spacer(1,10)]
         if heading in image_map:
             from PIL import Image as PILImage
             path=figure_dir/(image_map[heading]+".png")
-            width,height=PILImage.open(path).size
+            width,height=image_size(path)
             story += [Image(str(path),width=470,height=470*height/width),Spacer(1,9)]
     def footer(c,doc):
-        c.setFont("Helvetica",8)
+        c.setFont("ResearchSans",8)
         c.setFillColor(colors.HexColor("#64748B"))
         c.drawString(42,24,"Calendar privacy prototype | Human semantic review pending")
         c.drawRightString(A4[0]-42,24,str(doc.page))
-    SimpleDocTemplate(str(directory/"technical_report.pdf"),pagesize=A4,leftMargin=42,rightMargin=42,topMargin=38,bottomMargin=42).build(story,onFirstPage=footer,onLaterPages=footer)
+    SimpleDocTemplate(str(directory/"technical_report.pdf"),pagesize=A4,leftMargin=42,rightMargin=42,topMargin=38,bottomMargin=42,title=title,author="Self-Healing LLM Security Pipeline (AI-assisted prototype)").build(story,onFirstPage=footer,onLaterPages=footer)
     save_json(directory/"report_source.json",{"title":title,"subtitle":subtitle,"sections":sections,"result_table":rows,"source_evidence_sha256":sha_file(ROOT/"experiments/self_healing/evidence_summary.json")})
 
 
@@ -261,25 +289,28 @@ def slide_content(e, transformation):
     ]
 
 
-def slides(e, transformation, directory, figure_dir):
+def slides(e, transformation, directory, figure_dir, basename="presentation", content_override=None):
     directory.mkdir(parents=True,exist_ok=True)
-    content=slide_content(e,transformation)
-    save_json(directory/"slide_source.json",content)
+    content=content_override if content_override is not None else slide_content(e,transformation)
+    save_json(directory/(basename+"_source.json"),content)
     prs=Presentation()
     prs.slide_width=Inches(13.333)
     prs.slide_height=Inches(7.5)
+    prs.core_properties.title="Garak-triggered calendar privacy repair"
+    prs.core_properties.author="Self-Healing LLM Security Pipeline (AI-assisted prototype)"
     for index,item in enumerate(content,1):
         slide=prs.slides.add_slide(prs.slide_layouts[6])
         shape=slide.shapes.add_textbox(Inches(.55), Inches(.35), Inches(12.1), Inches(.75))
         p=shape.text_frame.paragraphs[0]
         p.text=item["title"]
         p.font.size=Pt(29)
+        p.font.name="Arial"
         p.font.bold=True
         p.font.color.rgb=RGBColor.from_string("172435")
         if item.get("image"):
             path=figure_dir/(item["image"]+".png")
             from PIL import Image as PILImage
-            w,h=PILImage.open(path).size
+            w,h=image_size(path)
             width=min(12.15,5.55*w/h)
             height=width*h/w
             slide.shapes.add_picture(str(path),Inches((13.333-width)/2), Inches(1.2+(5.55-height)/2), width=Inches(width),height=Inches(height))
@@ -291,33 +322,37 @@ def slides(e, transformation, directory, figure_dir):
                 p=frame.paragraphs[0] if n==0 else frame.add_paragraph()
                 p.text="• "+text
                 p.font.size=Pt(23 if len(item["bullets"])<5 else 21)
+                p.font.name="Arial"
                 p.font.color.rgb=RGBColor.from_string("263445")
                 p.space_after=Pt(18)
         foot=slide.shapes.add_textbox(Inches(.55), Inches(7.08), Inches(12.1), Inches(.25))
         p=foot.text_frame.paragraphs[0]
         p.text=f"Self-Healing LLM Security Pipeline | Synthetic data | Human review pending                                      {index}/10"
         p.font.size=Pt(10)
+        p.font.name="Arial"
         p.font.color.rgb=RGBColor.from_string("64748B")
         slide.notes_slide.notes_text_frame.text=item["notes"]
-    prs.save(directory/"presentation.pptx")
-    pdf=canvas.Canvas(str(directory/"presentation.pdf"),pagesize=(960,540))
+    prs.save(directory/(basename+".pptx"))
+    pdf=canvas.Canvas(str(directory/(basename+".pdf")),pagesize=(960,540))
+    pdf.setTitle("Garak-triggered calendar privacy repair")
+    pdf.setAuthor("Self-Healing LLM Security Pipeline (AI-assisted prototype)")
     for index,item in enumerate(content,1):
         pdf.setFillColor(colors.white);pdf.rect(0,0,960,540,fill=1,stroke=0)
-        pdf.setFillColor(colors.HexColor("#172435"));pdf.setFont("Helvetica-Bold",28)
+        pdf.setFillColor(colors.HexColor("#172435"));pdf.setFont("ResearchSans-Bold",26)
         pdf.drawString(40,488,item["title"])
         if item.get("image"):
             from PIL import Image as PILImage
             path=figure_dir/(item["image"]+".png")
-            w,h=PILImage.open(path).size
+            w,h=image_size(path)
             width=min(880,390*w/h);height=width*h/w
             pdf.drawImage(str(path),(960-width)/2,70+(390-height)/2,width,height,mask="auto")
         else:
             y=412
             for text in item["bullets"]:
-                para=Paragraph(escape("• "+text),ParagraphStyle("slide-body",fontName="Helvetica",fontSize=19 if len(item["bullets"])>=5 else 21,leading=28,textColor=colors.HexColor("#263445")))
+                para=Paragraph(escape("• "+text),ParagraphStyle("slide-body",fontName="ResearchSans",fontSize=18 if len(item["bullets"])>=5 else 20,leading=27,textColor=colors.HexColor("#263445")))
                 _,h=para.wrap(850,400)
                 para.drawOn(pdf,55,y-h);y-=h+20
-        pdf.setFillColor(colors.HexColor("#64748B"));pdf.setFont("Helvetica",9)
+        pdf.setFillColor(colors.HexColor("#64748B"));pdf.setFont("ResearchSans",9)
         pdf.drawString(40,25,"Synthetic data | Human semantic review pending")
         pdf.drawRightString(920,25,f"{index}/10")
         pdf.showPage()
@@ -327,16 +362,24 @@ def slides(e, transformation, directory, figure_dir):
         md += [f"## {i}. {item['title']}",""]+["- "+b for b in item["bullets"]]+["", "**Speaker notes:** "+item["notes"],""]
         if item.get("image"):
             md += [f"![{item['title']}](../figures/{item['image']}.png)",""]
-    (directory/"presentation.md").write_text("\n".join(md))
+    (directory/(basename+".md")).write_text("\n".join(md))
+
+
+def final_evidence(run):
+    # Check before aggregation writes any chart rows into the research folder.
+    # A rejected test-double run must not replace an existing real result file.
+    metadata=read_json(run/"metadata.json")
+    status=read_json(run/"summary.json")
+    if metadata["backend"]!="mistral" or status["run_status"]!="completed":
+        raise ValueError("Final research results require a complete real-provider study; no scripted or pending substitution")
+    return summarize(run,ROOT/"experiments/self_healing")
 
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument("--run",type=Path,default=ROOT/"experiments/self_healing/run_v1")
     args=p.parse_args()
-    evidence=summarize(args.run,ROOT/"experiments/self_healing")
-    if evidence["backend"]!="mistral" or evidence["run_status"]!="completed":
-        raise ValueError("Research results require an audited, complete real-provider study; scripted or pending data are not substituted")
+    evidence=final_evidence(args.run)
     figure_dir=ROOT/"figures"
     transformation=figures(evidence,figure_dir,args.run)
     write_report(evidence,ROOT/"reports",figure_dir)
