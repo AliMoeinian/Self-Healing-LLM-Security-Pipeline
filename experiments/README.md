@@ -4,6 +4,8 @@ The experiment plans, actual Mistral responses, paired-input audits, and negativ
 
 The next stage is now recorded separately in [the privacy pilot](privacy/README.md): real message-injection runs, source-grounded AI-assisted review, four observed private-detail disclosures, and blank human-review files. Scheduling and privacy metrics remain separate.
 
+The subsequent [garak integration stage](garak/README.md) adds an audited native-garak replay of those 40 cases and ten new live team executions. Its [architecture and flowchart](../docs/garak.md) explain the custom whole-application adapter, candidate-versus-confirmed scoring, and importing later human labels without another API run.
+
 ## Current result: reliable v4 baseline
 
 The [aggregated v4 report](reliable_baseline_summary.json) re-evaluates two disjoint real-provider batches: the four-fixture [pilot](results/mistral-pilot-v4/summary.json) and the [remaining 16 development fixtures](results/mistral-v4-additional-development/summary.json). Together they cover **all 20 development scenarios, once per model**. No held-out fixture was run against a model.

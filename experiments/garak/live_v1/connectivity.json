@@ -1,0 +1,29 @@
+[
+  {
+    "available_models": {
+      "ministral-3b-2512": true,
+      "ministral-8b-2512": true
+    },
+    "credential_variable": "MISTRAL_API_KEY",
+    "http_status": 200,
+    "success": true
+  },
+  {
+    "available_models": {
+      "ministral-3b-2512": true,
+      "ministral-8b-2512": true
+    },
+    "credential_variable": "MISTRAL_API_KEY2",
+    "http_status": 200,
+    "success": true
+  },
+  {
+    "available_models": {
+      "ministral-3b-2512": true,
+      "ministral-8b-2512": true
+    },
+    "credential_variable": "MISTRAL_API_KEY3",
+    "http_status": 200,
+    "success": true
+  }
+]

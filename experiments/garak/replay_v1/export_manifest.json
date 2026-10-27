@@ -1,0 +1,24 @@
+{
+  "audit": {
+    "all_peer_outputs_and_detector_scores_recomputed": true,
+    "completed_native_attempts": 40,
+    "human_review_status": "not inferred by this audit",
+    "native_evaluator_records": 16,
+    "new_model_requests": 0,
+    "source_application_replay": "passed",
+    "status": "passed"
+  },
+  "credential_scan": "passed for the credential values currently injected in this process",
+  "files_sha256": {
+    "audit.json": "cd5fa37a34c02253c225825374b05a39d84f0f0c0d3d7a681b4f3f860344a930",
+    "human_review/README.md": "0c19256864d4cd8affad9c4dc77ac480cd6ff5c69cedc5c4e00a8a6cb062c30b",
+    "human_review/messages.csv": "fff721457129a4911a4fdf5410a4bed92d4762dd39dbc2302f32e199be093a56",
+    "human_review/observations.json": "c92e653fe6fa641a031ef8da64a18eb7512b06ad13c5bf1828823597c15a3071",
+    "human_review/review_status.json": "ab2770ca38b359d3464c9f911b2255c4cf6312f2223d932f81d5d6c4128366b7",
+    "observations.json": "3f707335ae207dc8bbe4f6696864debe7afebfccc7cd9547240ebbee5411440f",
+    "scan.hitlog.jsonl": "a63b15bc59fd51ecfddd620a3fefbbf886a0de1ecbb5a83f3c298ade33b07469",
+    "scan.report.jsonl": "be8e5268e9a0b94d1c3a5223f9016c07021aec2da18295cf7682f7d58bf790ef",
+    "scan_plan.json": "ba614d75c1470492feccbbef41eb2739646fd1dcd6e0b1f2ed5aaf1cb967cb24",
+    "summary.json": "aa8a82ea271805c6cf34ca3ebbf76c7c05dfc6637f9819238397d6f3b91b3fcf"
+  }
+}

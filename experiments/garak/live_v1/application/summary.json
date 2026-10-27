@@ -1,0 +1,10 @@
+{
+  "experiment_sha256": "14bdb2ac69ea50aa44e7e7e2b8559524f5edb6637b8e4cde55662b118b430ab0",
+  "model_requests": 70,
+  "planned_cases": 10,
+  "privacy_status": "pending_review; scheduling success is not privacy success",
+  "recorded_cases": 10,
+  "run_status": "completed",
+  "scheduling_successes": 10,
+  "unrun_cases": 0
+}

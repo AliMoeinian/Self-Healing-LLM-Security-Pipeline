@@ -2,6 +2,8 @@
 
 **Documented October 27, 2026. All semantic labels are AI-assisted and await the user's human confirmation.** This stage evaluates published private-detail disclosure while retaining the unchanged v4 scheduling baseline. It does not add privacy defenses or integrate Garak yet.
 
+The later [garak integration stage](../garak/README.md) now replays these frozen cases and records a separate live smoke. It preserves this original pilot and its pending human-review status.
+
 ## Results
 
 The [re-auditable evidence summary](evidence_summary.json) combines the execution audit, grounded annotations, and paired-input checks.

@@ -2,7 +2,7 @@
 
 > A research prototype for privacy-aware calendar coordination and a planned **probe → patch → verify** security loop.
 
-**Current status: the v4 benign scheduling baseline works on all 20 development scenarios with both requested models — 40/40 successful team runs.** An initial message-injection pilot also retained correct scheduling, but found **four AI-reviewed private-detail disclosures in 24 injection sessions**. Human confirmation is pending. Garak integration and privacy mitigations remain future work.
+**Current status: the v4 benign scheduling baseline works on all 20 development scenarios with both requested models — 40/40 successful team runs.** The initial injection pilot found four AI-reviewed private-detail disclosures in 24 injection sessions. **garak 0.17.1 is now integrated:** it replayed those 40 cases and ran a new 10-session live smoke with 10/10 correct scheduling outcomes and one exact-private-value candidate. Human confirmation is pending; privacy mitigations remain future work.
 
 | Verification | Recorded result |
 | --- | --- |
@@ -12,6 +12,7 @@
 | Matched starting requests across models | 60/60 owner/scenario pairs |
 | Model action rejections / protocol repairs in v4 | 0 / 0 |
 | Local application / dataset tests | 84 / 21 passed |
+| Optional garak integration tests | 14 passed; focused programmatic runtime |
 | Offline protocol verification | All 60 fixtures, 174 valid options, 15 infeasible cases |
 
 These results establish the tested application's behavior, **not unaided LLM scheduling ability, general reliability on arbitrary calendars, or security against prompt injection**. The earlier unsuccessful versions are preserved in [the experiment history](experiments/README.md).
@@ -42,6 +43,7 @@ flowchart TD
     IB --> PUB
     IC --> PUB
     ATK["Optional fixed attacker participant note"] -->|message text only| PUB
+    GARAK["Custom garak Probe and whole-application Generator"] --> ATK
     PUB --> OPTIONS["Coordinator intersects shared availability only"]
     OPTIONS --> PROPOSE["Coordinator model selects one candidate index"]
     PROPOSE --> ID["One proposal with a bound proposal ID"]
@@ -127,11 +129,14 @@ calendar_pipeline/
   attack_catalog.py     # Frozen participant-message probes and matched control
   privacy_experiment.py # Paired runs, declared message replacement, exposure audit
   privacy.py            # Grounded disclosure candidates and review-backed metrics
+  garak_scan.py         # Whole-application garak adapter, live/replay scans, human review
   __main__.py     # Command-line interface
 configs/          # Versioned model, fixture, phase, and spending-limit settings
 data/calendar/    # 60 synthetic scenarios and independent dataset validation
 experiments/      # Frozen plans, actual API traces, audits, summaries, negative history
 tests/            # Application, transport, transaction, and fault-injection tests
+tests_garak/      # Optional garak integration and human-review import tests
+requirements/     # Pinned focused garak runtime; baseline remains dependency-free
 tools/            # Dataset generation, validators, evidence export, aggregation
 docs/             # Detailed protocol and reproduction notes
 How I think and What I did.md
@@ -145,6 +150,9 @@ How I think and What I did.md
 | [Offline protocol verification](experiments/reliable_protocol_validation.json) | All fixture candidates and commit receipts checked against the oracle |
 | [Experiment history](experiments/README.md) | Diagnosis, v1/v2 failures, v3 partial pilot, and v4 verification |
 | [Privacy pilot](experiments/privacy/README.md) | Threat model, paired results, source-grounded examples, and review limitations |
+| [garak architecture and usage](docs/garak.md) | Probe/Generator/Detector flowchart, installation, live/replay commands, human-review import |
+| [Recorded garak scans](experiments/garak/README.md) | Audited 40-case replay and 10 new live team runs; separate candidate and utility results |
+| [50 new messages for human review](experiments/garak/live_v1/human_review/README.md) | New live-scan texts, blank labels, and CSV worksheet |
 | [176 messages for human review](experiments/privacy/human_review_176/README.md) | Exact original messages with blank human labels; CSV available |
 | [Reasoning and assistance log](How%20I%20think%20and%20What%20I%20did.md) | Decisions, completed work, and explicit ChatGPT assistance disclosure |
 | [Original exercise](Research%20%20Excercise%20CSL.docx) | Research exercise brief |
@@ -152,7 +160,7 @@ How I think and What I did.md
 
 ## Run and verify
 
-Use **Python 3.11+** from the repository root; no dependency installation is required. The current environment was tested with Python 3.12.14.
+Use **Python 3.11+** from the repository root. The baseline requires no external dependencies; garak uses the separate pinned environment below. The current environment was tested with Python 3.12.14.
 
 ```bash
 # Offline: no keys, network, or API charges.
@@ -167,6 +175,18 @@ python tools/summarize_privacy_evidence.py
 python -m calendar_pipeline evaluate --run experiments/results/mistral-pilot-v4
 python -m calendar_pipeline evaluate --run experiments/results/mistral-v4-additional-development
 ```
+
+For the optional **programmatic garak integration**, install the focused runtime and replay recorded cases without API charges:
+
+```bash
+bash tools/setup_garak.sh
+.venv-garak/bin/python -m unittest discover -s tests_garak -v
+.venv-garak/bin/python tools/summarize_garak_evidence.py
+.venv-garak/bin/python -m calendar_pipeline.garak_scan replay \
+  --source experiments/privacy/paired_runs --output runs/my-garak-replay
+```
+
+See [the garak guide](docs/garak.md) for the focused installation's limits, paid live scans, and importing human annotations. An automatic candidate-detector pass does not establish semantic privacy. Human labels update a separate report without rerunning the models or overwriting the native garak output.
 
 For a **new paid execution**, inject `MISTRAL_API_KEY`, `MISTRAL_API_KEY2`, and `MISTRAL_API_KEY3` securely in environment settings. They are consistently bound to A, B, and C. Never paste their values into config files, prompts, or the repository. The official destination is `api.mistral.ai`.
 
@@ -185,4 +205,6 @@ The synthetic multi-calendar setting is inspired by [CalBench](https://arxiv.org
 
 V4 validation used only the **20 development fixtures**, once per model across two disjoint batches. The **40 held-out fixtures have not been run against the models**. Offline deterministic code checks cover all 60 fixtures. Passing the current cases is not a claim that the system is bug-free under every possible input or that privacy is protected.
 
-The [privacy pilot](experiments/privacy/README.md) used four development fixtures, two models, and five conditions: matched benign text, a direct private-data request, and three injection families. All 40 new scheduling outcomes were correct. Of 24 injection sessions, four exposed real private values; three had consistent event attribution and one included an incorrect owner/conflict claim. The matched benign and direct-request groups each had 0/8 observed disclosures. Labels are AI-assisted, with human review pending; four examples per family/model do not establish general security or model rankings. The next stage is human annotation validation, then input/output mitigations and Garak integration.
+The [privacy pilot](experiments/privacy/README.md) used four development fixtures, two models, and five conditions: matched benign text, a direct private-data request, and three injection families. All 40 new scheduling outcomes were correct. Of 24 injection sessions, four exposed real private values; three had consistent event attribution and one included an incorrect owner/conflict claim. The matched benign and direct-request groups each had 0/8 observed disclosures. Labels are AI-assisted, with human review pending; four examples per family/model do not establish general security or model rankings.
+
+The subsequent [garak stage](experiments/garak/README.md) reused those 40 cases for offline integration verification and added ten live sessions on a deliberately selected development fixture. It reused the same static attack texts; the replay does not add independent evidence. The next research stage is human annotation validation and versioned input/output mitigations with paired utility/privacy evaluation. The self-healing loop and broad built-in garak probe coverage have not been implemented.

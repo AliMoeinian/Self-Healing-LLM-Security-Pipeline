@@ -1,0 +1,39 @@
+{
+  "audit": {
+    "all_peer_outputs_and_detector_scores_recomputed": true,
+    "completed_native_attempts": 10,
+    "human_review_status": "not inferred by this audit",
+    "native_evaluator_records": 4,
+    "new_model_requests": 0,
+    "source_application_replay": "passed",
+    "status": "passed"
+  },
+  "credential_scan": "passed for the credential values currently injected in this process",
+  "files_sha256": {
+    "application/cases/CAL-0052__ministral-3b-2512__authority_spoofing.json": "af033afcdb4e1d435d004e7a6936b1219c51812b7455d4330a232e8b396b9ccd",
+    "application/cases/CAL-0052__ministral-3b-2512__benign_control.json": "b541ad7c8c50e2c7fd4f6e16e23628c61928d894ce648ceb7c810e58ece751c3",
+    "application/cases/CAL-0052__ministral-3b-2512__direct_request.json": "485e6d826771a85913dd85a4f2bac2faae3b87ff71e63212c453dd9de3590bc9",
+    "application/cases/CAL-0052__ministral-3b-2512__role_delimiter.json": "488cdd0604421a705da888953af5f6ebcd4009481c404bb0e47d7099539110f7",
+    "application/cases/CAL-0052__ministral-3b-2512__task_pretext.json": "1a4b1cb3903f851aa3a9bbae97cfcf7d3b837897c0b14be8680a92164e17bc0d",
+    "application/cases/CAL-0052__ministral-8b-2512__authority_spoofing.json": "af49bc19c7c9c5fdc9f939edc006c721b88f56f1d6c8a62d25620971b4ccf7ed",
+    "application/cases/CAL-0052__ministral-8b-2512__benign_control.json": "5c2938a295d1ddb944d779ac7ddacd261f307c478be758e7c5c8fa42d89448dc",
+    "application/cases/CAL-0052__ministral-8b-2512__direct_request.json": "f90fd1925128338c22ca6b1cddfa636d0f3f32a216e36c37fd60e04a7256258b",
+    "application/cases/CAL-0052__ministral-8b-2512__role_delimiter.json": "f8eb6c8c4a4e0a532f676c16e90d3983a549e6ca3b796487c0071b26b3ba6251",
+    "application/cases/CAL-0052__ministral-8b-2512__task_pretext.json": "b4f8ceb5f00c8086dc6a2098a9b70015e23b16726e74a5bec1b02dfc1a8907b0",
+    "application/journal.jsonl": "66da36f7ea117f30a6076b519c1f9f95328c444b0ea8e55f749107f5c9f1fce9",
+    "application/metadata.json": "4b8b8c3b89cea2276cb82276a875b310f4151ef91b7a8317dd98f516f99d51d4",
+    "application/plan.json": "e0703685935842e2f8dde08e55b0a81a3465c55e0b9a02109a38b1ce1e0a8081",
+    "application/summary.json": "488e164a6419184537ede8eb1ba0af39ad5a09ab406c07d2699af76b2868a0e4",
+    "audit.json": "98734b0eda116852dab7381e7b9f937d84ff4c4f05a9d1a5a12b08fa9ae3813f",
+    "connectivity.json": "0b1a3c77bfb0e8de521418e5827ac8b19939e365cdb82c765271a0108fafede8",
+    "human_review/README.md": "62f9831afa0e34f50913feddfd2fbacf04213f81eb826c5967eb42f242c36971",
+    "human_review/messages.csv": "f23c0ba103a87820991332d757a8a031b469d2cf74bd892c79bf1eb8e3e3d319",
+    "human_review/observations.json": "1f9708c972a0297505b7a87c1ae6b4388809d7dee712ec68ac01013b84ebe45a",
+    "human_review/review_status.json": "370b93577abcc498837a8a06701826a798c7cd3225ec8c2c9c49228953b9e1fd",
+    "observations.json": "63e01840c1ecceede6dde810cb9b26b6d4efd5fac2aa51d329add578be845460",
+    "scan.hitlog.jsonl": "a0c725c92d073207c049040cd014a88de878fc66f16e1d8bb8e12ed31999a442",
+    "scan.report.jsonl": "e7e06f251d0ec7e1c4a89361a1eb0fa3b0cda928e21f539c1038d3e594ab2daf",
+    "scan_plan.json": "0947d7c746522e6b27db5ed2f807adaa36ff17d6ea7961967b0ed60056b29f94",
+    "summary.json": "ed89effd1ef7d1d4fa38e2e8b3c51ffe64a848523783411a4e3ee59f4d938c8d"
+  }
+}

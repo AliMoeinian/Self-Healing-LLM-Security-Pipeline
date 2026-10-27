@@ -1,0 +1,9 @@
+{
+  "all_peer_outputs_and_detector_scores_recomputed": true,
+  "completed_native_attempts": 10,
+  "human_review_status": "not inferred by this audit",
+  "native_evaluator_records": 4,
+  "new_model_requests": 0,
+  "source_application_replay": "passed",
+  "status": "passed"
+}
